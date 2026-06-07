@@ -1,0 +1,28 @@
+I’m working on a Next.js portfolio site and want help making the case-study pages more componentized and efficient.
+
+Please analyze the current architecture and give me a clear overview of the project.
+
+Context:
+- This is a Next.js App Router project.
+- The app uses Tailwind CSS via global styles and shared layout.
+- The main shell lives in app/layout.js.
+- The shared case-study wrapper lives in app/components/CaseStudyPage.js.
+- Existing case-study pages are in:
+  - app/my-verizon-app/page.js
+  - app/ae-bopis/page.js
+  - app/conversational-ux/page.js
+- The homepage links to these case studies from app/page.js.
+
+Please provide:
+1. A concise architecture overview of how the site is structured today.
+2. A sitemap of current routes and how the case-study pages relate to the homepage.
+3. A breakdown of what is currently shared vs. what is duplicated across the case-study pages.
+4. The main design/architecture problem I’m trying to solve: making the case-study pages more consistent, reusable, and efficient.
+5. A recommended refactor plan:
+   - what should become reusable components
+   - what should stay page-specific
+   - how to reduce duplication
+   - a practical next-step implementation sequence
+6. A “best version” of the component architecture I should move toward.
+
+Please keep the answer practical, not vague. I want something I can use immediately for implementation decisions.
