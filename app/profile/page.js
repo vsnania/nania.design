@@ -121,9 +121,9 @@ export default function ProfilePage() {
       </div>
 
       <div className="mt-20 pt-12 border-t border-stone-400/25">
-        <Link href="/" className="text-xs text-stone-500 hover:text-stone-900 transition-colors flex items-center gap-2 group">
+        <a href="/" className="text-xs text-stone-500 hover:text-stone-900 transition-colors flex items-center gap-2 group">
           View my work <span className="transition-transform group-hover:translate-x-0.5">→</span>
-        </Link>
+        </a>
       </div>
     </div>
   );
