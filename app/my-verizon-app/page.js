@@ -1,14 +1,17 @@
-'use client';
-
 import CaseStudyPage from '@/app/components/CaseStudyPage';
 import ZoomableImage from '@/app/components/ZoomableImage';
+
+export const metadata = {
+  title: 'Skim, Dip, Dive // Vincent Nania',
+  description: 'How a centralized navigation framework transformed the My Verizon app into an elegant pathfinder system, driving a 60% engagement lift.',
+};
 
 export default function VerizonCaseStudy() {
   return (
     <CaseStudyPage
       bottomNav={{
         previous: { href: '/', label: 'Back to work' },
-        next: { href: '/ae-bopis', label: 'Next' },
+        next: { href: '/ae-bopis', label: 'American Eagle BOPIS' },
       }}
       kicker="Project Pathfinder"
       projectLabel="My Verizon App"
@@ -30,12 +33,12 @@ export default function VerizonCaseStudy() {
             The Problem
           </h3>
         </div>
-        <div className="md:col-span-8 space-y-4 text-sm md:text-base font-normal leading-relaxed text-stone-600/90">
+        <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
           <p>
-            The legacy My Verizon application suffered from its own breadth of options. As an incredibly dense product handling everything from billing to connected home device management, it had gradually become an aggregation point for competing internal business priorities. 
+            The legacy My Verizon application had become a victim of its own ambition. As a product handling everything from billing to connected home device management, it had gradually turned into an aggregation point for competing internal priorities. Each team was surfacing their work at the top layer with no one governing the whole.
           </p>
           <p>
-            With no centralized hierarchy governing the Level 1 (L1) experience, new features were constantly surfaced at the top layer. This rapid feature bloat obscured intuitive user paths, suppressed core digital revenue discovery, and significantly amplified customer contact center drivers.
+            The result was predictable: feature bloat that buried intuitive user paths, suppressed core revenue discovery, and drove a measurable spike in customer support contacts. The app needed a hierarchy, not more features.
           </p>
         </div>
       </section>
@@ -63,30 +66,30 @@ export default function VerizonCaseStudy() {
             Governance Model
           </h3>
         </div>
-        <div className="md:col-span-8 space-y-4 text-sm md:text-base font-normal leading-relaxed text-stone-600/90">
+        <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
           <p>
-            To address this, we introduced the <strong className="font-semibold text-stone-900">"Skim, Dip, Dive"</strong> architecture. Instead of treating the home dashboard as a final destination, we repositioned it as an information processing strategy. This allowed customers to digest the sheer breadth of the product one intentional step at a time.
+            The answer was the <strong className="font-semibold text-stone-900">"Skim, Dip, Dive"</strong> architecture. The framework reframes the home dashboard not as a final destination, but as an information processing strategy. It lets customers work through a dense product one intentional layer at a time. My job was to operationalize it and make sure it actually held.
           </p>
           <p>
-            Beyond a clean interaction loop, the framework served a vital operational purpose: <strong className="font-semibold text-stone-900">product governance</strong>. By codifying strict boundaries for what constituted a "Skim" element versus a "Dive" flow, we provided cross-functional teams with a clear, objective framework to evaluate and slot new features without degrading the baseline L1 clarity.
+            That meant treating it not just as a design pattern, but as a <strong className="font-semibold text-stone-900">governance tool</strong>. I established clear rules for what belonged at the Skim layer versus the Dive level, giving cross-functional teams an objective lens for evaluating new feature requests and making it harder to justify bloating the L1 for any one team's priority.
           </p>
         </div>
       </section>
 
       {/* Framework Blueprint Visualization diagram */}
       <section className="mb-12">
-        <div className="w-full py-12 bg-stone-400/30 border border-stone-400/50 rounded-2xl flex items-center justify-center gap-6 md:gap-12 text-xs text-stone-700 shadow-inner px-4">
-          <div className="px-5 py-3 bg-stone-100 border border-stone-400/40 rounded-xl shadow-sm text-center min-w-[90px]">
+        <div className="w-full py-12 bg-stone-400/30 border border-stone-400/50 rounded-2xl flex items-center justify-center gap-3 md:gap-12 text-xs text-stone-700 shadow-inner px-3 md:px-4">
+          <div className="px-3 md:px-5 py-3 bg-stone-100 border border-stone-400/40 rounded-xl shadow-sm text-center">
             <span className="block font-bold">Skim</span>
             <span className="text-[10px] text-stone-500 font-semibold mt-0.5 block">L1 Harmony</span>
           </div>
-          <span className="font-bold text-stone-400">→</span>
-          <div className="px-5 py-3 bg-stone-100 border border-stone-400/40 rounded-xl shadow-sm text-center min-w-[90px]">
+          <span className="font-bold text-stone-400 shrink-0">→</span>
+          <div className="px-3 md:px-5 py-3 bg-stone-100 border border-stone-400/40 rounded-xl shadow-sm text-center">
             <span className="block font-bold">Dip</span>
             <span className="text-[10px] text-stone-500 font-semibold mt-0.5 block">Contextual Drill</span>
           </div>
-          <span className="font-bold text-stone-400">→</span>
-          <div className="px-5 py-3 bg-stone-100 border border-stone-400/40 rounded-xl shadow-sm text-center min-w-[90px]">
+          <span className="font-bold text-stone-400 shrink-0">→</span>
+          <div className="px-3 md:px-5 py-3 bg-stone-100 border border-stone-400/40 rounded-xl shadow-sm text-center">
             <span className="block font-bold">Dive</span>
             <span className="text-[10px] text-stone-500 font-semibold mt-0.5 block">Task Completion</span>
           </div>
@@ -131,21 +134,21 @@ export default function VerizonCaseStudy() {
           </h3>
         </div>
         <div className="md:col-span-8">
-          <p className="text-sm md:text-base font-normal leading-relaxed mb-6 text-stone-600/90">
-            Design leadership means delivering complex systems inside rigid organizational realities. Executing Project Pathfinder required careful, strategic diplomacy across three pillars:
+          <p className="text-base font-normal leading-relaxed mb-6 text-stone-600/90">
+            Shipping this required me to work across three organizational fronts at once. The design work was only part of the job.
           </p>
           <div className="grid grid-cols-1 gap-6 text-sm">
             <div className="p-5 bg-stone-100/90 border border-stone-400/40 rounded-xl shadow-sm">
               <span className="font-bold block mb-1">Product Management</span>
-              <p className="font-normal text-stone-600/90 leading-relaxed">Navigated historical, feature-dense product roadmaps by translating UX improvements directly into shared growth metrics, shifting the collaborative focus from feature volume to structural clarity.</p>
+              <p className="font-normal text-stone-600/90 leading-relaxed">I reframed our UX work in the language of growth metrics that product managers already owned. That translation shifted conversations away from "whose feature gets surfaced" and toward shared structural outcomes, which made it a lot harder to argue against.</p>
             </div>
             <div className="p-5 bg-stone-100/90 border border-stone-400/40 rounded-xl shadow-sm">
               <span className="font-bold block mb-1">Design System Stewardship</span>
-              <p className="font-normal text-stone-600/90 leading-relaxed">Collaborated with global system maintainers to advocate for contextual patterns, validating specific system departures where localized nuance was required to enhance scannability.</p>
+              <p className="font-normal text-stone-600/90 leading-relaxed">The framework required patterns that didn't exist in the global design system. I made the case for those departures directly with system maintainers, arguing that localized nuance was necessary where scannability was the primary goal, and got alignment on the exceptions we needed.</p>
             </div>
             <div className="p-5 bg-stone-100/90 border border-stone-400/40 rounded-xl shadow-sm">
               <span className="font-bold block mb-1">Engineering Partnership</span>
-              <p className="font-normal text-stone-600/90 leading-relaxed">Partnered deeply with engineering teams to explore structural frontend solutions that stepped outside conventional layout boundaries, keeping performance lightweight and fluid.</p>
+              <p className="font-normal text-stone-600/90 leading-relaxed">I worked closely with engineering to find frontend solutions that could support the new layout model without taking on performance debt. Some of the best decisions in the final product came directly out of those technical conversations.</p>
             </div>
           </div>
         </div>
@@ -155,18 +158,18 @@ export default function VerizonCaseStudy() {
       <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-20 mb-12">
         <div>
           <h4 className="text-xs uppercase text-amber-700 font-bold mb-4 tracking-wider">Key Takeaways</h4>
-          <ul className="space-y-4 text-sm text-stone-600">
-            <li>• Hierarchy is a growth lever: Reducing top-level noise consistently maximizes downstream completion.</li>
-            <li>• Shared models reduce friction: Frameworks unify cross-functional teams and dramatically eliminate competing priorities.</li>
-            <li>• Simplicity requires protection: Without active governance structures, interface complexity inevitably sneaks back over time.</li>
+          <ul className="space-y-4 text-base text-stone-600">
+            <li>• Reducing noise at the top is a growth lever. Every time we cleared L1 clutter, completion rates went up downstream. It wasn't subtle.</li>
+            <li>• A shared framework is a negotiation tool. Having Skim, Dip, Dive on the table meant feature prioritization conversations had an anchor. That changed everything.</li>
+            <li>• Simplicity needs a guardian. The hardest part of this project wasn't designing the system. It was making sure it didn't quietly erode once we shipped it.</li>
           </ul>
         </div>
         <div>
           <h4 className="text-xs uppercase text-emerald-700 font-bold mb-4 tracking-wider">Strategic Horizon</h4>
-          <ul className="space-y-4 text-sm text-stone-600">
-            <li>1. Monitor ongoing behavioral data streams to iteratively refine features appearing on L1 based on user intent models.</li>
-            <li>2. Evolve the modular layout to better support personalized, contextual user situations without fracturing the core visual clarity.</li>
-            <li>3. Propagate the skim-dip-dive framework across complementary platforms to lock down absolute ecosystem consistency.</li>
+          <ul className="space-y-4 text-base text-stone-600">
+            <li>• I'd want to go deeper on behavioral data: which L1 features are actually earning their spot based on what users do, not just what teams ask for.</li>
+            <li>• There's an opportunity to make the layout feel more personal without fracturing the core hierarchy. Contextual states based on account activity feel like the right next layer.</li>
+            <li>• Skim, Dip, Dive shouldn't live only in the app. I'd love to see it become a shared mental model across the broader Verizon ecosystem.</li>
           </ul>
         </div>
       </section>

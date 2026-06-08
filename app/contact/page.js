@@ -6,65 +6,48 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <article className="py-16 md:py-24 max-w-3xl mx-auto tracking-tight w-full flex flex-col items-start">
-      
-      {/* Left-Aligned Header */}
+
       <header className="mb-16 md:mb-20 text-left w-full">
-        <div className="flex items-center justify-start gap-4 text-xs  font-bold uppercase tracking-[0.2em] mb-6">
+        <div className="flex items-center justify-start gap-4 text-xs font-bold uppercase tracking-[0.2em] mb-6">
           <span className="text-amber-800">Contact</span>
         </div>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight mb-6">
+        <h1 className="text-3xl md:text-4xl font-light leading-tight mb-6">
           Get in touch
         </h1>
-        <p className="text-lg font-normal leading-relaxed text-stone-600/90 max-w-xl">
-          Currently open for new opportunities in design leadership and product strategy. 
+        <p className="text-base font-normal leading-relaxed text-stone-600/90 max-w-xl">
+          Currently open for new opportunities in design leadership and product strategy.
           I'm always happy to connect, collaborate, or just talk shop.
         </p>
       </header>
 
-      {/* The Centered LinkTree Grid */}
-      <div className="flex flex-col gap-5 w-full">
-        
-        {/* Email Button */}
-        <a 
-          href="mailto:vincent.nania@gmail.com" 
-          className="group relative flex items-center justify-start w-full p-6 md:p-8 bg-stone-100/40 hover:bg-white border border-stone-300/50 hover:border-amber-700/30 rounded-[2rem] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-amber-900/5"
+      <div className="flex flex-col gap-4 w-full">
+
+        <a
+          href="mailto:vincent.nania@gmail.com"
+          className="group flex items-center justify-between w-full px-5 py-4 bg-stone-100/95 border border-stone-400/25 border-l-4 border-l-amber-600 rounded-2xl hover:bg-white hover:border-stone-400/40 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-amber-900/5 transition-all duration-300"
         >
-          <span className="text-2xl md:text-3xl font-light text-stone-900 tracking-tight">
-            Email
-          </span>
-          <span className="absolute right-8 text-3xl text-stone-300 group-hover:text-amber-800 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">
-            ↗
-          </span>
+          <span className="text-lg font-medium text-stone-900">Email</span>
+          <span className="text-stone-400 group-hover:text-amber-700 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200 text-lg">↗</span>
         </a>
 
-        {/* LinkedIn Button */}
-        <a 
-          href="https://www.linkedin.com/in/vsnania/" 
-          target="_blank" 
-          rel="noreferrer" 
-          className="group relative flex items-center justify-start w-full p-6 md:p-8 bg-stone-100/40 hover:bg-white border border-stone-300/50 hover:border-sky-700/30 rounded-[2rem] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-sky-900/5"
-        >
-          <span className="text-2xl md:text-3xl font-light text-stone-900 tracking-tight">
-            LinkedIn
-          </span>
-          <span className="absolute right-8 text-3xl text-stone-300 group-hover:text-sky-800 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">
-            ↗
-          </span>
-        </a>
-
-        {/* PDF Resume Button */}
-        <a 
-          href="/Vincent_Nania_Resume.pdf" 
+        <a
+          href="https://www.linkedin.com/in/vsnania/"
           target="_blank"
           rel="noreferrer"
-          className="group relative flex items-center justify-start w-full p-6 md:p-8 bg-stone-100/40 hover:bg-white border border-stone-300/50 hover:border-emerald-700/30 rounded-[2rem] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-emerald-900/5"
+          className="group flex items-center justify-between w-full px-5 py-4 bg-stone-100/95 border border-stone-400/25 border-l-4 border-l-sky-600/70 rounded-2xl hover:bg-white hover:border-stone-400/40 hover:border-l-sky-600 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-sky-900/5 transition-all duration-300"
         >
-          <span className="text-2xl md:text-3xl font-light text-stone-900 tracking-tight">
-            View Resume
-          </span>
-          <span className="absolute right-8 text-3xl text-stone-300 group-hover:text-emerald-800 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">
-            ↗
-          </span>
+          <span className="text-lg font-medium text-stone-900">LinkedIn</span>
+          <span className="text-stone-400 group-hover:text-sky-700 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200 text-lg">↗</span>
+        </a>
+
+        <a
+          href="/Vincent_Nania_Resume.pdf"
+          target="_blank"
+          rel="noreferrer"
+          className="group flex items-center justify-between w-full px-5 py-4 bg-stone-100/95 border border-stone-400/25 border-l-4 border-l-emerald-600/70 rounded-2xl hover:bg-white hover:border-stone-400/40 hover:border-l-emerald-600 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-emerald-900/5 transition-all duration-300"
+        >
+          <span className="text-lg font-medium text-stone-900">View Resume</span>
+          <span className="text-stone-400 group-hover:text-emerald-700 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200 text-lg">↗</span>
         </a>
 
       </div>

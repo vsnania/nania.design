@@ -1,9 +1,10 @@
 import Link from 'next/link';
+import MetricCounter from '@/app/components/MetricCounter';
 
 export default function CaseStudyPage({
   backHref = '/',
   backLabel = 'Back to work',
-  kicker = 'Project Pathfinder',
+  kicker = '',
   projectLabel,
   kickerClassName = 'text-stone-500',
   projectLabelClassName = 'text-stone-500',
@@ -40,7 +41,7 @@ export default function CaseStudyPage({
         <section className="grid grid-cols-1 sm:grid-cols-3 gap-8 border-y border-stone-400/25 py-10 mb-16 text-center sm:text-left bg-stone-100/20 rounded-none">
           {metrics.map((metric) => (
             <div key={metric.label}>
-              <span className="text-4xl font-light">{metric.value}</span>
+              <MetricCounter value={metric.value} />
               <p className="text-xs  mt-2 uppercase tracking-wider font-bold text-stone-500">{metric.label}</p>
               {metric.detail ? <p className="text-xs font-normal mt-1 text-stone-600/80">{metric.detail}</p> : null}
             </div>

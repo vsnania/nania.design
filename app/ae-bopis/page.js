@@ -1,14 +1,17 @@
-'use client';
-
 import CaseStudyPage from '@/app/components/CaseStudyPage';
 import ZoomableImage from '@/app/components/ZoomableImage';
+
+export const metadata = {
+  title: 'BOPIS: 0 to 1 Service Design // Vincent Nania',
+  description: 'Leading a cross-functional initiative to design and launch Buy Online Pickup In-Store for American Eagle and Aerie across 1,000+ locations.',
+};
 
 export default function BOPISCaseStudy() {
   return (
     <CaseStudyPage
       bottomNav={{
-        previous: { href: '/my-verizon-app', label: 'Previous' },
-        next: { href: '/conversational-ux', label: 'Next' },
+        previous: { href: '/my-verizon-app', label: 'My Verizon App' },
+        next: { href: '/conversational-ux', label: 'Conversational UX' },
       }}
       kicker="Omni-channel E-com"
       projectLabel="American Eagle & Aerie"
@@ -30,7 +33,7 @@ export default function BOPISCaseStudy() {
             The Problem
           </h3>
         </div>
-        <div className="md:col-span-8 space-y-4 text-sm md:text-base font-normal leading-relaxed text-stone-600/90">
+        <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
           <p>
             American Eagle and Aerie’s legacy "Reserve, Try, Buy" program allowed customers to reserve items without upfront payment. However, the lack of financial commitment and unclear pickup logistics caused the system to buckle under its own weight. 
           </p>
@@ -63,12 +66,12 @@ export default function BOPISCaseStudy() {
             Dual-Track Mapping
           </h3>
         </div>
-        <div className="md:col-span-8 space-y-4 text-sm md:text-base font-normal leading-relaxed text-stone-600/90">
+        <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
           <p>
-            Designing for omnichannel means wrangling multiple realities at once. We had to ensure the digital interface perfectly mirrored the physical constraints of the stores. To make sense of this, we utilized dual-track story maps.
+            Designing for omnichannel means holding two realities at once. I needed the digital interface to perfectly mirror the physical constraints of the stores: the stockroom logistics, the associate workflows, the moments where digital intent meets physical fulfillment. To make sense of it all, I introduced dual-track story mapping.
           </p>
           <p>
-            The <strong className="font-semibold text-stone-900">Digital Browse</strong> track mapped key scenarios to craft user stories for the screen experience. Simultaneously, the <strong className="font-semibold text-stone-900">Store Pickup</strong> track identified physical, in-store scenarios to orchestrate the actual fulfillment process for both customers and retail associates.
+            The <strong className="font-semibold text-stone-900">Digital Browse</strong> track mapped key scenarios to craft user stories for the screen experience. The <strong className="font-semibold text-stone-900">Store Pickup</strong> track ran in parallel, identifying physical, in-store scenarios to orchestrate the actual fulfillment process for both customers and retail associates.
           </p>
         </div>
       </section>
@@ -125,8 +128,8 @@ export default function BOPISCaseStudy() {
           </h3>
         </div>
         <div className="md:col-span-8">
-          <p className="text-sm md:text-base font-normal leading-relaxed mb-6 text-stone-600/90">
-            With the wireframes acting as our blueprint, we conducted iterative prototype testing to learn and refine the solutions. However, a digital prototype can only simulate so much of a physical logistics problem.
+          <p className="text-base font-normal leading-relaxed mb-6 text-stone-600/90">
+            With the wireframes as our blueprint, I led iterative prototype testing to stress-test and refine the solutions. But a digital prototype can only simulate so much of a physical logistics problem.
           </p>
           <div className="grid grid-cols-1 gap-6 text-sm">
             <div className="p-5 bg-stone-100/90 border border-stone-400/40 rounded-xl shadow-sm">
@@ -135,7 +138,7 @@ export default function BOPISCaseStudy() {
             </div>
             <div className="p-5 bg-stone-100/90 border border-stone-400/40 rounded-xl shadow-sm">
               <span className="font-bold block mb-1 text-stone-900">Continuous Optimization</span>
-              <p className="font-normal text-stone-600/90 leading-relaxed">This localized pilot allowed us to gather live operational feedback and monitor in-store traffic flows. We used this data to push more design improvements, ultimately transforming the initial concept into a highly streamlined, customer-centric solution.</p>
+              <p className="font-normal text-stone-600/90 leading-relaxed">This localized pilot let me gather live operational feedback and monitor in-store traffic flows. I used that data to push more design improvements, ultimately transforming the initial concept into a highly streamlined, customer-centric solution.</p>
             </div>
           </div>
         </div>
@@ -148,12 +151,12 @@ export default function BOPISCaseStudy() {
             The Final Experience
           </h3>
         </div>
-        <div className="md:col-span-8 space-y-4 text-sm md:text-base font-normal leading-relaxed text-stone-600/90">
+        <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
           <p>
-            With the underlying architecture validated by the pilot, we focused on the final coat of paint. The production UI translated the raw utility of our wireframes into a seamless, high-fidelity checkout flow. 
+            With the architecture validated by the pilot, I turned attention to the final experience. The goal was translating the raw utility of our wireframes into a checkout flow that felt effortless rather than transactional.
           </p>
           <p>
-            The resulting screens prioritized absolute clarity across the digital hand-off, ensuring customers knew exactly when, where, and how to retrieve their orders without having to contact customer support or second-guess the fulfillment timeline.
+            I prioritized clarity at every digital hand-off point, making sure customers knew exactly when, where, and how to retrieve their orders without ever needing to contact support or second-guess the timeline.
           </p>
         </div>
       </section>
@@ -194,12 +197,12 @@ export default function BOPISCaseStudy() {
             Post-Launch Evolution
           </h3>
         </div>
-        <div className="md:col-span-8 space-y-4 text-sm md:text-base font-normal leading-relaxed text-stone-600/90">
+        <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
           <p>
-            Shipping the initial BOPIS experience was a massive milestone, but it was only the foundation. A successfully architected service design is inherently built to evolve.
+            Shipping the initial BOPIS experience was a major milestone, but I designed the underlying architecture to grow. A good service design doesn't just solve the immediate problem. It creates the scaffolding for what comes next.
           </p>
           <p>
-            The robust omnichannel framework we established enabled the organization to rapidly scale and introduce adjacent features. Post-launch, we established a continuous research methodology that directly informed subsequent rollouts, including <strong className="font-semibold text-stone-900">In-Store Mode</strong> and a seamless integration for <strong className="font-semibold text-stone-900">Curbside Pickup</strong>.
+            Post-launch, I established a continuous research methodology to keep the product honest. That feedback loop directly informed subsequent rollouts, including <strong className="font-semibold text-stone-900">In-Store Mode</strong> and a native integration for <strong className="font-semibold text-stone-900">Curbside Pickup</strong>.
           </p>
         </div>
       </section>
@@ -208,18 +211,18 @@ export default function BOPISCaseStudy() {
       <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-20 mb-12">
         <div>
           <h4 className="text-xs uppercase text-amber-700 font-bold mb-4 tracking-wider">Key Takeaways</h4>
-          <ul className="space-y-4 text-sm text-stone-600">
-            <li>• Orchestration over interface: A successful omni-channel experience requires designing the physical store operations just as rigorously as the digital screens.</li>
-            <li>• Making sense of the grey: Bridging digital intent with physical fulfillment requires answering complex customer anxieties upfront before they result in abandoned orders.</li>
-            <li>• Pilot to scale: Validating assumptions in four physical stores allowed us to troubleshoot edge cases before rolling out to over 1,000 locations.</li>
+          <ul className="space-y-4 text-base text-stone-600">
+            <li>• The screen is only half the experience. I came into this project thinking about flows and interfaces. I left it thinking about stockrooms, associate workflows, and the moment a customer walks through the door. Omnichannel means designing all of it.</li>
+            <li>• Answer the anxious questions first. The research kept surfacing the same grey-area fears: who can pick up my order, where do I go in the store. Addressing those upfront was what moved the abandonment rate.</li>
+            <li>• Four stores taught me more than any prototype. The Pittsburgh pilot surfaced edge cases no wireframe could have predicted. I'd never skip a physical pilot again.</li>
           </ul>
         </div>
         <div>
           <h4 className="text-xs uppercase text-emerald-700 font-bold mb-4 tracking-wider">Strategic Horizon</h4>
-          <ul className="space-y-4 text-sm text-stone-600">
-            <li>1. Continue integrating behavioral data from physical pickups to iteratively refine the digital hand-off.</li>
-            <li>2. Expand the digital browse mapping to continuously improve the streamlined, customer-centric in-store pickup solution.</li>
-            <li>3. Leverage the successful 84% pickup rate to introduce complementary cross-selling features within the pickup confirmation loop.</li>
+          <ul className="space-y-4 text-base text-stone-600">
+            <li>• I'd want to close the loop between physical pickup data and the digital hand-off. There's signal in that moment that could meaningfully shape the confirmation and notification flows.</li>
+            <li>• The 84% fulfillment rate is strong, but I'd want to understand the 16%. Is it a store operations issue, a communication gap, or something in the digital flow that's setting the wrong expectation?</li>
+            <li>• The ready-for-pickup notification is doing a lot of work right now. I think there's a smarter version of it: one that factors in store hours, estimated wait times, and order hold windows so customers always show up at the right moment.</li>
           </ul>
         </div>
       </section>

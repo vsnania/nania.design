@@ -1,13 +1,16 @@
-'use client';
-
 import CaseStudyPage from '@/app/components/CaseStudyPage';
 import ZoomableImage from '@/app/components/ZoomableImage';
+
+export const metadata = {
+  title: 'Conversational UX on Zero Budget // Vincent Nania',
+  description: 'How a scrappy interactive FAQ proved the value of conversational design and secured funding for a fully scaled automated support ecosystem.',
+};
 
 export default function ConversationalUX() {
   return (
     <CaseStudyPage
       bottomNav={{
-        previous: { href: '/ae-bopis', label: 'Previous' },
+        previous: { href: '/ae-bopis', label: 'American Eagle BOPIS' },
         next: { href: '/', label: 'Back to work' },
       }}
       kicker="Conversational UX"
@@ -37,14 +40,14 @@ export default function ConversationalUX() {
       {/* Act I: The Constraint */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="section-label sticky top-28" style={{ letterSpacing: 'normal' }}>The Constraint</h3>
+          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">The Constraint</h3>
         </div>
-        <div className="md:col-span-8 space-y-4 text-sm md:text-base font-normal leading-relaxed text-stone-600/90">
+        <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
           <p>
-            Users were drowning in a dense, static FAQ section, leading to a massive influx of easily avoidable support tickets. A conversational chatbot was the obvious goal, but we had zero budget and no engineering resources allocated for a massive platform overhaul.
+            Users were drowning in a dense, static FAQ section, generating a flood of easily avoidable support tickets. A conversational chatbot was the obvious answer, but there was zero budget and no engineering resources available for a platform overhaul.
           </p>
           <p>
-            Instead of waiting for funding, I designed a "Trojan Horse": an interactive FAQ. E-commerce customer journeys are often highly predictable, so we did not need complex machine learning. We just needed a relentless focus on information architecture. By manually coding and mapping existing static content into a guided decision tree, we simulated a dynamic conversational experience.
+            So I didn't wait. I designed a "Trojan Horse": an interactive FAQ built on the insight that e-commerce customer journeys are highly predictable. We didn't need machine learning. We needed a relentless focus on information architecture. By manually mapping existing static content into a guided decision tree, I simulated a dynamic conversational experience at virtually no cost.
           </p>
         </div>
       </section>
@@ -68,14 +71,14 @@ export default function ConversationalUX() {
       {/* Act II: The Stakeholder Bridge */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="section-label sticky top-28" style={{ letterSpacing: 'normal' }}>The Stakeholder Bridge</h3>
+          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">The Stakeholder Bridge</h3>
         </div>
-        <div className="md:col-span-8 space-y-4 text-sm md:text-base font-normal leading-relaxed text-stone-600/90">
+        <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
           <p>
             To align on complex behaviors like "Close Chat" triggers, I moved away from abstract discussions. I utilized this "choose your adventure" wireframe model to socialize options directly with Customer Support stakeholders.
           </p>
           <p>
-            This allowed the team to visualize the decision logic and feel the flow in real-time, moving the conversation from subjective debate to objective decision-making. It was the visual catalyst we needed to gain final consensus.
+            It gave stakeholders something to react to rather than abstract. They could feel the decision logic in real-time, which moved the conversation from subjective debate to concrete tradeoffs. That was the catalyst for final consensus.
           </p>
         </div>
       </section>
@@ -109,11 +112,11 @@ export default function ConversationalUX() {
       {/* Act III: The Scale */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="section-label sticky top-28" style={{ letterSpacing: 'normal' }}>The Scale</h3>
+          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">The Scale</h3>
         </div>
-        <div className="md:col-span-8 space-y-4 text-sm md:text-base font-normal leading-relaxed text-stone-600/90">
+        <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
           <p>
-            The success of the scrappy Interactive FAQ gave us the leverage we needed. Leadership saw the value of conversational UX, and we were granted the budget to design and build a custom, fully integrated chatbot in-house.
+            The success of the scrappy Interactive FAQ gave me the leverage I needed. Leadership saw the value of conversational UX, and I was granted the budget to design and build a custom, fully integrated chatbot in-house.
           </p>
           <p>
             While the network of responses and options was sizing up considerably, the golden rule of the UX remained unchanged: never leave the user stranded. If the automated logic flow wasn’t enough to resolve the issue, I designed the system to ensure the path to a human agent was always seamless, highly visible, and instantly accessible.
@@ -163,18 +166,18 @@ export default function ConversationalUX() {
       <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-20 mb-12">
         <div>
           <h4 className="text-xs uppercase text-amber-700 font-bold mb-4 tracking-wider">Key Takeaways</h4>
-          <ul className="space-y-4 text-sm text-stone-600">
-            <li>• Scrappiness as strategy: Launching with minimal assets can effectively prove business value and secure long-term investment.</li>
-            <li>• Visualizing logic: Using "choose your adventure" wireframes bridges the gap between technical logic and stakeholder understanding.</li>
-            <li>• Human escalation is mandatory: In conversational UX, the automated logic should never become a trap; the path to a human must remain seamless.</li>
+          <ul className="space-y-4 text-base text-stone-600">
+            <li>• A rough thing that works beats a polished thing that doesn't exist. The interactive FAQ wasn't pretty, but it proved the concept, moved stakeholders, and unlocked real budget. I'll always look for that scrappy first move.</li>
+            <li>• Making stakeholders feel the logic is more powerful than explaining it. The "choose your adventure" wireframe wasn't just a design artifact. It was a facilitation tool. Putting decision logic in someone's hands changes the conversation entirely.</li>
+            <li>• The exit ramp matters as much as the flow. No matter how good the automation gets, users will hit a wall. Designing a seamless path to a human agent wasn't an edge case. It was a core principle.</li>
           </ul>
         </div>
         <div>
           <h4 className="text-xs uppercase text-emerald-700 font-bold mb-4 tracking-wider">Strategic Horizon</h4>
-          <ul className="space-y-4 text-sm text-stone-600">
-            <li>1. Continue leveraging conversational data to identify high-friction topics and refine automated flow logic.</li>
-            <li>2. Expand the assistant's capabilities to handle more complex, personalized user scenarios without increasing customer support wait times.</li>
-            <li>3. Advance the chatbot from a static logic-tree model to a more flexible, agentic architecture for proactive customer support.</li>
+          <ul className="space-y-4 text-base text-stone-600">
+            <li>• The conversational data is a goldmine that I don't think is fully used yet. Every dead end and repeated question is a signal about where the flow breaks down. I'd build a regular review cycle around that.</li>
+            <li>• I'd want to move toward more personalized flows. Right now the logic tree treats every user the same. Someone who just placed an order has a completely different set of needs than someone troubleshooting a return.</li>
+            <li>• The long-term play is agentic support: a system that doesn't just answer questions but anticipates them based on account context. That's where this is headed, and the foundation we built makes it possible.</li>
           </ul>
         </div>
       </section>

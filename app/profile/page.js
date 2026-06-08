@@ -19,10 +19,10 @@ export default function ProfilePage() {
           <span className="text-stone-500">Profile</span>
         </div>
         <h1 className="text-3xl md:text-4xl font-light leading-tight mb-6">
-          Designing for the human on the other side.
+          Designing for the human on the other side
         </h1>
         <p className="text-base md:text-lg font-normal leading-relaxed text-stone-600/90">
-          I'm a design leader based in Brooklyn. I believe the best digital systems are deeply informed by the physical world. For me, human-centered design isn't just a corporate framework. It’s a philosophy of intentionality and feedback that I practice constantly, both on stage and behind the lens.
+          I’m a design leader based in Brooklyn. For the past decade I’ve worked with companies like Verizon and American Eagle, mostly trying to make complicated things feel simple. A lot of what helps me do that, I learned away from a desk.
         </p>
       </header>
 
@@ -35,16 +35,33 @@ export default function ProfilePage() {
               The Stage & Studio
             </h4>
           </div>
-          <div className="md:col-span-8 space-y-4 text-sm md:text-base font-normal leading-relaxed text-stone-600/90">
+          <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
             <p>
-              I am a songwriter and producer, and I regularly play gigs and open mics around NYC. To me, playing live music is the ultimate, unfiltered exercise in experience design. 
+              I'm a songwriter and producer, and I play gigs and open mics around NYC whenever I get the chance. Performing live is a weird, humbling thing. You get completely unfiltered feedback from a room full of people who aren't going to lie to you about it. You figure out fast what's landing and what isn't, and you adjust mid-song.
             </p>
             <p>
-              When you are on stage, you are entirely beholden to the human element. You have to read the room, sense where the friction is, and iterate on your delivery in real-time so that the connection feels effortless to the audience. 
+              Production is the quieter side of the same coin. Taking a voice memo and building it into a full arrangement means making a thousand small calls about what belongs and what doesn't. I've probably learned more about editing from music than from anything else.
             </p>
-            <p>
-              That exact same mindset applies to production. Taking a song from a raw concept to a fully produced track is an exercise in complex architecture. Arranging disparate layers of sound so they serve the emotional core of the piece, without ever overwhelming the listener. 
-            </p>
+
+            <div className="mt-8 pt-4 space-y-4">
+              <div className="w-full aspect-[16/9] rounded-xl overflow-hidden shadow-md border border-stone-400/20">
+                <img
+                  src="/images/profile/4B6181C0-296C-4F6F-A08B-D8CE1898EE0D_1_105_c.jpeg"
+                  alt="Vincent Nania performing live at an open mic"
+                  className="w-full h-full object-cover object-[center_20%]"
+                />
+              </div>
+              <div className="overflow-hidden rounded-xl shadow-sm">
+                <iframe
+                  allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+                  frameBorder="0"
+                  height="175"
+                  className="w-full"
+                  sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+                  src="https://embed.music.apple.com/us/album/secondhand-smoke/1868131513?i=1868131514&theme=light"
+                />
+              </div>
+            </div>
           </div>
         </section>
 
@@ -55,12 +72,12 @@ export default function ProfilePage() {
               Film Photography
             </h4>
           </div>
-          <div className="md:col-span-8 space-y-4 text-sm md:text-base font-normal leading-relaxed text-stone-600/90">
+          <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
             <p>
-              In a digital world dominated by infinite scrolling, rapid prototyping, and immediate "undo" buttons, I shoot analog photography to force myself back into a space of rigid intentionality.
+              I shoot on 35mm film. Partly because I love how it looks, but mostly because it forces me to slow down. You get 36 frames, maybe fewer, and there's no preview, no delete button. You have to think before you shoot, or you burn the frame.
             </p>
             <p>
-              Shooting on film requires you to embrace constraints. You have limited exposures. You must commit to your framing, understand the environmental limitations of your light, and focus entirely on the subject in front of you before you act. That deliberate, constraint-driven empathy is exactly how I approach problem solving.
+              Most of my rolls end up being city stuff. Strangers on the subway, weird light on a building, something I've walked past a hundred times and finally actually noticed. It's a good reminder that paying attention is a skill you have to keep practicing.
             </p>
 
             {/* ANALOG PHOTO PLACEHOLDERS */}
@@ -101,6 +118,12 @@ export default function ProfilePage() {
           </div>
         </section>
 
+      </div>
+
+      <div className="mt-20 pt-12 border-t border-stone-400/25">
+        <Link href="/" className="text-xs text-stone-500 hover:text-stone-900 transition-colors flex items-center gap-2 group">
+          View my work <span className="transition-transform group-hover:translate-x-0.5">→</span>
+        </Link>
       </div>
     </div>
   );
