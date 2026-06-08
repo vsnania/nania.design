@@ -31,7 +31,7 @@ export default function ZoomableImage({ src, alt, className }) {
       <img 
         src={src} 
         alt={alt} 
-        className={`${className} cursor-zoom-in transition-transform duration-300 hover:scale-[1.02]`}
+        className={`${className} cursor-zoom-in outline outline-2 outline-transparent outline-offset-0 hover:outline-stone-400 hover:outline-offset-[6px] transition-all duration-200 ease-out`}
         onClick={() => setIsZoomed(true)}
       />
 
@@ -46,7 +46,7 @@ export default function ZoomableImage({ src, alt, className }) {
             alt={alt} 
             className="max-w-full max-h-full object-contain rounded-lg shadow-2xl animate-in zoom-in-95 duration-200"
           />
-          <span className="absolute bottom-8 text-xs font-mono text-stone-400 tracking-widest uppercase">
+          <span className="absolute bottom-8 text-xs text-stone-400 tracking-widest uppercase">
             Click anywhere or press Esc to close
           </span>
         </div>

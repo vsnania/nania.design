@@ -94,7 +94,7 @@ export default function Home() {
           <div className="relative flex items-start justify-start gap-4 md:gap-6">
             <div className="w-40 h-40 md:w-48 md:h-48 bg-stone-400/20 border border-stone-400/40 rounded-tl-[2rem] rounded-br-[2rem] flex items-center justify-center overflow-hidden relative shadow-sm backdrop-blur-[2px]">
               <div className="absolute inset-0 bg-gradient-to-tr from-amber-500/10 via-transparent to-sky-500/10 opacity-60" />
-              <span className="text-xs text-stone-500 font-mono">[ photo of v ]</span>
+              <span className="text-xs text-stone-500 ">[ photo of v ]</span>
             </div>
 
             <div className="relative mt-2 w-20 h-20 shrink-0 pointer-events-none md:w-24 md:h-24 lg:w-28 lg:h-28">
@@ -123,7 +123,7 @@ export default function Home() {
             {/* 1. MAIN FEATURED CARD */}
             <Link href="/my-verizon-app" className="group flex flex-col justify-between p-6 bg-stone-100/95 border border-stone-400/30 border-l-4 border-l-amber-600 rounded-2xl hover:border-amber-700/40 hover:-translate-y-1 hover:shadow-2xl hover:shadow-amber-950/5 transition-all duration-300 cursor-pointer relative z-10 shadow-sm">
               <div>
-                <div className="flex justify-between items-baseline text-xs font-mono text-stone-500 mb-4">
+                <div className="flex justify-between items-baseline text-xs  text-stone-500 mb-4">
                   <span className="bg-stone-200/60 px-3 py-1 rounded-md text-stone-700 border border-stone-400/20 font-medium">
                     My Verizon App
                   </span>
@@ -140,7 +140,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="w-full h-28 bg-stone-400/10 border border-stone-400/20 rounded-tr-xl rounded-bl-xl flex items-center justify-center mt-6">
-                <span className="text-xs font-mono text-stone-500 group-hover:text-stone-800 transition-colors font-medium">
+                <span className="text-xs  text-stone-500 group-hover:text-stone-800 transition-colors font-medium">
                   [ view transformation blueprints ]
                 </span>
               </div>
@@ -154,7 +154,7 @@ export default function Home() {
                   className="group flex flex-col justify-between p-6 bg-stone-100/95 border border-stone-400/30 border-l-4 border-l-stone-400/70 rounded-2xl transition-all duration-300 min-h-[280px] relative z-10 shadow-sm"
                 >
                   <div>
-                    <div className="flex justify-between items-baseline text-xs font-mono text-stone-500 mb-4">
+                    <div className="flex justify-between items-baseline text-xs  text-stone-500 mb-4">
                       <span className="bg-stone-200/60 px-3 py-1 rounded-md text-stone-700 border border-stone-400/20 font-medium">
                         {project.company}
                       </span>
@@ -167,7 +167,7 @@ export default function Home() {
                       {project.desc}
                     </p>
                   </div>
-                  <div className="w-full h-24 bg-stone-400/10 border border-stone-400/20 rounded-tr-xl rounded-bl-xl flex items-center justify-center mt-6 font-mono text-[10px] text-stone-400 italic">
+                  <div className="w-full h-24 bg-stone-400/10 border border-stone-400/20 rounded-tr-xl rounded-bl-xl flex items-center justify-center mt-6  text-[10px] text-stone-400 italic">
                     [ Content details pending ]
                   </div>
                 </div>

@@ -38,13 +38,13 @@ export default function RootLayout({ children }) {
             <Link href="/" className="text-base font-bold tracking-tight text-stone-900 hover:text-stone-700 transition-colors uppercase">
               Vincent Nania
             </Link>
-            <span className="text-xs text-amber-900 font-mono mt-1 font-bold uppercase tracking-widest">
+            <span className="text-xs text-amber-900  mt-1 font-bold uppercase tracking-widest">
               Design Leadership // Product Strategy
             </span>
           </div>
           
           {/* Navigation Links */}
-          <nav className="flex items-center gap-8 text-xs text-stone-800 font-mono tracking-tight font-semibold md:pt-1">
+          <nav className="flex items-center gap-8 text-xs text-stone-800  tracking-tight font-semibold md:pt-1">
             <Link href="/" className="hover:text-stone-950 transition-colors relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[1px] after:bg-amber-800 hover:after:w-full after:transition-all">
               work
             </Link>
@@ -64,7 +64,7 @@ export default function RootLayout({ children }) {
         </main>
 
         {/* Global Bottom Footer */}
-        <footer className="w-full max-w-5xl mx-auto flex justify-between items-center border-t border-stone-400/40 pt-6 z-10 text-xs text-stone-700 font-mono">
+        <footer className="w-full max-w-5xl mx-auto flex justify-between items-center border-t border-stone-400/40 pt-6 z-10 text-xs text-stone-700 ">
           <span className="font-semibold">© 2026</span>
           <div className="flex items-center gap-6">
             <span className="font-semibold hidden md:inline">bklyn // ny</span>

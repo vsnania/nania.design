@@ -26,8 +26,8 @@ export default function BOPISCaseStudy() {
       {/* Act I: The Problem */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="text-xs font-mono uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
-            // The Problem
+          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+            The Problem
           </h3>
         </div>
         <div className="md:col-span-8 space-y-4 text-sm md:text-base font-normal leading-relaxed text-stone-600/90">
@@ -43,14 +43,14 @@ export default function BOPISCaseStudy() {
       {/* VISUAL INSERT 1: SENSE-MAKING & RESEARCH */}
       <section className="mb-20">
         <div className="bg-stone-300/30 border border-stone-400/20 rounded-2xl p-6 md:p-12 flex flex-col items-center justify-center gap-4">
-          <div className="w-full rounded-xl overflow-hidden shadow-lg border border-stone-400/40 bg-white">
+          <div className="w-full rounded-xl shadow-lg border border-stone-400/40 bg-white">
             <ZoomableImage 
               src="/images/ae-bopis/BOPIS Common Customer Questions.png" 
               alt="BOPIS Customer Anxiety Post-it Mapping"
-              className="w-full h-auto block mix-blend-multiply"
+              className="w-full h-auto block mix-blend-multiply rounded-xl"
             />
           </div>
-          <span className="text-xs font-mono text-stone-500 italic text-center max-w-lg mt-4">
+          <span className="text-xs text-stone-500 italic text-center max-w-lg mt-4">
             Figure 1.0: Synthesizing the "grey area." Mapping fundamental customer anxieties such as "Can someone else pick up my order?" and "Where should I go in the store?" to drive the initial UX requirements.
           </span>
         </div>
@@ -59,8 +59,8 @@ export default function BOPISCaseStudy() {
       {/* Act II: Making Sense of the Grey */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="text-xs font-mono uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
-            // Dual-Track Mapping
+          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+            Dual-Track Mapping
           </h3>
         </div>
         <div className="md:col-span-8 space-y-4 text-sm md:text-base font-normal leading-relaxed text-stone-600/90">
@@ -78,24 +78,24 @@ export default function BOPISCaseStudy() {
         <div className="bg-stone-300/30 border border-stone-400/20 rounded-2xl p-6 md:p-12 flex flex-col gap-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
             
-            <div className="w-full rounded-xl overflow-hidden shadow-lg border border-stone-400/40 bg-white">
+            <div className="w-full rounded-xl shadow-lg border border-stone-400/40 bg-white">
               <ZoomableImage 
                 src="/images/ae-bopis/Digital Browse Mapping.png" 
                 alt="Digital Browse Mapping"
-                className="w-full h-auto block mix-blend-multiply"
+                className="w-full h-auto block mix-blend-multiply rounded-xl"
               />
             </div>
             
-            <div className="w-full rounded-xl overflow-hidden shadow-lg border border-stone-400/40 bg-white">
+            <div className="w-full rounded-xl shadow-lg border border-stone-400/40 bg-white">
               <ZoomableImage 
                 src="/images/ae-bopis/In Store Mapping.png" 
                 alt="In Store Mapping"
-                className="w-full h-auto block mix-blend-multiply"
+                className="w-full h-auto block mix-blend-multiply rounded-xl"
               />
             </div>
 
           </div>
-          <span className="text-xs font-mono text-stone-500 italic text-center max-w-2xl mx-auto mt-2">
+          <span className="text-xs text-stone-500 italic text-center max-w-2xl mx-auto mt-2">
             Figure 1.1: Dual-track story mapping. The Digital Browse track (left) defines the screen-level user stories, while the Store Pickup track (right) orchestrates the physical fulfillment realities for retail associates.
           </span>
         </div>
@@ -104,14 +104,14 @@ export default function BOPISCaseStudy() {
       {/* VISUAL INSERT 3: PROTOTYPING */}
       <section className="mb-20">
         <div className="bg-stone-300/30 border border-stone-400/20 rounded-2xl p-6 md:p-12 flex flex-col gap-8">
-          <div className="w-full rounded-xl overflow-hidden shadow-lg border border-stone-400/40 bg-white">
+          <div className="w-full rounded-xl shadow-lg border border-stone-400/40 bg-white">
             <ZoomableImage 
               src="/images/ae-bopis/Lofi Mosaic.png" 
               alt="BOPIS Lo-fi Wireframes and Checkout Flows"
-              className="w-full h-auto block"
+              className="w-full h-auto block rounded-xl"
             />
           </div>
-          <span className="text-xs font-mono text-stone-500 italic text-center max-w-lg mx-auto mt-2">
+          <span className="text-xs text-stone-500 italic text-center max-w-lg mx-auto mt-2">
             Figure 1.2: Comprehensive wireframes developed in response to UX challenges, focusing on content placement and layout options to set up iterative prototype testing.
           </span>
         </div>
@@ -120,8 +120,8 @@ export default function BOPISCaseStudy() {
       {/* Act III: Prototyping and Piloting */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-16">
         <div className="md:col-span-4">
-          <h3 className="text-xs font-mono uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
-            // Pilot & Scale
+          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+            Pilot & Scale
           </h3>
         </div>
         <div className="md:col-span-8">
@@ -144,8 +144,8 @@ export default function BOPISCaseStudy() {
       {/* Act IV: The Final Experience */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="text-xs font-mono uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
-            // The Final Experience
+          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+            The Final Experience
           </h3>
         </div>
         <div className="md:col-span-8 space-y-4 text-sm md:text-base font-normal leading-relaxed text-stone-600/90">
@@ -170,18 +170,18 @@ export default function BOPISCaseStudy() {
             ].map((img, i) => (
               <div 
                 key={i}
-                className="w-full max-w-[250px] aspect-[9/19] rounded-[1.5rem] overflow-hidden shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white"
+                className="w-full max-w-[250px] aspect-[9/19] rounded-[1.5rem] shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white"
               >
                 <ZoomableImage 
                   src={img.src} 
                   alt={img.alt}
-                  className="w-full h-full object-cover object-top block"
+                  className="w-full h-full object-cover object-top block rounded-[1.5rem]"
                 />
               </div>
             ))}
 
           </div>
-          <span className="text-xs font-mono text-stone-500 italic text-center max-w-lg mx-auto mt-6">
+          <span className="text-xs text-stone-500 italic text-center max-w-lg mx-auto mt-6">
             Figure 1.3: Mobile UI flows for Product Detail, Checkout, and the Find Another Store utility. Click to zoom.
           </span>
         </div>
@@ -190,8 +190,8 @@ export default function BOPISCaseStudy() {
       {/* Act V: Post-Launch Evolution */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-16">
         <div className="md:col-span-4">
-          <h3 className="text-xs font-mono uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
-            // Post-Launch Evolution
+          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+            Post-Launch Evolution
           </h3>
         </div>
         <div className="md:col-span-8 space-y-4 text-sm md:text-base font-normal leading-relaxed text-stone-600/90">
@@ -207,7 +207,7 @@ export default function BOPISCaseStudy() {
       {/* TAKEAWAYS SECTION */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-20 mb-12">
         <div>
-          <h4 className="text-xs font-mono uppercase text-amber-700 font-bold mb-4 tracking-wider">// Key Takeaways</h4>
+          <h4 className="text-xs uppercase text-amber-700 font-bold mb-4 tracking-wider">Key Takeaways</h4>
           <ul className="space-y-4 text-sm text-stone-600">
             <li>• Orchestration over interface: A successful omni-channel experience requires designing the physical store operations just as rigorously as the digital screens.</li>
             <li>• Making sense of the grey: Bridging digital intent with physical fulfillment requires answering complex customer anxieties upfront before they result in abandoned orders.</li>
@@ -215,7 +215,7 @@ export default function BOPISCaseStudy() {
           </ul>
         </div>
         <div>
-          <h4 className="text-xs font-mono uppercase text-emerald-700 font-bold mb-4 tracking-wider">// Strategic Horizon</h4>
+          <h4 className="text-xs uppercase text-emerald-700 font-bold mb-4 tracking-wider">Strategic Horizon</h4>
           <ul className="space-y-4 text-sm text-stone-600">
             <li>1. Continue integrating behavioral data from physical pickups to iteratively refine the digital hand-off.</li>
             <li>2. Expand the digital browse mapping to continuously improve the streamlined, customer-centric in-store pickup solution.</li>
@@ -227,7 +227,7 @@ export default function BOPISCaseStudy() {
       {/* IMPACT & DEPLOYMENT */}
       <section className="mt-8 p-8 md:p-10 border border-stone-400/30 bg-stone-100/50 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div className="space-y-1">
-          <h4 className="text-stone-900 font-bold text-sm uppercase tracking-wider font-mono">See the experience in action</h4>
+          <h4 className="text-stone-900 font-bold text-sm uppercase tracking-wider ">See the experience in action</h4>
           <p className="text-stone-600 text-sm max-w-sm">
             Explore the American Eagle site to see the checkout and store pickup flows live.
           </p>

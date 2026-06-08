@@ -1,5 +1,7 @@
+'use client';
+
 import CaseStudyPage from '@/app/components/CaseStudyPage';
-import ZoomableImage from '../components/ZoomableImage';
+import ZoomableImage from '@/app/components/ZoomableImage';
 
 export default function ConversationalUX() {
   return (
@@ -35,7 +37,7 @@ export default function ConversationalUX() {
       {/* Act I: The Constraint */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="section-label sticky top-28">// The Constraint</h3>
+          <h3 className="section-label sticky top-28" style={{ letterSpacing: 'normal' }}>The Constraint</h3>
         </div>
         <div className="md:col-span-8 space-y-4 text-sm md:text-base font-normal leading-relaxed text-stone-600/90">
           <p>
@@ -48,26 +50,25 @@ export default function ConversationalUX() {
       </section>
 
       {/* Wireframe Image Slot */}
-        <section className="mb-20">
+      <section className="mb-20">
         <div className="bg-stone-300/30 border border-stone-400/20 rounded-2xl p-6 md:p-12 flex flex-col items-center justify-center gap-4">
-            {/* This wrapper forces the exact same size/shape as your Verizon screenshots */}
-            <div className="w-full max-w-[250px] aspect-[9/19] rounded-[1.5rem] overflow-hidden shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white">
+          <div className="w-full max-w-[250px] aspect-[9/19] rounded-[1.5rem] shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white">
             <ZoomableImage 
-                src="/images/conversational-ux/Chatbot-prototype.png" 
-                alt="Interactive FAQ Decision Tree Blueprint"
-                className="h-full w-full object-cover object-top block"
+              src="/images/conversational-ux/Chatbot-prototype.png" 
+              alt="Interactive FAQ Decision Tree Blueprint"
+              className="h-full w-full object-cover object-top block rounded-[1.5rem]"
             />
-            </div>
-            <span className="text-xs font-mono text-stone-500 italic text-center max-w-lg mt-4">
+          </div>
+          <span className="text-xs text-stone-500 italic text-center max-w-lg mt-4">
             Figure 1.0: A lightweight, decision-tree FAQ pattern that gave the team proof of value before committing to a full chatbot build.
-            </span>
+          </span>
         </div>
-        </section>
+      </section>
 
-        {/* Act II: The Stakeholder Bridge */}
+      {/* Act II: The Stakeholder Bridge */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="section-label sticky top-28">// The Stakeholder Bridge</h3>
+          <h3 className="section-label sticky top-28" style={{ letterSpacing: 'normal' }}>The Stakeholder Bridge</h3>
         </div>
         <div className="md:col-span-8 space-y-4 text-sm md:text-base font-normal leading-relaxed text-stone-600/90">
           <p>
@@ -82,14 +83,14 @@ export default function ConversationalUX() {
       {/* Stakeholder Bridge Image Slot */}
       <section className="mb-20">
         <div className="bg-stone-300/30 border border-stone-400/20 rounded-2xl p-6 md:p-12 flex flex-col items-center justify-center gap-4">
-          <div className="w-full rounded-xl overflow-hidden shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white">
+          <div className="w-full rounded-xl shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white">
             <ZoomableImage 
-              src="images/conversational-ux/Chatbot-flow-socialization.png" 
+              src="/images/conversational-ux/Chatbot-flow-socialization.png" 
               alt="Close Chat Choose Your Adventure Flow"
-              className="h-full w-full object-contain block"
+              className="w-full h-auto block mix-blend-multiply rounded-xl"
             />
           </div>
-          <span className="text-xs font-mono text-stone-500 italic text-center max-w-lg mt-4">
+          <span className="text-xs text-stone-500 italic text-center max-w-lg mt-4">
             Figure 1.2: A "choose your adventure" wireframe model used to socialize and validate "Close Chat" logic with internal stakeholders.
           </span>
         </div>
@@ -100,7 +101,7 @@ export default function ConversationalUX() {
         <p className="text-xl md:text-2xl font-light italic text-stone-700 leading-snug mb-4">
           “Our online FAQ has been fantastic for our site... Each chat contact costs us $5.00, so a reduction that significant is huge. And it’s seen as a shiny, cheap feature!”
         </p>
-        <footer className="text-xs font-mono uppercase tracking-widest text-stone-500">
+        <footer className="text-xs uppercase tracking-widest text-stone-500">
           — Director of Customer Engagement
         </footer>
       </blockquote>
@@ -108,7 +109,7 @@ export default function ConversationalUX() {
       {/* Act III: The Scale */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="section-label sticky top-28">// The Scale</h3>
+          <h3 className="section-label sticky top-28" style={{ letterSpacing: 'normal' }}>The Scale</h3>
         </div>
         <div className="md:col-span-8 space-y-4 text-sm md:text-base font-normal leading-relaxed text-stone-600/90">
           <p>
@@ -124,48 +125,64 @@ export default function ConversationalUX() {
       <section className="mb-12">
         <div className="bg-stone-300/30 border border-stone-400/20 rounded-2xl p-6 md:p-12 flex flex-col items-center justify-center gap-8">
           
-          {/* Row of 3 Images */}
           <div className="w-full flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
             
-            {/* Image 1 */}
-            <div className="w-full max-w-[200px] aspect-[9/19] rounded-[1.5rem] overflow-hidden shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white">
+            <div className="w-full max-w-[200px] aspect-[9/19] rounded-[1.5rem] shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white">
               <ZoomableImage 
                 src="/images/conversational-ux/Chatbot-hifi-1.png" 
                 alt="Final Chatbot UI View 1"
-                className="h-full w-full object-cover object-top block"
+                className="h-full w-full object-cover object-top block rounded-[1.5rem]"
               />
             </div>
 
-            {/* Image 2 */}
-            <div className="w-full max-w-[200px] aspect-[9/19] rounded-[1.5rem] overflow-hidden shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white">
+            <div className="w-full max-w-[200px] aspect-[9/19] rounded-[1.5rem] shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white">
               <ZoomableImage 
                 src="/images/conversational-ux/Chatbot-hifi-2.png" 
                 alt="Final Chatbot UI View 2"
-                className="h-full w-full object-cover object-top block"
+                className="h-full w-full object-cover object-top block rounded-[1.5rem]"
               />
             </div>
 
-            {/* Image 3 */}
-            <div className="w-full max-w-[200px] aspect-[9/19] rounded-[1.5rem] overflow-hidden shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white">
+            <div className="w-full max-w-[200px] aspect-[9/19] rounded-[1.5rem] shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white">
               <ZoomableImage 
                 src="/images/conversational-ux/Chatbot-hifi-3.png" 
                 alt="Final Chatbot UI View 3"
-                className="h-full w-full object-cover object-top block"
+                className="h-full w-full object-cover object-top block rounded-[1.5rem]"
               />
             </div>
             
           </div>
 
-          <span className="text-xs font-mono text-stone-500 italic text-center max-w-lg">
+          <span className="text-xs text-stone-500 italic text-center max-w-lg">
             Figure 1.1: The eventual support assistant frame, positioned as a clear escalation path rather than a dead end.
           </span>
+        </div>
+      </section>
+
+      {/* TAKEAWAYS SECTION */}
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-20 mb-12">
+        <div>
+          <h4 className="text-xs uppercase text-amber-700 font-bold mb-4 tracking-wider">Key Takeaways</h4>
+          <ul className="space-y-4 text-sm text-stone-600">
+            <li>• Scrappiness as strategy: Launching with minimal assets can effectively prove business value and secure long-term investment.</li>
+            <li>• Visualizing logic: Using "choose your adventure" wireframes bridges the gap between technical logic and stakeholder understanding.</li>
+            <li>• Human escalation is mandatory: In conversational UX, the automated logic should never become a trap; the path to a human must remain seamless.</li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="text-xs uppercase text-emerald-700 font-bold mb-4 tracking-wider">Strategic Horizon</h4>
+          <ul className="space-y-4 text-sm text-stone-600">
+            <li>1. Continue leveraging conversational data to identify high-friction topics and refine automated flow logic.</li>
+            <li>2. Expand the assistant's capabilities to handle more complex, personalized user scenarios without increasing customer support wait times.</li>
+            <li>3. Advance the chatbot from a static logic-tree model to a more flexible, agentic architecture for proactive customer support.</li>
+          </ul>
         </div>
       </section>
 
       {/* IMPACT & DEPLOYMENT */}
       <section className="mt-8 p-8 md:p-10 border border-stone-400/30 bg-stone-100/50 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div className="space-y-1">
-          <h4 className="text-stone-900 font-bold text-sm uppercase tracking-wider font-mono">See the experience in action</h4>
+          <h4 className="text-stone-900 font-bold text-sm uppercase tracking-wider">See the experience in action</h4>
           <p className="text-stone-600 text-sm max-w-sm">
             Explore the automated support assistant flow designed to modernize AE’s support experience and build the foundation for the agentic future.
           </p>

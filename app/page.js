@@ -133,7 +133,7 @@ export default function Home() {
 
         {/* RIGHT COLUMN: Featured Work */}
         <div className="lg:col-span-7 pt-2 lg:pt-7">
-          <h2 className="section-label mb-8">// Featured Work</h2>
+          <h2 className="section-label mb-8">Featured Work</h2>
           
           <div className="flex flex-col gap-8">
             
@@ -141,10 +141,10 @@ export default function Home() {
             <Link href="/my-verizon-app" className="group flex flex-col justify-between p-6 bg-stone-100/95 border border-stone-400/25 border-l-4 border-l-amber-600 rounded-2xl hover:border-stone-400/40 hover:-translate-y-1 hover:shadow-2xl hover:shadow-amber-950/5 transition-all duration-300 cursor-pointer relative z-10 shadow-sm">
               <div>
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="bg-stone-200/60 px-3 py-1 rounded-md text-[10px] font-mono uppercase tracking-wider text-stone-700 font-medium">
+                  <span className="bg-stone-200/60 px-3 py-1 rounded-md text-[10px] uppercase tracking-wider text-stone-700 font-medium">
                     My Verizon App
                   </span>
-                  <span className="text-stone-400 text-[10px] font-mono">2026</span>
+                  <span className="text-stone-400 text-[10px] ">2026</span>
                   <span className="ml-auto text-amber-800 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-[11px] tracking-wider">VIEW STUDY →</span>
                 </div>
                 <h3 className="text-xl font-medium leading-snug group-hover:text-amber-900 transition-colors">
@@ -154,25 +154,23 @@ export default function Home() {
                   Redesigning core interfaces into a lightweight pathfinder system for high-value user flows.
                 </p>
               </div>
-              <div className="w-full mt-6 flex justify-center">
-              <div className="border border-stone-400/15 rounded-tr-xl rounded-bl-xl overflow-hidden flex items-center justify-center">
+              <div className="w-full mt-6 flex justify-center bg-stone-200/50 rounded-tr-xl rounded-bl-xl border border-stone-400/15 overflow-hidden">
                 <img 
                   src="/homepage/verizon-thumbnail.png" 
                   alt="Verizon thumbnail"
-                  className="h-auto w-auto object-contain opacity-100 mix-blend-multiply group-hover:opacity-60 transition-opacity duration-300"
+                  className="h-auto w-auto object-contain opacity-40 group-hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
-            </div>
             </Link>
 
             {/* 2. American Eagle */}
             <Link href="/ae-bopis" className="group flex flex-col justify-between p-6 bg-stone-100/95 border border-stone-400/25 border-l-4 border-l-emerald-600/70 hover:border-l-emerald-600 rounded-2xl hover:border-stone-400/40 hover:-translate-y-1 hover:shadow-2xl hover:shadow-emerald-950/5 transition-all duration-300 cursor-pointer relative z-10 shadow-sm">
               <div>
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="bg-stone-200/60 px-3 py-1 rounded-md text-[10px] font-mono uppercase tracking-wider text-stone-700 font-medium">
+                  <span className="bg-stone-200/60 px-3 py-1 rounded-md text-[10px]  uppercase tracking-wider text-stone-700 font-medium">
                     Omni-channel E-com
                   </span>
-                  <span className="text-stone-400 text-[10px] font-mono">2024</span>
+                  <span className="text-stone-400 text-[10px] ">2024</span>
                   <span className="ml-auto text-emerald-800 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-[11px] tracking-wider">VIEW STUDY →</span>
                 </div>
                 <h3 className="text-xl font-medium leading-snug group-hover:text-emerald-900 transition-colors">
@@ -182,14 +180,12 @@ export default function Home() {
                   Led a major cross-functional initiative to develop and launch a new in-store pickup channel for American Eagle and Aerie.
                 </p>
               </div>
-              <div className="w-full mt-6 flex justify-center">
-                <div className="border border-stone-400/15 rounded-tr-xl rounded-bl-xl overflow-hidden flex items-center justify-center">
-                  <img 
-                    src="/homepage/ae-thumbnail.png" 
-                    alt="AE thumbnail"
-                    className="h-auto w-auto object-contain opacity-100 mix-blend-multiply group-hover:opacity-60 transition-opacity duration-300"
-                  />
-                </div>
+              <div className="w-full mt-6 flex justify-center bg-stone-200/50 rounded-tr-xl rounded-bl-xl border border-stone-400/15 overflow-hidden">
+                <img 
+                  src="/homepage/ae-thumbnail.png" 
+                  alt="AE thumbnail"
+                  className="h-auto w-auto object-contain opacity-40 group-hover:opacity-100 transition-opacity duration-300"
+                />
               </div>
             </Link>
 
@@ -197,10 +193,10 @@ export default function Home() {
             <Link href="/conversational-ux" className="group flex flex-col justify-between p-6 bg-stone-100/95 border border-stone-400/25 border-l-4 border-l-sky-600/70 hover:border-l-sky-600 rounded-2xl hover:border-stone-400/40 hover:-translate-y-1 hover:shadow-2xl hover:shadow-sky-950/5 transition-all duration-300 cursor-pointer relative z-10 shadow-sm">
               <div>
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="bg-stone-200/60 px-3 py-1 rounded-md text-[10px] font-mono uppercase tracking-wider text-stone-700 font-medium">
+                  <span className="bg-stone-200/60 px-3 py-1 rounded-md text-[10px]  uppercase tracking-wider text-stone-700 font-medium">
                     Conversational UX
                   </span>
-                  <span className="text-stone-400 text-[10px] font-mono">2023</span>
+                  <span className="text-stone-400 text-[10px] ">2023</span>
                   <span className="ml-auto text-sky-800 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-[11px] tracking-wider">VIEW STUDY →</span>
                 </div>
                 <h3 className="text-xl font-medium leading-snug group-hover:text-sky-900 transition-colors">
@@ -210,14 +206,12 @@ export default function Home() {
                   How a scrappy, interactive FAQ proved the value of conversational design and secured funding for a fully scaled automated support ecosystem.
                 </p>
               </div>
-              <div className="w-full mt-6 flex justify-center">
-                <div className="border border-stone-400/15 rounded-tr-xl rounded-bl-xl overflow-hidden flex items-center justify-center">
-                  <img 
-                    src="/homepage/conversational-ux-thumbnail.png" 
-                    alt="Conversational UX thumbnail"
-                    className="h-auto w-auto object-contain opacity-100 mix-blend-multiply group-hover:opacity-60 transition-opacity duration-300"
-                  />
-                </div>
+              <div className="w-full mt-6 flex justify-center bg-stone-200/50 rounded-tr-xl rounded-bl-xl border border-stone-400/15 overflow-hidden">
+                <img 
+                  src="/homepage/conversational-ux-thumbnail.png" 
+                  alt="Conversational UX thumbnail"
+                  className="h-auto w-auto object-contain opacity-40 group-hover:opacity-100 transition-opacity duration-300"
+                />
               </div>
             </Link>
 

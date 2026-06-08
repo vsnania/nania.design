@@ -6,14 +6,14 @@ export default function ProfilePage() {
       
       {/* Back Link */}
       <div className="mb-12">
-        <Link href="/" className="text-xs font-mono text-stone-500 hover:text-stone-900 transition-colors flex items-center gap-2 group">
+        <Link href="/" className="text-xs  text-stone-500 hover:text-stone-900 transition-colors flex items-center gap-2 group">
           <span className="transition-transform group-hover:-translate-x-0.5">←</span> Back to work
         </Link>
       </div>
 
       {/* Header Block */}
       <header className="mb-16">
-        <div className="flex items-center gap-4 text-xs font-mono font-bold uppercase tracking-[0.2em] mb-4">
+        <div className="flex items-center gap-4 text-xs  font-bold uppercase tracking-[0.2em] mb-4">
           <span className="text-emerald-800">Vincent Nania</span>
           <span className="text-stone-400/60">•</span>
           <span className="text-stone-500">Profile</span>
@@ -31,8 +31,8 @@ export default function ProfilePage() {
         {/* MUSIC SECTION: Real-time feedback */}
         <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
           <div className="md:col-span-4">
-            <h4 className="text-xs font-mono uppercase text-amber-800 font-bold mb-4 tracking-wider sticky top-28">
-              // The Stage & Studio
+            <h4 className="text-xs  uppercase text-amber-800 font-bold mb-4 tracking-wider sticky top-28">
+              The Stage & Studio
             </h4>
           </div>
           <div className="md:col-span-8 space-y-4 text-sm md:text-base font-normal leading-relaxed text-stone-600/90">
@@ -51,8 +51,8 @@ export default function ProfilePage() {
         {/* PHOTOGRAPHY SECTION: Intentional constraints */}
         <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
           <div className="md:col-span-4">
-            <h4 className="text-xs font-mono uppercase text-sky-800 font-bold mb-4 tracking-wider sticky top-28">
-              // Film Photography
+            <h4 className="text-xs  uppercase text-sky-800 font-bold mb-4 tracking-wider sticky top-28">
+              Film Photography
             </h4>
           </div>
           <div className="md:col-span-8 space-y-4 text-sm md:text-base font-normal leading-relaxed text-stone-600/90">
@@ -68,34 +68,34 @@ export default function ProfilePage() {
               
               {/* Photo Slot 1 */}
               <div className="group relative aspect-[4/3] bg-stone-200/50 border border-stone-400/30 rounded-lg overflow-hidden flex flex-col items-center justify-center hover:border-stone-400/60 transition-colors">
-                <span className="text-xs font-mono text-stone-400 group-hover:text-stone-500 transition-colors">
+                <span className="text-xs  text-stone-400 group-hover:text-stone-500 transition-colors">
                 </span>
                   <img src="images/profile/000013370002.jpg" alt="Analog photography bowie" className="absolute inset-0 w-full h-full object-cover mix-blend-multiply" /> 
               </div>
 
               {/* Photo Slot 2 */}
               <div className="group relative aspect-[4/3] bg-stone-200/50 border border-stone-400/30 rounded-lg overflow-hidden flex flex-col items-center justify-center hover:border-stone-400/60 transition-colors">
-                <span className="text-xs font-mono text-stone-400 group-hover:text-stone-500 transition-colors">
+                <span className="text-xs  text-stone-400 group-hover:text-stone-500 transition-colors">
                 </span>
                   <img src="images/profile/000091880020.jpg" alt="Analog photography tower of london" className="absolute inset-0 w-full h-full object-cover mix-blend-multiply" /> 
               </div>
 
               {/* Photo Slot 3 */}
               <div className="group relative aspect-[4/3] bg-stone-200/50 border border-stone-400/30 rounded-lg overflow-hidden flex flex-col items-center justify-center hover:border-stone-400/60 transition-colors">
-                <span className="text-xs font-mono text-stone-400 group-hover:text-stone-500 transition-colors">
+                <span className="text-xs  text-stone-400 group-hover:text-stone-500 transition-colors">
                 </span>
                   <img src="images/profile/IMG_9599.JPG" alt="Analog photography chicago" className="absolute inset-0 w-full h-full object-cover mix-blend-multiply" /> 
               </div>
 
               {/* Photo Slot 4 */}
               <div className="group relative aspect-[4/3] bg-stone-200/50 border border-stone-400/30 rounded-lg overflow-hidden flex flex-col items-center justify-center hover:border-stone-400/60 transition-colors">
-                <span className="text-xs font-mono text-stone-400 group-hover:text-stone-500 transition-colors">
+                <span className="text-xs  text-stone-400 group-hover:text-stone-500 transition-colors">
                 </span>
                   <img src="images/profile/IMG_9759.JPG" alt="Analog photography merry go round" className="absolute inset-0 w-full h-full object-cover mix-blend-multiply" /> 
               </div>
 
             </div>
-            <span className="block text-[10px] font-mono text-stone-400 uppercase tracking-widest mt-3 text-center sm:text-left">
+            <span className="block text-[10px]  text-stone-400 uppercase tracking-widest mt-3 text-center sm:text-left">
               Selected 35mm Archives
             </span>
           </div>

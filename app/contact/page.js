@@ -9,7 +9,7 @@ export default function ContactPage() {
       
       {/* Left-Aligned Header */}
       <header className="mb-16 md:mb-20 text-left w-full">
-        <div className="flex items-center justify-start gap-4 text-xs font-mono font-bold uppercase tracking-[0.2em] mb-6">
+        <div className="flex items-center justify-start gap-4 text-xs  font-bold uppercase tracking-[0.2em] mb-6">
           <span className="text-amber-800">Contact</span>
         </div>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight mb-6">

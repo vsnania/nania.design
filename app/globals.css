@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+  /* This tells Tailwind: "Whenever you see the font-sans class, use my Next.js font" */
+  --font-sans: var(--font-body);
+}
+
 :root {
   color-scheme: light;
 }
@@ -8,8 +13,6 @@ html,
 body {
   min-height: 100%;
 }
-
-
 
 p {
   color: inherit;
@@ -24,6 +27,7 @@ h4,
 h5,
 h6 {
   letter-spacing: -0.02em;
+  font-weight: 700;
 }
 
 strong {
@@ -33,7 +37,6 @@ strong {
 
 .section-label {
   color: #6b6661;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -42,7 +45,6 @@ strong {
   margin-bottom: 1.5rem;
   padding-bottom: 0.5rem;
 }
-
 
 @layer utilities {
   .scrollbar-hide::-webkit-scrollbar {

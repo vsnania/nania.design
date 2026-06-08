@@ -26,8 +26,8 @@ export default function VerizonCaseStudy() {
       {/* Act I: The Problem */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="text-xs font-mono uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
-            // The Problem
+          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+            The Problem
           </h3>
         </div>
         <div className="md:col-span-8 space-y-4 text-sm md:text-base font-normal leading-relaxed text-stone-600/90">
@@ -43,14 +43,14 @@ export default function VerizonCaseStudy() {
       {/* VISUAL INSERT 1: RECONFIGURED L1 ENTRY (SKIM LAYER) */}
       <section className="mb-20">
         <div className="bg-stone-300/30 border border-stone-400/20 rounded-2xl p-6 md:p-12 flex flex-col items-center justify-center gap-4">
-          <div className="w-full max-w-[250px] aspect-[9/19] rounded-[1.5rem] overflow-hidden shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white">
+          <div className="w-full max-w-[250px] aspect-[9/19] shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white rounded-[1.5rem]">
             <ZoomableImage 
               src="/images/verizon/MVA Screen 2.png" 
               alt="My Verizon App L1 Dashboard"
-              className="h-full w-full object-cover object-top block"
+              className="h-full w-full object-cover object-top block rounded-[1.5rem]"
             />
           </div>
-          <span className="text-xs font-mono text-stone-500 italic text-center max-w-md mt-4">
+          <span className="text-xs text-stone-500 italic text-center max-w-md mt-4">
             Figure 1.0: Reconfigured L1 dashboard balancing top-level utility states, account actions, and billing transparency inside an intentional scanning layout.
           </span>
         </div>
@@ -59,8 +59,8 @@ export default function VerizonCaseStudy() {
       {/* Act II: The Information Processing Strategy */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="text-xs font-mono uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
-            // Governance Model
+          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+            Governance Model
           </h3>
         </div>
         <div className="md:col-span-8 space-y-4 text-sm md:text-base font-normal leading-relaxed text-stone-600/90">
@@ -75,7 +75,7 @@ export default function VerizonCaseStudy() {
 
       {/* Framework Blueprint Visualization diagram */}
       <section className="mb-12">
-        <div className="w-full py-12 bg-stone-400/30 border border-stone-400/50 rounded-2xl flex items-center justify-center gap-6 md:gap-12 font-mono text-xs text-stone-700 shadow-inner px-4">
+        <div className="w-full py-12 bg-stone-400/30 border border-stone-400/50 rounded-2xl flex items-center justify-center gap-6 md:gap-12 text-xs text-stone-700 shadow-inner px-4">
           <div className="px-5 py-3 bg-stone-100 border border-stone-400/40 rounded-xl shadow-sm text-center min-w-[90px]">
             <span className="block font-bold">Skim</span>
             <span className="text-[10px] text-stone-500 font-semibold mt-0.5 block">L1 Harmony</span>
@@ -99,25 +99,25 @@ export default function VerizonCaseStudy() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start justify-items-center">
             
             {/* Left Phone: Dip View */}
-            <div className="w-full max-w-[250px] aspect-[9/19] rounded-[1.5rem] overflow-hidden shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white">
+            <div className="w-full max-w-[250px] aspect-[9/19] shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white rounded-[1.5rem]">
               <ZoomableImage 
                 src="/images/verizon/IMG_4843.PNG" 
                 alt="Verizon Device Detail Flow (Dip Layer)"
-                className="h-full w-full object-cover object-top block"
+                className="h-full w-full object-cover object-top block rounded-[1.5rem]"
               />
             </div>
             
             {/* Right Phone: Dive View */}
-            <div className="w-full max-w-[250px] aspect-[9/19] rounded-[1.5rem] overflow-hidden shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white">
+            <div className="w-full max-w-[250px] aspect-[9/19] shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white rounded-[1.5rem]">
               <ZoomableImage 
                 src="/images/verizon/IMG_4845.PNG" 
                 alt="Verizon Usage Metrics Utilization Chart (Dive Layer)"
-                className="h-full w-full object-cover object-top block"
+                className="h-full w-full object-cover object-top block rounded-[1.5rem]"
               />
             </div>
 
           </div>
-          <span className="text-xs font-mono text-stone-500 italic text-center max-w-lg mx-auto mt-2">
+          <span className="text-xs text-stone-500 italic text-center max-w-lg mx-auto mt-2">
             Figure 1.1: Vertical navigation patterns translating standard links into high-context components. Inquire actions (Dip) map details instantly to granular, sub-tier tracking states (Dive).
           </span>
         </div>
@@ -126,13 +126,13 @@ export default function VerizonCaseStudy() {
       {/* Act III: Cross-Functional Alignment */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-16">
         <div className="md:col-span-4">
-          <h3 className="text-xs font-mono uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
-            // Alignment
+          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+            Alignment
           </h3>
         </div>
         <div className="md:col-span-8">
           <p className="text-sm md:text-base font-normal leading-relaxed mb-6 text-stone-600/90">
-            True design leadership means delivering complex systems inside rigid organizational realities. Executing Project Pathfinder required careful, strategic diplomacy across three pillars:
+            Design leadership means delivering complex systems inside rigid organizational realities. Executing Project Pathfinder required careful, strategic diplomacy across three pillars:
           </p>
           <div className="grid grid-cols-1 gap-6 text-sm">
             <div className="p-5 bg-stone-100/90 border border-stone-400/40 rounded-xl shadow-sm">
@@ -154,7 +154,7 @@ export default function VerizonCaseStudy() {
       {/* TAKEAWAYS SECTION */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-20 mb-12">
         <div>
-          <h4 className="text-xs font-mono uppercase text-amber-700 font-bold mb-4 tracking-wider">// Key Takeaways</h4>
+          <h4 className="text-xs uppercase text-amber-700 font-bold mb-4 tracking-wider">Key Takeaways</h4>
           <ul className="space-y-4 text-sm text-stone-600">
             <li>• Hierarchy is a growth lever: Reducing top-level noise consistently maximizes downstream completion.</li>
             <li>• Shared models reduce friction: Frameworks unify cross-functional teams and dramatically eliminate competing priorities.</li>
@@ -162,7 +162,7 @@ export default function VerizonCaseStudy() {
           </ul>
         </div>
         <div>
-          <h4 className="text-xs font-mono uppercase text-emerald-700 font-bold mb-4 tracking-wider">// Strategic Horizon</h4>
+          <h4 className="text-xs uppercase text-emerald-700 font-bold mb-4 tracking-wider">Strategic Horizon</h4>
           <ul className="space-y-4 text-sm text-stone-600">
             <li>1. Monitor ongoing behavioral data streams to iteratively refine features appearing on L1 based on user intent models.</li>
             <li>2. Evolve the modular layout to better support personalized, contextual user situations without fracturing the core visual clarity.</li>
@@ -174,7 +174,7 @@ export default function VerizonCaseStudy() {
       {/* IMPACT & DEPLOYMENT */}
       <section className="mt-8 p-8 md:p-10 border border-stone-400/30 bg-stone-100/50 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div className="space-y-1">
-          <h4 className="text-stone-900 font-bold text-sm uppercase tracking-wider font-mono">See the experience in action</h4>
+          <h4 className="text-stone-900 font-bold text-sm uppercase tracking-wider">See the experience in action</h4>
           <p className="text-stone-600 text-sm max-w-sm">
             Explore the My Verizon app on the iOS App Store to see the core interface transformations live.
           </p>
