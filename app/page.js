@@ -45,7 +45,7 @@ export default function Home() {
           <div className="flex flex-col gap-8">
 
             {/* 1. Verizon */}
-            <Link href="/my-verizon-app" scroll={true} className="group flex flex-col justify-between p-6 bg-stone-100/95 border border-stone-400/25 border-l-4 border-l-amber-600 rounded-2xl hover:border-stone-400/40 hover:-translate-y-1 hover:shadow-2xl hover:shadow-amber-950/5 transition-all duration-300 cursor-pointer relative z-10 shadow-sm">
+            <a href="/my-verizon-app" className="group flex flex-col justify-between p-6 bg-stone-100/95 border border-stone-400/25 border-l-4 border-l-amber-600 rounded-2xl hover:border-stone-400/40 hover:-translate-y-1 hover:shadow-2xl hover:shadow-amber-950/5 transition-all duration-300 cursor-pointer relative z-10 shadow-sm">
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <span className="bg-stone-200/60 px-3 py-1 rounded-md text-[10px] uppercase tracking-wider text-stone-700 font-medium">
@@ -71,10 +71,10 @@ export default function Home() {
                   className="h-auto w-auto object-contain opacity-40 group-hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
-            </Link>
+            </a>
 
             {/* 2. American Eagle */}
-            <Link href="/ae-bopis" scroll={true} className="group flex flex-col justify-between p-6 bg-stone-100/95 border border-stone-400/25 border-l-4 border-l-emerald-600/70 hover:border-l-emerald-600 rounded-2xl hover:border-stone-400/40 hover:-translate-y-1 hover:shadow-2xl hover:shadow-emerald-950/5 transition-all duration-300 cursor-pointer relative z-10 shadow-sm">
+            <a href="/ae-bopis" className="group flex flex-col justify-between p-6 bg-stone-100/95 border border-stone-400/25 border-l-4 border-l-emerald-600/70 hover:border-l-emerald-600 rounded-2xl hover:border-stone-400/40 hover:-translate-y-1 hover:shadow-2xl hover:shadow-emerald-950/5 transition-all duration-300 cursor-pointer relative z-10 shadow-sm">
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <span className="bg-stone-200/60 px-3 py-1 rounded-md text-[10px] uppercase tracking-wider text-stone-700 font-medium">
@@ -100,10 +100,10 @@ export default function Home() {
                   className="h-auto w-auto object-contain opacity-40 group-hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
-            </Link>
+            </a>
 
             {/* 3. Conversational UX */}
-            <Link href="/conversational-ux" scroll={true} className="group flex flex-col justify-between p-6 bg-stone-100/95 border border-stone-400/25 border-l-4 border-l-sky-600/70 hover:border-l-sky-600 rounded-2xl hover:border-stone-400/40 hover:-translate-y-1 hover:shadow-2xl hover:shadow-sky-950/5 transition-all duration-300 cursor-pointer relative z-10 shadow-sm">
+            <a href="/conversational-ux" className="group flex flex-col justify-between p-6 bg-stone-100/95 border border-stone-400/25 border-l-4 border-l-sky-600/70 hover:border-l-sky-600 rounded-2xl hover:border-stone-400/40 hover:-translate-y-1 hover:shadow-2xl hover:shadow-sky-950/5 transition-all duration-300 cursor-pointer relative z-10 shadow-sm">
               <div>
                 <div className="flex items-center gap-3 mb-4">
                   <span className="bg-stone-200/60 px-3 py-1 rounded-md text-[10px] uppercase tracking-wider text-stone-700 font-medium">
@@ -129,7 +129,7 @@ export default function Home() {
                   className="h-auto w-auto object-contain opacity-40 group-hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
-            </Link>
+            </a>
 
           </div>
 

@@ -51,6 +51,13 @@ export default function ContactPage() {
         </a>
 
       </div>
+
+      <div className="mt-20 pt-12 border-t border-stone-400/25 w-full">
+        <a href="/" className="text-xs text-stone-500 hover:text-stone-900 transition-colors flex items-center gap-2 group">
+          View my work <span className="transition-transform group-hover:translate-x-0.5">→</span>
+        </a>
+      </div>
+
     </article>
   );
 }

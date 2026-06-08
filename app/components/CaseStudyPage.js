@@ -18,9 +18,9 @@ export default function CaseStudyPage({
   return (
     <article className="py-16 md:py-24 max-w-3xl mx-auto tracking-tight">
       <div className="mb-12">
-        <Link href={backHref} scroll={true} className="text-xs  text-stone-500 hover:text-stone-900 transition-colors flex items-center gap-2 group">
+        <a href={backHref} className="text-xs  text-stone-500 hover:text-stone-900 transition-colors flex items-center gap-2 group">
           <span className="transition-transform group-hover:-translate-x-0.5">←</span> {backLabel}
-        </Link>
+        </a>
       </div>
 
       <header className="mb-16">
@@ -53,16 +53,16 @@ export default function CaseStudyPage({
 
       {bottomNav ? (
         <div className="mt-24 grid grid-cols-1 gap-4 pt-12 border-t border-stone-400/25 md:grid-cols-2">
-          <Link href={bottomNav.previous.href} scroll={true} className="group flex items-center justify-center p-6 bg-stone-100/50 hover:bg-stone-100 border border-stone-400/20 rounded-xl transition-all duration-300">
+          <a href={bottomNav.previous.href} className="group flex items-center justify-center p-6 bg-stone-100/50 hover:bg-stone-100 border border-stone-400/20 rounded-xl transition-all duration-300">
             <span className="text-xs  tracking-wider uppercase text-stone-500 group-hover:text-stone-900 transition-colors">
               ← {bottomNav.previous.label}
             </span>
-          </Link>
-          <Link href={bottomNav.next.href} scroll={true} className="group flex items-center justify-center p-6 bg-stone-100/50 hover:bg-stone-100 border border-stone-400/20 rounded-xl transition-all duration-300">
+          </a>
+          <a href={bottomNav.next.href} className="group flex items-center justify-center p-6 bg-stone-100/50 hover:bg-stone-100 border border-stone-400/20 rounded-xl transition-all duration-300">
             <span className="text-xs  tracking-wider uppercase text-stone-500 group-hover:text-stone-900 transition-colors">
               {bottomNav.next.label} →
             </span>
-          </Link>
+          </a>
         </div>
       ) : null}
     </article>
