@@ -18,7 +18,7 @@ export default function CaseStudyPage({
   return (
     <article className="py-16 md:py-24 max-w-3xl mx-auto tracking-tight">
       <div className="mb-12">
-        <Link href={backHref} className="text-xs  text-stone-500 hover:text-stone-900 transition-colors flex items-center gap-2 group">
+        <Link href={backHref} scroll={true} className="text-xs  text-stone-500 hover:text-stone-900 transition-colors flex items-center gap-2 group">
           <span className="transition-transform group-hover:-translate-x-0.5">←</span> {backLabel}
         </Link>
       </div>
