@@ -53,12 +53,12 @@ export default function CaseStudyPage({
 
       {bottomNav ? (
         <div className="mt-24 grid grid-cols-1 gap-4 pt-12 border-t border-stone-400/25 md:grid-cols-2">
-          <Link href={bottomNav.previous.href} className="group flex items-center justify-center p-6 bg-stone-100/50 hover:bg-stone-100 border border-stone-400/20 rounded-xl transition-all duration-300">
+          <Link href={bottomNav.previous.href} scroll={true} className="group flex items-center justify-center p-6 bg-stone-100/50 hover:bg-stone-100 border border-stone-400/20 rounded-xl transition-all duration-300">
             <span className="text-xs  tracking-wider uppercase text-stone-500 group-hover:text-stone-900 transition-colors">
               ← {bottomNav.previous.label}
             </span>
           </Link>
-          <Link href={bottomNav.next.href} className="group flex items-center justify-center p-6 bg-stone-100/50 hover:bg-stone-100 border border-stone-400/20 rounded-xl transition-all duration-300">
+          <Link href={bottomNav.next.href} scroll={true} className="group flex items-center justify-center p-6 bg-stone-100/50 hover:bg-stone-100 border border-stone-400/20 rounded-xl transition-all duration-300">
             <span className="text-xs  tracking-wider uppercase text-stone-500 group-hover:text-stone-900 transition-colors">
               {bottomNav.next.label} →
             </span>
