@@ -35,10 +35,10 @@ export default function BOPISCaseStudy() {
         </div>
         <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
           <p>
-            American Eagle and Aerie’s legacy "Reserve, Try, Buy" program allowed customers to reserve items without upfront payment. However, the lack of financial commitment and unclear pickup logistics caused the system to buckle under its own weight. 
+            American Eagle and Aerie’s legacy "Reserve, Try, Buy" program let customers reserve items without paying upfront. But with no financial commitment and unclear pickup logistics, the system buckled under its own weight.
           </p>
           <p>
-            The program faced a staggering <strong className="font-semibold text-stone-900">69% abandonment rate</strong> and resulted in over <strong className="font-semibold text-stone-900">223,000 uncollected units</strong> sitting in stockrooms. This widespread customer confusion and operational friction underscored the immediate need for a robust, reliable Buy Online Pickup In-Store (BOPIS) system.
+            It hit a staggering <strong className="font-semibold text-stone-900">69% abandonment rate</strong> and left over <strong className="font-semibold text-stone-900">223,000 uncollected units</strong> sitting in stockrooms. The fix was a real Buy Online Pickup In-Store (BOPIS) system.
           </p>
         </div>
       </section>
@@ -54,7 +54,7 @@ export default function BOPISCaseStudy() {
             />
           </div>
           <span className="text-xs text-stone-500 italic text-center max-w-lg mt-4">
-            Figure 1.0: Synthesizing the "grey area." Mapping fundamental customer anxieties such as "Can someone else pick up my order?" and "Where should I go in the store?" to drive the initial UX requirements.
+            Figure 1.0: Mapping the customer anxieties that drove the early UX requirements.
           </span>
         </div>
       </section>
@@ -68,10 +68,10 @@ export default function BOPISCaseStudy() {
         </div>
         <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
           <p>
-            Designing for omnichannel means holding two realities at once. I needed the digital interface to perfectly mirror the physical constraints of the stores: the stockroom logistics, the associate workflows, the moments where digital intent meets physical fulfillment. To make sense of it all, I introduced dual-track story mapping.
+            Designing for omnichannel means holding two realities at once. I needed the digital interface to mirror the physical constraints of the stores: stockroom logistics, associate workflows, the moments where digital intent meets physical fulfillment. To make sense of it, I introduced dual-track story mapping.
           </p>
           <p>
-            The <strong className="font-semibold text-stone-900">Digital Browse</strong> track mapped key scenarios to craft user stories for the screen experience. The <strong className="font-semibold text-stone-900">Store Pickup</strong> track ran in parallel, identifying physical, in-store scenarios to orchestrate the actual fulfillment process for both customers and retail associates.
+            The <strong className="font-semibold text-stone-900">Digital Browse</strong> track mapped the on-screen user stories. The <strong className="font-semibold text-stone-900">Store Pickup</strong> track ran in parallel, orchestrating the physical fulfillment process for both customers and retail associates.
           </p>
         </div>
       </section>
@@ -99,7 +99,7 @@ export default function BOPISCaseStudy() {
 
           </div>
           <span className="text-xs text-stone-500 italic text-center max-w-2xl mx-auto mt-2">
-            Figure 1.1: Dual-track story mapping. The Digital Browse track (left) defines the screen-level user stories, while the Store Pickup track (right) orchestrates the physical fulfillment realities for retail associates.
+            Figure 1.1: Dual-track story mapping. Digital Browse (left) and Store Pickup (right).
           </span>
         </div>
       </section>
@@ -115,7 +115,7 @@ export default function BOPISCaseStudy() {
             />
           </div>
           <span className="text-xs text-stone-500 italic text-center max-w-lg mx-auto mt-2">
-            Figure 1.2: Comprehensive wireframes developed in response to UX challenges, focusing on content placement and layout options to set up iterative prototype testing.
+            Figure 1.2: Early wireframes exploring content placement ahead of prototype testing.
           </span>
         </div>
       </section>
@@ -138,9 +138,45 @@ export default function BOPISCaseStudy() {
             </div>
             <div className="p-5 bg-stone-100/90 border border-stone-400/40 rounded-xl shadow-sm">
               <span className="font-bold block mb-1 text-stone-900">Continuous Optimization</span>
-              <p className="font-normal text-stone-600/90 leading-relaxed">This localized pilot let me gather live operational feedback and monitor in-store traffic flows. I used that data to push more design improvements, ultimately transforming the initial concept into a highly streamlined, customer-centric solution.</p>
+              <p className="font-normal text-stone-600/90 leading-relaxed">Those four stores surfaced live operational feedback and traffic-flow issues no prototype could. I fed that straight back into the design.</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Act III.5: The Pivot - Speed Over Proximity */}
+      <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
+        <div className="md:col-span-4">
+          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+            Speed Over Proximity
+          </h3>
+        </div>
+        <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
+          <p>
+            Early on, the system did the obvious thing. It defaulted customers to the store closest to them. That made sense on paper, but the data told a different story. The nearest store often wasn't the one that could actually fulfill the order fastest.
+          </p>
+          <p>
+            So I challenged the default. Research showed that customers will happily travel a little farther when it means getting their order in hand sooner. I reframed the logic from "nearest store" to "fastest available pickup," and surfaced a clear prompt that let customers trade a few extra miles for same-day speed.
+          </p>
+          <p>
+            The shift paid off on both sides of the equation. Same-day pickup volume went up, and routing orders to stores with available inventory brought fulfillment costs down.
+          </p>
+        </div>
+      </section>
+
+      {/* VISUAL INSERT: SPEED OVER PROXIMITY PROMPT */}
+      <section className="mb-20">
+        <div className="bg-stone-300/30 border border-stone-400/20 rounded-2xl p-6 md:p-12 flex flex-col items-center justify-center gap-4">
+          <div className="w-full max-w-xl rounded-xl shadow-lg border border-stone-400/40 bg-white overflow-hidden">
+            <ZoomableImage
+              src="/images/ae-bopis/BOPIS-Pivot.png"
+              alt="Fastest pickup prompt offering a nearby store for same-day fulfillment"
+              className="w-full h-auto block rounded-xl"
+            />
+          </div>
+          <span className="text-xs text-stone-500 italic text-center max-w-lg mt-4">
+            Figure 1.3: The pickup card lets customers trade a farther store for same-day speed.
+          </span>
         </div>
       </section>
 
@@ -153,10 +189,10 @@ export default function BOPISCaseStudy() {
         </div>
         <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
           <p>
-            With the architecture validated by the pilot, I turned attention to the final experience. The goal was translating the raw utility of our wireframes into a checkout flow that felt effortless rather than transactional.
+            With the architecture validated by the pilot, I turned to the final experience. The goal was a checkout flow that felt effortless rather than transactional.
           </p>
           <p>
-            I prioritized clarity at every digital hand-off point, making sure customers knew exactly when, where, and how to retrieve their orders without ever needing to contact support or second-guess the timeline.
+            I prioritized clarity at every hand-off, so customers always knew when, where, and how to pick up their order without contacting support or second-guessing the timeline.
           </p>
         </div>
       </section>
@@ -185,7 +221,7 @@ export default function BOPISCaseStudy() {
 
           </div>
           <span className="text-xs text-stone-500 italic text-center max-w-lg mx-auto mt-6">
-            Figure 1.3: Mobile UI flows for Product Detail, Checkout, and the Find Another Store utility. Click to zoom.
+            Figure 1.4: Final UI for Product Detail, Checkout, and Find Another Store. Click to zoom.
           </span>
         </div>
       </section>
@@ -202,7 +238,7 @@ export default function BOPISCaseStudy() {
             Shipping the initial BOPIS experience was a major milestone, but I designed the underlying architecture to grow. A good service design doesn't just solve the immediate problem. It creates the scaffolding for what comes next.
           </p>
           <p>
-            Post-launch, I established a continuous research methodology to keep the product honest. That feedback loop directly informed subsequent rollouts, including <strong className="font-semibold text-stone-900">In-Store Mode</strong> and a native integration for <strong className="font-semibold text-stone-900">Curbside Pickup</strong>.
+            Post-launch, I set up a continuous research loop to keep the product honest. That loop directly shaped later rollouts, including <strong className="font-semibold text-stone-900">In-Store Mode</strong> and a native integration for <strong className="font-semibold text-stone-900">Curbside Pickup</strong>.
           </p>
         </div>
       </section>

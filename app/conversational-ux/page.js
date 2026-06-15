@@ -63,7 +63,7 @@ export default function ConversationalUX() {
             />
           </div>
           <span className="text-xs text-stone-500 italic text-center max-w-lg mt-4">
-            Figure 1.0: A lightweight, decision-tree FAQ pattern that gave the team proof of value before committing to a full chatbot build.
+            Figure 1.0: The lightweight decision-tree FAQ that proved value before any chatbot build.
           </span>
         </div>
       </section>
@@ -75,10 +75,10 @@ export default function ConversationalUX() {
         </div>
         <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
           <p>
-            To align on complex behaviors like "Close Chat" triggers, I moved away from abstract discussions. I utilized this "choose your adventure" wireframe model to socialize options directly with Customer Support stakeholders.
+            To align on complex behaviors like "Close Chat" triggers, I moved away from abstract discussions. I used this "choose your adventure" wireframe model to socialize options directly with Customer Support stakeholders.
           </p>
           <p>
-            It gave stakeholders something to react to rather than abstract. They could feel the decision logic in real-time, which moved the conversation from subjective debate to concrete tradeoffs. That was the catalyst for final consensus.
+            It gave stakeholders something real to react to. They could feel the decision logic in real time, which moved the conversation from subjective debate to concrete tradeoffs. That was the catalyst for final consensus.
           </p>
         </div>
       </section>
@@ -94,7 +94,7 @@ export default function ConversationalUX() {
             />
           </div>
           <span className="text-xs text-stone-500 italic text-center max-w-lg mt-4">
-            Figure 1.2: A "choose your adventure" wireframe model used to socialize and validate "Close Chat" logic with internal stakeholders.
+            Figure 1.2: The "choose your adventure" model used to validate "Close Chat" logic with stakeholders.
           </span>
         </div>
       </section>
@@ -116,10 +116,10 @@ export default function ConversationalUX() {
         </div>
         <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
           <p>
-            The success of the scrappy Interactive FAQ gave me the leverage I needed. Leadership saw the value of conversational UX, and I was granted the budget to design and build a custom, fully integrated chatbot in-house.
+            The success of the scrappy Interactive FAQ gave me the leverage I needed. Leadership saw the value of conversational UX, and I got the budget to design and build a custom, fully integrated chatbot in-house.
           </p>
           <p>
-            While the network of responses and options was sizing up considerably, the golden rule of the UX remained unchanged: never leave the user stranded. If the automated logic flow wasn’t enough to resolve the issue, I designed the system to ensure the path to a human agent was always seamless, highly visible, and instantly accessible.
+            As the network of responses grew, the golden rule held. Never leave the user stranded. Whenever automation fell short, I made sure the path to a human agent stayed seamless, visible, and instantly accessible.
           </p>
         </div>
       </section>
@@ -157,7 +157,7 @@ export default function ConversationalUX() {
           </div>
 
           <span className="text-xs text-stone-500 italic text-center max-w-lg">
-            Figure 1.1: The eventual support assistant frame, positioned as a clear escalation path rather than a dead end.
+            Figure 1.1: The final support assistant, designed as an escalation path rather than a dead end.
           </span>
         </div>
       </section>

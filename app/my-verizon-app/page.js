@@ -35,11 +35,51 @@ export default function VerizonCaseStudy() {
         </div>
         <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
           <p>
-            The legacy My Verizon application had become a victim of its own ambition. As a product handling everything from billing to connected home device management, it had gradually turned into an aggregation point for competing internal priorities. Each team was surfacing their work at the top layer with no one governing the whole.
+            The legacy My Verizon application had become a victim of its own ambition. Handling everything from billing to connected-home management, it had turned into an aggregation point for competing internal priorities. Each team surfaced their work at the top layer, with no one governing the whole.
           </p>
           <p>
-            The result was predictable: feature bloat that buried intuitive user paths, suppressed core revenue discovery, and drove a measurable spike in customer support contacts. The app needed a hierarchy, not more features.
+            The result was predictable. Feature bloat buried intuitive paths, suppressed revenue discovery, and spiked support contacts. The app needed a hierarchy, not more features.
           </p>
+        </div>
+      </section>
+
+      {/* Act I.5: Defining the Problem */}
+      <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
+        <div className="md:col-span-4">
+          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+            Defining the Problem
+          </h3>
+        </div>
+        <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
+          <p>
+            Before I could fix the L1, I had to define what was actually broken. I pulled together workshop outputs, historical research, stakeholder interviews, and customer feedback, and the noise resolved into six recurring themes.
+          </p>
+          <p>
+            These six became the lens for every decision that followed, and the rubric the Skim, Dip, Dive framework had to answer to.
+          </p>
+        </div>
+      </section>
+
+      {/* Six Problem Themes grid */}
+      <section className="mb-20">
+        <div className="bg-stone-400/30 border border-stone-400/50 rounded-2xl shadow-inner p-4 md:p-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
+            {[
+              { label: 'Navigation Complexity & Structure', tint: 'bg-amber-100/70 border-amber-300/40' },
+              { label: 'Lack of Centralized Information', tint: 'bg-emerald-100/70 border-emerald-300/40' },
+              { label: 'Account & Plan Management', tint: 'bg-sky-100/70 border-sky-300/40' },
+              { label: 'Usability Issues & Dead Ends', tint: 'bg-rose-100/70 border-rose-300/40' },
+              { label: 'Visual & Interaction Overload', tint: 'bg-violet-100/70 border-violet-300/40' },
+              { label: 'Service & Feature Clarity', tint: 'bg-teal-100/70 border-teal-300/40' },
+            ].map((theme) => (
+              <div
+                key={theme.label}
+                className={`${theme.tint} border rounded-xl p-5 min-h-[92px] flex items-center justify-center text-center shadow-sm`}
+              >
+                <span className="text-sm font-semibold text-stone-700 leading-snug">{theme.label}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -54,7 +94,7 @@ export default function VerizonCaseStudy() {
             />
           </div>
           <span className="text-xs text-stone-500 italic text-center max-w-md mt-4">
-            Figure 1.0: Reconfigured L1 dashboard balancing top-level utility states, account actions, and billing transparency inside an intentional scanning layout.
+            Figure 1.0: The reconfigured L1 dashboard, built for scanning.
           </span>
         </div>
       </section>
@@ -71,7 +111,7 @@ export default function VerizonCaseStudy() {
             The answer was the <strong className="font-semibold text-stone-900">"Skim, Dip, Dive"</strong> architecture. The framework reframes the home dashboard not as a final destination, but as an information processing strategy. It lets customers work through a dense product one intentional layer at a time. My job was to operationalize it and make sure it actually held.
           </p>
           <p>
-            That meant treating it not just as a design pattern, but as a <strong className="font-semibold text-stone-900">governance tool</strong>. I established clear rules for what belonged at the Skim layer versus the Dive level, giving cross-functional teams an objective lens for evaluating new feature requests and making it harder to justify bloating the L1 for any one team's priority.
+            That meant treating it as a <strong className="font-semibold text-stone-900">governance tool</strong>, not just a design pattern. I set clear rules for what belonged at the Skim layer versus the Dive level, giving teams an objective lens for new feature requests and making it harder to bloat the L1 for any one priority.
           </p>
         </div>
       </section>
@@ -121,7 +161,7 @@ export default function VerizonCaseStudy() {
 
           </div>
           <span className="text-xs text-stone-500 italic text-center max-w-lg mx-auto mt-2">
-            Figure 1.1: Vertical navigation patterns translating standard links into high-context components. Inquire actions (Dip) map details instantly to granular, sub-tier tracking states (Dive).
+            Figure 1.1: The Dip and Dive layers turn standard links into high-context, drillable components.
           </span>
         </div>
       </section>
@@ -144,7 +184,7 @@ export default function VerizonCaseStudy() {
             </div>
             <div className="p-5 bg-stone-100/90 border border-stone-400/40 rounded-xl shadow-sm">
               <span className="font-bold block mb-1">Design System Stewardship</span>
-              <p className="font-normal text-stone-600/90 leading-relaxed">The framework required patterns that didn't exist in the global design system. I made the case for those departures directly with system maintainers, arguing that localized nuance was necessary where scannability was the primary goal, and got alignment on the exceptions we needed.</p>
+              <p className="font-normal text-stone-600/90 leading-relaxed">The framework required patterns that didn't exist in the global design system. I made the case for those departures directly with system maintainers, arguing for localized nuance where scannability mattered most, and won alignment on the exceptions we needed.</p>
             </div>
             <div className="p-5 bg-stone-100/90 border border-stone-400/40 rounded-xl shadow-sm">
               <span className="font-bold block mb-1">Engineering Partnership</span>
