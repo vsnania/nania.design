@@ -13,8 +13,12 @@ export default function ConversationalUX() {
         previous: { href: '/ae-bopis', label: 'American Eagle BOPIS' },
         next: { href: '/', label: 'Back to work' },
       }}
+      heroScreenshot="/images/conversational-ux/Chatbot-hifi-1.png"
+      heroScreenshotAlt="American Eagle conversational assistant screen"
+      heroGlowClassName="bg-sky-400/20"
+      heroKickerClassName="text-sky-400"
       kicker="Conversational UX"
-      projectLabel="2025"
+      projectLabel="American Eagle & Aerie"
       kickerClassName="text-sky-800"
       projectLabelClassName="text-stone-500"
       title="Conversational UX on a zero-dollar budget"

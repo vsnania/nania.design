@@ -13,6 +13,10 @@ export default function VerizonCaseStudy() {
         previous: { href: '/', label: 'Back to work' },
         next: { href: '/ae-bopis', label: 'American Eagle BOPIS' },
       }}
+      heroScreenshot="/images/verizon/MVA Screen 2.png"
+      heroScreenshotAlt="My Verizon app L1 dashboard"
+      heroGlowClassName="bg-amber-400/20"
+      heroKickerClassName="text-amber-400"
       kicker="Project Pathfinder"
       projectLabel="My Verizon App"
       kickerClassName="text-amber-800"

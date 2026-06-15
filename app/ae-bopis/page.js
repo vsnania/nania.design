@@ -13,6 +13,10 @@ export default function BOPISCaseStudy() {
         previous: { href: '/my-verizon-app', label: 'My Verizon App' },
         next: { href: '/conversational-ux', label: 'Conversational UX' },
       }}
+      heroScreenshot="/images/ae-bopis/BOPIS PDP 2025.png"
+      heroScreenshotAlt="American Eagle BOPIS product detail screen"
+      heroGlowClassName="bg-emerald-400/20"
+      heroKickerClassName="text-emerald-400"
       kicker="Omni-channel E-com"
       projectLabel="American Eagle & Aerie"
       kickerClassName="text-amber-800"
