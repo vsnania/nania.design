@@ -120,7 +120,10 @@ export default function ProfilePage() {
 
       </div>
 
-      <div className="mt-20 pt-12 border-t border-stone-400/25">
+      <div className="mt-20 pt-12 border-t border-stone-400/25 space-y-6">
+        <p className="text-base font-normal leading-relaxed text-stone-600/90 max-w-xl">
+          Writing songs and shipping products are the same job, honestly. You start with noise, you find the thread, and you fight for it until it's real.
+        </p>
         <a href="/" className="text-xs text-stone-500 hover:text-stone-900 transition-colors flex items-center gap-2 group">
           View my work <span className="transition-transform group-hover:translate-x-0.5">→</span>
         </a>

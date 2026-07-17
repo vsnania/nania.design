@@ -21,7 +21,7 @@ export default function BOPISCaseStudy() {
       projectLabel="American Eagle & Aerie"
       kickerClassName="text-amber-800"
       projectLabelClassName="text-emerald-800"
-      title="0 to 1 service design for a complex, omnichannel retail experience"
+      title="0 to 1 service design for omnichannel retail"
       summary="Led a major cross-functional initiative to develop and launch a new in-store pickup channel for American Eagle and Aerie, unlocking customer convenience and streamlining order fulfillment."
       metrics={[
         { value: '$51.4M', label: 'Generated Revenue', detail: 'Picked-up dollars + attached in-store sales.' },

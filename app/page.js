@@ -27,7 +27,7 @@ export default function Home() {
           {/* 2. Headline */}
           <div className="order-2 w-full pt-2 md:mb-4">
             <h1 className="text-3xl md:text-4xl font-light tracking-tight leading-snug max-w-md">
-              I turn complexity into clarity, and ideas into products that people enjoy using.
+              Screens are the easy part. I make the right things happen inside big organizations.
             </h1>
           </div>
 
@@ -84,7 +84,7 @@ export default function Home() {
                   <span className="ml-auto text-emerald-800 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-[11px] tracking-wider">VIEW STUDY →</span>
                 </div>
                 <h3 className="text-xl font-medium leading-snug group-hover:text-emerald-900 transition-colors">
-                  0 to 1 service design for a complex, omnichannel retail experience
+                  0 to 1 service design for omnichannel retail
                 </h3>
                 <p className="text-sm text-stone-600/90 mt-3 font-normal leading-relaxed max-w-xl">
                   Led a major cross-functional initiative to develop and launch a new in-store pickup channel for American Eagle and Aerie.
