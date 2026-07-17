@@ -68,7 +68,12 @@ export default function ShardCluster() {
           className="absolute mix-blend-multiply opacity-80"
           style={{ top: `${piece.y}px`, left: piece.left, width: `${piece.w}px`, height: `${piece.h}px` }}
         >
-          <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" className="w-full h-full overflow-visible">
+          <svg
+            viewBox="0 0 40 40"
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-full h-full overflow-visible shard-float"
+            style={{ animationDuration: `${3.2 + (i % 4) * 0.7}s`, animationDelay: `${-i * 0.9}s` }}
+          >
             <polygon points={piece.points} fill={piece.fill} />
           </svg>
         </div>

@@ -58,6 +58,21 @@ strong {
   100% { background-position: 0% 50%; }
 }
 
+@keyframes shardFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50%      { transform: translateY(-5px) rotate(2.5deg); }
+}
+
+.shard-float {
+  animation: shardFloat 3.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shard-float {
+    animation: none;
+  }
+}
+
 @layer utilities {
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
