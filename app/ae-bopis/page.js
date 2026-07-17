@@ -47,6 +47,23 @@ export default function BOPISCaseStudy() {
         </div>
       </section>
 
+      {/* Act I.5: Leading Discovery */}
+      <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
+        <div className="md:col-span-4">
+          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+            Leading Discovery
+          </h3>
+        </div>
+        <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
+          <p>
+            When a new design director arrived, brought over from product management, I was the first person he pulled in. The mandate was experience discovery. What was Reserve, Try, Buy actually telling us, what needed fixing immediately, and what could the new system not afford to repeat.
+          </p>
+          <p>
+            I partnered with UX research, rode along on store shopalongs, and interviewed customers and store associates directly. And I didn't wait for a tidy findings report. I put my designer to work ideating and prototyping while the insights were still fresh.
+          </p>
+        </div>
+      </section>
+
       {/* VISUAL INSERT 1: SENSE-MAKING & RESEARCH */}
       <section className="mb-20">
         <div className="bg-stone-300/30 border border-stone-400/20 rounded-2xl p-6 md:p-12 flex flex-col items-center justify-center gap-4">
@@ -124,6 +141,23 @@ export default function BOPISCaseStudy() {
         </div>
       </section>
 
+      {/* Act II.5: Friction as Fuel */}
+      <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
+        <div className="md:col-span-4">
+          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+            Friction as Fuel
+          </h3>
+        </div>
+        <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
+          <p>
+            Our first prototypes landed with hesitation, and honestly, fair enough. We had only just begun collaborating with the teams who owned the physical half of this experience. I made a deliberate choice to treat that friction as fuel rather than a fight.
+          </p>
+          <p>
+            When we had to stand firm on a design decision, I showed the why with grace. Prototypes did the heavy lifting, letting people feel the experience instead of debating screenshots. And I kept my director informed at every step, so when a decision needed organizational weight behind it, he could escalate without missing a beat.
+          </p>
+        </div>
+      </section>
+
       {/* Act III: Prototyping and Piloting */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-16">
         <div className="md:col-span-4">
@@ -133,7 +167,7 @@ export default function BOPISCaseStudy() {
         </div>
         <div className="md:col-span-8">
           <p className="text-base font-normal leading-relaxed mb-6 text-stone-600/90">
-            With the wireframes as our blueprint, I led iterative prototype testing to stress-test and refine the solutions. But a digital prototype can only simulate so much of a physical logistics problem.
+            With the wireframes as our blueprint, I led iterative prototype testing to stress-test and refine the solutions. But a digital prototype can only simulate so much of a physical logistics problem, and holiday season was bearing down on us. The iterative pilot was our pressure valve. Ship something real, learn from it, build on it.
           </p>
           <div className="grid grid-cols-1 gap-6 text-sm">
             <div className="p-5 bg-stone-100/90 border border-stone-400/40 rounded-xl shadow-sm">
@@ -141,8 +175,8 @@ export default function BOPISCaseStudy() {
               <p className="font-normal text-stone-600/90 leading-relaxed">After validating the initial design, American Eagle and Aerie launched an early rollout pilot program across four stores in the Pittsburgh area.</p>
             </div>
             <div className="p-5 bg-stone-100/90 border border-stone-400/40 rounded-xl shadow-sm">
-              <span className="font-bold block mb-1 text-stone-900">Continuous Optimization</span>
-              <p className="font-normal text-stone-600/90 leading-relaxed">Those four stores surfaced live operational feedback and traffic-flow issues no prototype could. I fed that straight back into the design.</p>
+              <span className="font-bold block mb-1 text-stone-900">What the Pilot Taught Us</span>
+              <p className="font-normal text-stone-600/90 leading-relaxed">Those four stores surfaced what no prototype could. Associates' pickup notifications weren't cutting through, so we drove a fix with the internal systems team. Customers wanted to know how long orders would be held and what happened if they never came, so we built those answers into the flow. Every fix earned more trust from store ops, and they increasingly let us run.</p>
             </div>
           </div>
         </div>
@@ -160,7 +194,7 @@ export default function BOPISCaseStudy() {
             Early on, the system did the obvious thing. It defaulted customers to the store closest to them. That made sense on paper, but the data told a different story. The nearest store often wasn't the one that could actually fulfill the order fastest.
           </p>
           <p>
-            So I challenged the default. Research showed that customers will happily travel a little farther when it means getting their order in hand sooner. I reframed the logic from "nearest store" to "fastest available pickup," and surfaced a clear prompt that let customers trade a few extra miles for same-day speed.
+            I caught it in a prototype usability study I ran with my researcher. Our product partner was hesitant to change the logic, and reasonably so. Distance felt like the obvious default. But the finding was definitive. Customers would happily drive a little farther when it meant getting their order in hand sooner. Once she saw that, she made the change with full confidence. We reframed the logic from "nearest store" to "fastest available pickup," and surfaced a clear prompt that let customers trade a few extra miles for same-day speed.
           </p>
           <p>
             The shift paid off on both sides of the equation. Same-day pickup volume went up, and routing orders to stores with available inventory brought fulfillment costs down.
@@ -243,6 +277,23 @@ export default function BOPISCaseStudy() {
           </p>
           <p>
             Post-launch, I set up a continuous research loop to keep the product honest. That loop directly shaped later rollouts, including <strong className="font-semibold text-stone-900">In-Store Mode</strong> and a native integration for <strong className="font-semibold text-stone-900">Curbside Pickup</strong>.
+          </p>
+        </div>
+      </section>
+
+      {/* Act VI: Where It Fell Short */}
+      <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-16">
+        <div className="md:col-span-4">
+          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+            Where It Fell Short
+          </h3>
+        </div>
+        <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
+          <p>
+            The one that got away was item-level fulfillment. I wanted a customer to pick up what was ready today and have the rest of the order shipped home, all in one seamless transaction. The operational complexity meant we had to settle for ship to store on the remaining items.
+          </p>
+          <p>
+            It works, but it isn't the experience I was chasing. It's the first thing I'd fund if I went back.
           </p>
         </div>
       </section>

@@ -45,16 +45,16 @@ export default function Home() {
           <div className="flex flex-col gap-8">
 
             {/* 1. Verizon */}
-            <a href="/my-verizon-app" className="group flex flex-col justify-between p-6 bg-stone-100/95 border border-stone-400/25 border-l-4 border-l-amber-600/70 rounded-2xl hover:border-stone-400/40 hover:border-l-amber-600 hover:-translate-y-1 hover:shadow-2xl hover:shadow-amber-950/5 transition-all duration-300 cursor-pointer relative z-10 shadow-sm">
+            <a href="/my-verizon-app" className="group flex flex-col justify-between p-6 bg-stone-100/95 border border-stone-400/25 rounded-2xl hover:border-stone-400/40 hover:-translate-y-1 hover:shadow-2xl hover:shadow-red-950/5 transition-all duration-300 cursor-pointer relative z-10 shadow-sm">
               <div>
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="bg-stone-200/60 px-3 py-1 rounded-md text-[10px] uppercase tracking-wider text-stone-700 font-medium">
+                  <span className="bg-red-100/80 px-3 py-1 rounded-md text-[10px] uppercase tracking-wider text-red-900 font-medium">
                     My Verizon App
                   </span>
                   <span className="text-stone-400 text-[10px]">2026</span>
-                  <span className="ml-auto text-amber-800 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-[11px] tracking-wider">VIEW STUDY →</span>
+                  <span className="ml-auto text-red-800 font-bold opacity-0 group-hover:opacity-100 transition-opacity text-[11px] tracking-wider">VIEW STUDY →</span>
                 </div>
-                <h3 className="text-xl font-medium leading-snug group-hover:text-amber-900 transition-colors">
+                <h3 className="text-xl font-medium leading-snug group-hover:text-red-900 transition-colors">
                   Skim, Dip, Dive: Leading the My Verizon app transformation
                 </h3>
                 <p className="text-sm text-stone-600/90 mt-3 font-normal leading-relaxed max-w-xl">
@@ -68,16 +68,16 @@ export default function Home() {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  className="h-auto w-auto object-contain opacity-40 group-hover:opacity-100 transition-opacity duration-300"
+                  className="h-auto w-auto object-contain"
                 />
               </div>
             </a>
 
             {/* 2. American Eagle */}
-            <a href="/ae-bopis" className="group flex flex-col justify-between p-6 bg-stone-100/95 border border-stone-400/25 border-l-4 border-l-emerald-600/70 rounded-2xl hover:border-stone-400/40 hover:border-l-emerald-600 hover:-translate-y-1 hover:shadow-2xl hover:shadow-emerald-950/5 transition-all duration-300 cursor-pointer relative z-10 shadow-sm">
+            <a href="/ae-bopis" className="group flex flex-col justify-between p-6 bg-stone-100/95 border border-stone-400/25 rounded-2xl hover:border-stone-400/40 hover:-translate-y-1 hover:shadow-2xl hover:shadow-emerald-950/5 transition-all duration-300 cursor-pointer relative z-10 shadow-sm">
               <div>
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="bg-stone-200/60 px-3 py-1 rounded-md text-[10px] uppercase tracking-wider text-stone-700 font-medium">
+                  <span className="bg-emerald-100/80 px-3 py-1 rounded-md text-[10px] uppercase tracking-wider text-emerald-900 font-medium">
                     Omni-channel E-com
                   </span>
                   <span className="text-stone-400 text-[10px]">2024</span>
@@ -97,16 +97,16 @@ export default function Home() {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  className="h-auto w-auto object-contain opacity-40 group-hover:opacity-100 transition-opacity duration-300"
+                  className="h-auto w-auto object-contain"
                 />
               </div>
             </a>
 
             {/* 3. Conversational UX */}
-            <a href="/conversational-ux" className="group flex flex-col justify-between p-6 bg-stone-100/95 border border-stone-400/25 border-l-4 border-l-sky-600/70 rounded-2xl hover:border-stone-400/40 hover:border-l-sky-600 hover:-translate-y-1 hover:shadow-2xl hover:shadow-sky-950/5 transition-all duration-300 cursor-pointer relative z-10 shadow-sm">
+            <a href="/conversational-ux" className="group flex flex-col justify-between p-6 bg-stone-100/95 border border-stone-400/25 rounded-2xl hover:border-stone-400/40 hover:-translate-y-1 hover:shadow-2xl hover:shadow-sky-950/5 transition-all duration-300 cursor-pointer relative z-10 shadow-sm">
               <div>
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="bg-stone-200/60 px-3 py-1 rounded-md text-[10px] uppercase tracking-wider text-stone-700 font-medium">
+                  <span className="bg-sky-100/80 px-3 py-1 rounded-md text-[10px] uppercase tracking-wider text-sky-900 font-medium">
                     Conversational UX
                   </span>
                   <span className="text-stone-400 text-[10px]">2023</span>
@@ -126,7 +126,7 @@ export default function Home() {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  className="h-auto w-auto object-contain opacity-40 group-hover:opacity-100 transition-opacity duration-300"
+                  className="h-auto w-auto object-contain"
                 />
               </div>
             </a>

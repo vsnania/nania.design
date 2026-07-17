@@ -48,10 +48,13 @@ export default function ConversationalUX() {
         </div>
         <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
           <p>
-            Users were drowning in a dense, static FAQ section, generating a flood of easily avoidable support tickets. A conversational chatbot was the obvious answer, but there was zero budget and no engineering resources available for a platform overhaul.
+            Users were drowning in a dense, static FAQ section, generating a flood of easily avoidable support tickets. A conversational experience was the obvious answer. But when I raised it, product, business, and even my own design manager said no. There was zero budget, and the only option anyone would entertain was a third-party, out-of-the-box chatbot. At the time, those were genuinely bad.
           </p>
           <p>
-            So I didn't wait. I designed a "Trojan Horse": an interactive FAQ built on the insight that e-commerce customer journeys are highly predictable. We didn't need machine learning. We needed a relentless focus on information architecture. By manually mapping existing static content into a guided decision tree, I simulated a dynamic conversational experience at virtually no cost.
+            Here's what I knew that hadn't landed yet. Retail support needs aren't that complex. People want their clothes at a fair price, delivered quickly, fitting well. The same questions surfaced over and over across thousands of contacts. We didn't need machine learning. We needed a relentless focus on information architecture.
+          </p>
+          <p>
+            So I didn't wait. I built the "Trojan Horse" prototype myself, an interactive FAQ that mapped our existing static content into a guided decision tree, simulating a conversational experience at virtually no cost. Then I pitched my design manager with an ironclad story about cost and call-volume reduction. I made myself undeniable. She said it had legs, we took the same pitch to product and business, and it worked.
           </p>
         </div>
       </section>
@@ -79,7 +82,10 @@ export default function ConversationalUX() {
         </div>
         <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
           <p>
-            To align on complex behaviors like "Close Chat" triggers, I moved away from abstract discussions. I used this "choose your adventure" wireframe model to socialize options directly with Customer Support stakeholders.
+            Customer Support could have been skeptics. Instead, they became co-authors. I gave them the same pitch and they got genuinely excited, so I involved them at every step, with daily calls to craft the conversational content together. I kept those calls loose and fun on purpose. Style, grace, and a few good jokes move projects too.
+          </p>
+          <p>
+            To align on complex behaviors like "Close Chat" triggers, I moved away from abstract discussions. I used this "choose your adventure" wireframe model to socialize options directly with those same stakeholders.
           </p>
           <p>
             It gave stakeholders something real to react to. They could feel the decision logic in real time, which moved the conversation from subjective debate to concrete tradeoffs. That was the catalyst for final consensus.
@@ -120,7 +126,7 @@ export default function ConversationalUX() {
         </div>
         <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
           <p>
-            The success of the scrappy Interactive FAQ gave me the leverage I needed. Leadership saw the value of conversational UX, and I got the budget to design and build a custom, fully integrated chatbot in-house.
+            One month of live data changed everything. The numbers at the top of this page stopped being projections, and leadership's posture flipped from "the FAQ thing" to "what do you need." In a single stroke, the tool was validated, enhancements were greenlit, and I'd earned a reputation as someone who could make something from nothing. That leverage became the budget to design and build a custom, fully integrated chatbot in-house.
           </p>
           <p>
             As the network of responses grew, the golden rule held. Never leave the user stranded. Whenever automation fell short, I made sure the path to a human agent stayed seamless, visible, and instantly accessible.
@@ -163,6 +169,23 @@ export default function ConversationalUX() {
           <span className="text-xs text-stone-500 italic text-center max-w-lg">
             Figure 1.1: The final support assistant, designed as an escalation path rather than a dead end.
           </span>
+        </div>
+      </section>
+
+      {/* Where It Fell Short */}
+      <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-16">
+        <div className="md:col-span-4">
+          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+            Where It Fell Short
+          </h3>
+        </div>
+        <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
+          <p>
+            Zero budget shows. There was no personalization, so the logic tree treated every customer the same. Authentication for order-specific help was cumbersome. And the polish I wanted, the UI feedback and micro-animations that make an experience feel alive, never made it in.
+          </p>
+          <p>
+            It shipped visually basic. But it did the job it was created for, swimmingly, and it bought the credibility that funded everything after.
+          </p>
         </div>
       </section>
 

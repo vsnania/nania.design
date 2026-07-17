@@ -15,11 +15,11 @@ export default function VerizonCaseStudy() {
       }}
       heroScreenshot="/images/verizon/MVA Screen 2.png"
       heroScreenshotAlt="My Verizon app L1 dashboard"
-      heroGlowClassName="bg-amber-400/20"
-      heroKickerClassName="text-amber-400"
+      heroGlowClassName="bg-red-400/20"
+      heroKickerClassName="text-red-400"
       kicker="Project Pathfinder"
       projectLabel="My Verizon App"
-      kickerClassName="text-amber-800"
+      kickerClassName="text-red-800"
       projectLabelClassName="text-sky-800"
       title="Skim, Dip, Dive: Re-architecting the L1 mobile experience"
       summary="How a centralized navigation framework transformed a dense, fragmented application into an elegant pathfinder system. This initiative drove a 60% engagement lift while protecting long-term design governance."
@@ -112,7 +112,10 @@ export default function VerizonCaseStudy() {
         </div>
         <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
           <p>
-            The answer was the <strong className="font-semibold text-stone-900">"Skim, Dip, Dive"</strong> architecture. The framework reframes the home dashboard not as a final destination, but as an information processing strategy. It lets customers work through a dense product one intentional layer at a time. My job was to operationalize it and make sure it actually held.
+            The answer was the <strong className="font-semibold text-stone-900">"Skim, Dip, Dive"</strong> architecture, a framework my director introduced and I helped shape in the earliest brainstorms. It reframes the home dashboard not as a final destination, but as an information processing strategy. Customers work through a dense product one intentional layer at a time.
+          </p>
+          <p>
+            To prove it was more than a nice diagram, I mapped our <strong className="font-semibold text-stone-900">entire legacy app and website</strong> against the framework, screen by screen. That exercise pressure-tested it against every edge case we had, and it became the evidence my director and I used to sell the model to product and business stakeholders.
           </p>
           <p>
             That meant treating it as a <strong className="font-semibold text-stone-900">governance tool</strong>, not just a design pattern. I set clear rules for what belonged at the Skim layer versus the Dive level, giving teams an objective lens for new feature requests and making it harder to bloat the L1 for any one priority.
@@ -137,6 +140,23 @@ export default function VerizonCaseStudy() {
             <span className="block font-bold">Dive</span>
             <span className="text-[10px] text-stone-500 font-semibold mt-0.5 block">Task Completion</span>
           </div>
+        </div>
+      </section>
+
+      {/* Act II.5: Holding the Line */}
+      <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
+        <div className="md:col-span-4">
+          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+            Holding the Line
+          </h3>
+        </div>
+        <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
+          <p>
+            Governance gets tested fast. The Offers team pushed to place a promotion, <strong className="font-semibold text-stone-900">Add a Line</strong>, into the L1 shortcuts, and their product manager fought hard for it. The shortcuts existed to get customers where they needed to go. The moment they became ad space, the whole layer would stop earning trust. Instead of arguing taste, I pointed at the framework we had all signed up for. Shortcuts are navigation. Offers live where customers shop. The rules held, the promotion found a better home, and the precedent protected L1 from the next dozen requests just like it.
+          </p>
+          <p>
+            Another test came on the Mobile tab. Stakeholders wanted every subtitle under usage to be tappable. It sounded like added utility, but every one of those taps led to the same destination, because the L2 that would justify them didn't exist yet. Rather than explain that on a slide, I built a working prototype and let stakeholders feel the dead end for themselves. Tapping four different labels and landing in the same place made the argument in about thirty seconds. We shipped the honest version.
+          </p>
         </div>
       </section>
 
@@ -188,13 +208,30 @@ export default function VerizonCaseStudy() {
             </div>
             <div className="p-5 bg-stone-100/90 border border-stone-400/40 rounded-xl shadow-sm">
               <span className="font-bold block mb-1">Design System Stewardship</span>
-              <p className="font-normal text-stone-600/90 leading-relaxed">The framework required patterns that didn't exist in the global design system. I made the case for those departures directly with system maintainers, arguing for localized nuance where scannability mattered most, and won alignment on the exceptions we needed.</p>
+              <p className="font-normal text-stone-600/90 leading-relaxed">The framework needed patterns the global design system didn't have. Instead of asking for exceptions in the abstract, I built the experience twice. Once with out-of-box components, limitations on full display, and once with a lightly customized version. Seeing them side by side ended the debate. The customized patterns shipped, and the system team appended them to the global library.</p>
             </div>
             <div className="p-5 bg-stone-100/90 border border-stone-400/40 rounded-xl shadow-sm">
               <span className="font-bold block mb-1">Engineering Partnership</span>
               <p className="font-normal text-stone-600/90 leading-relaxed">I worked closely with engineering to find frontend solutions that could support the new layout model without taking on performance debt. Some of the best decisions in the final product came directly out of those technical conversations.</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Act IV: Where It Fell Short */}
+      <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-16">
+        <div className="md:col-span-4">
+          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+            Where It Fell Short
+          </h3>
+        </div>
+        <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
+          <p>
+            I'd rather name this than pretend the framework fixed everything. The L1 came out tight, but we never had the capacity to rework L2 with the same rigor. Some of that layer still carries redundancies and design waste that teams are working through today.
+          </p>
+          <p>
+            Skim, Dip, Dive set the standard. The layers below it still have to earn it, and that's the honest cost of shipping a framework with finite capacity.
+          </p>
         </div>
       </section>
 
