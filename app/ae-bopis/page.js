@@ -125,6 +125,39 @@ export default function BOPISCaseStudy() {
         </div>
       </section>
 
+      {/* Act II.3: The Service Blueprint */}
+      <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
+        <div className="md:col-span-4">
+          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+            The Service Blueprint
+          </h3>
+        </div>
+        <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
+          <p>
+            The story maps fed a full service blueprint spanning five layers: the customer journey, the digital experience, the physical store experience, the associate workflow behind the counter, and the systems underneath it all.
+          </p>
+          <p>
+            Laying the layers side by side surfaced the core diagnosis. <strong className="font-semibold text-stone-900">Reserve, Try, Buy didn't fail because of any single screen. It failed because these layers were never aligned.</strong> Customers could reserve items, but the backend systems and store operations weren't built to deliver a reliable pickup. The blueprint became our shared map for fixing all five layers at once.
+          </p>
+        </div>
+      </section>
+
+      {/* VISUAL INSERT: SERVICE BLUEPRINT */}
+      <section className="mb-20">
+        <div className="bg-stone-300/30 border border-stone-400/20 rounded-2xl p-6 md:p-12 flex flex-col items-center justify-center gap-4">
+          <div className="w-full rounded-xl shadow-lg border border-stone-400/40 bg-white">
+            <ZoomableImage
+              src="/images/ae-bopis/BOPIS-Service-Blueprint.png"
+              alt="BOPIS service blueprint spanning customer, digital, store, associate, and systems layers"
+              className="w-full h-auto block rounded-xl"
+            />
+          </div>
+          <span className="text-xs text-stone-500 italic text-center max-w-lg mt-4">
+            Figure 1.2: The five-layer BOPIS service blueprint. Click to zoom.
+          </span>
+        </div>
+      </section>
+
       {/* VISUAL INSERT 3: PROTOTYPING */}
       <section className="mb-20">
         <div className="bg-stone-300/30 border border-stone-400/20 rounded-2xl p-6 md:p-12 flex flex-col gap-8">
@@ -136,7 +169,7 @@ export default function BOPISCaseStudy() {
             />
           </div>
           <span className="text-xs text-stone-500 italic text-center max-w-lg mx-auto mt-2">
-            Figure 1.2: Early wireframes exploring content placement ahead of prototype testing.
+            Figure 1.3: Early wireframes exploring content placement ahead of prototype testing.
           </span>
         </div>
       </section>
@@ -213,7 +246,7 @@ export default function BOPISCaseStudy() {
             />
           </div>
           <span className="text-xs text-stone-500 italic text-center max-w-lg mt-4">
-            Figure 1.3: The pickup card lets customers trade a farther store for same-day speed.
+            Figure 1.4: The pickup card lets customers trade a farther store for same-day speed.
           </span>
         </div>
       </section>
@@ -259,7 +292,7 @@ export default function BOPISCaseStudy() {
 
           </div>
           <span className="text-xs text-stone-500 italic text-center max-w-lg mx-auto mt-6">
-            Figure 1.4: Final UI for Product Detail, Checkout, and Find Another Store. Click to zoom.
+            Figure 1.5: Final UI for Product Detail, Checkout, and Find Another Store. Click to zoom.
           </span>
         </div>
       </section>

@@ -3,7 +3,7 @@ import ZoomableImage from '@/app/components/ZoomableImage';
 
 export const metadata = {
   title: 'Skim, Dip, Dive // Vincent Nania',
-  description: 'How a centralized navigation framework transformed the My Verizon app into an elegant pathfinder system, driving a 60% engagement lift.',
+  description: 'How a centralized navigation framework transformed the My Verizon app into an intuitive pathfinder system, driving a 60% engagement lift.',
 };
 
 export default function VerizonCaseStudy() {
@@ -22,7 +22,7 @@ export default function VerizonCaseStudy() {
       kickerClassName="text-red-800"
       projectLabelClassName="text-sky-800"
       title="Skim, Dip, Dive: Re-architecting the L1 mobile experience"
-      summary="How a centralized navigation framework transformed a dense, fragmented application into an elegant pathfinder system. This initiative drove a 60% engagement lift while protecting long-term design governance."
+      summary="How a centralized navigation framework transformed a dense, fragmented application into an intuitive pathfinder system. This initiative drove a 60% engagement lift while protecting long-term design governance."
       metrics={[
         { value: '60%', label: 'Monthly Engagement', detail: 'Sustained across active app users.' },
         { value: '4.7★', label: 'iOS App Store Rating', detail: 'Accompanied by 4.8 on Google Play.' },
@@ -44,6 +44,31 @@ export default function VerizonCaseStudy() {
           <p>
             The result was predictable. Feature bloat buried intuitive paths, suppressed revenue discovery, and spiked support contacts. The app needed a hierarchy, not more features.
           </p>
+        </div>
+      </section>
+
+      {/* VISUAL INSERT 0: THE BEFORE STATE */}
+      <section className="mb-20">
+        <div className="bg-stone-300/30 border border-stone-400/20 rounded-2xl p-6 md:p-12 flex flex-col gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start justify-items-center">
+            <div className="w-full max-w-[250px] aspect-[9/19] shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white rounded-[1.5rem]">
+              <ZoomableImage
+                src="/images/verizon/MVA-before-discover.png"
+                alt="Legacy My Verizon Discover tab crowded with promotions"
+                className="h-full w-full object-cover object-top block rounded-[1.5rem]"
+              />
+            </div>
+            <div className="w-full max-w-[250px] aspect-[9/19] shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white rounded-[1.5rem]">
+              <ZoomableImage
+                src="/images/verizon/MVA-before-account.png"
+                alt="Legacy My Verizon Account tab as a flat list"
+                className="h-full w-full object-cover object-top block rounded-[1.5rem]"
+              />
+            </div>
+          </div>
+          <span className="text-xs text-stone-500 italic text-center max-w-lg mx-auto mt-2">
+            Figure 1.0: The before state. Promotions crowding the Discover tab, and a flat, undifferentiated list standing in for the account.
+          </span>
         </div>
       </section>
 
@@ -98,7 +123,7 @@ export default function VerizonCaseStudy() {
             />
           </div>
           <span className="text-xs text-stone-500 italic text-center max-w-md mt-4">
-            Figure 1.0: The reconfigured L1 dashboard, built for scanning.
+            Figure 1.1: The reconfigured L1 dashboard, built for scanning.
           </span>
         </div>
       </section>
@@ -185,7 +210,7 @@ export default function VerizonCaseStudy() {
 
           </div>
           <span className="text-xs text-stone-500 italic text-center max-w-lg mx-auto mt-2">
-            Figure 1.1: The Dip and Dive layers turn standard links into high-context, drillable components.
+            Figure 1.2: The Dip and Dive layers turn standard links into high-context, drillable components.
           </span>
         </div>
       </section>
