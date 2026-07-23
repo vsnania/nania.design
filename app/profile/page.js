@@ -13,17 +13,33 @@ export default function ProfilePage() {
 
       {/* Header Block */}
       <header className="mb-16">
-        <div className="flex items-center gap-4 text-xs  font-bold uppercase tracking-[0.2em] mb-4">
-          <span className="text-emerald-800">Vincent Nania</span>
-          <span className="text-stone-400/60">•</span>
-          <span className="text-stone-500">Profile</span>
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 items-center">
+          <div className="md:col-span-7">
+            <div className="flex items-center gap-4 text-xs  font-bold uppercase tracking-[0.2em] mb-4">
+              <span className="text-emerald-800">Vincent Nania</span>
+              <span className="text-stone-400/60">•</span>
+              <span className="text-stone-500">Profile</span>
+            </div>
+            <h1 className="text-3xl md:text-4xl font-light leading-tight mb-6">
+              Designing for the human on the other side
+            </h1>
+            <p className="text-base md:text-lg font-normal leading-relaxed text-stone-600/90">
+              I’m a design leader based in Brooklyn. For the past decade I’ve worked with companies like Verizon and American Eagle, mostly trying to make complicated things feel simple. A lot of what helps me do that, I learned away from a desk.
+            </p>
+          </div>
+          <div className="md:col-span-5">
+            <div className="w-full aspect-[1414/1620] rounded-2xl overflow-hidden shadow-md border border-stone-400/25">
+              <img
+                src="/images/profile/vince-bowie.jpg"
+                alt="Vincent Nania at a table with his dog Bowie"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <span className="block text-[10px] text-stone-400 uppercase tracking-widest mt-3 text-center">
+              Me & Bowie
+            </span>
+          </div>
         </div>
-        <h1 className="text-3xl md:text-4xl font-light leading-tight mb-6">
-          Designing for the human on the other side
-        </h1>
-        <p className="text-base md:text-lg font-normal leading-relaxed text-stone-600/90">
-          I’m a design leader based in Brooklyn. For the past decade I’ve worked with companies like Verizon and American Eagle, mostly trying to make complicated things feel simple. A lot of what helps me do that, I learned away from a desk.
-        </p>
       </header>
 
       <div className="space-y-20 border-t border-stone-400/40 pt-16">

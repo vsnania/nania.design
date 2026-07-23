@@ -41,6 +41,10 @@ strong {
   font-weight: 700;
 }
 
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
 .section-label {
   color: #6b6661;
   font-size: 0.75rem;

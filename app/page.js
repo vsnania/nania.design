@@ -16,18 +16,19 @@ export default function Home() {
           <div className="order-1 w-full aspect-[4/3] bg-stone-400/20 border border-stone-400/40 rounded-tl-[2rem] rounded-br-[2rem] overflow-hidden relative shadow-sm backdrop-blur-[2px] shrink-0 md:mt-20">
             <div className="absolute inset-0 bg-gradient-to-tr from-amber-500/10 via-transparent to-sky-500/10 opacity-60 z-10" />
             <Image
-              src="/homepage/0f70a5d8-7cd2-45a2-8345-4e3d5aff38ce.jpeg"
+              src="/homepage/vince-hero.jpg"
               alt="Vincent Nania, Design Leader"
               fill
-              className="object-cover object-top"
+              sizes="(max-width: 1024px) 100vw, 40vw"
+              className="object-cover object-center"
               priority
             />
           </div>
 
           {/* 2. Headline */}
           <div className="order-2 w-full pt-2 md:mb-4">
-            <h1 className="text-3xl md:text-4xl font-light tracking-tight leading-snug max-w-md">
-              NYC-based design leader, mentor and problem solver. I turn complexity into clarity and build products that people enjoy using.
+            <h1 className="font-display text-3xl md:text-4xl font-semibold tracking-tight leading-snug max-w-md">
+              NYC-based design leader, mentor and problem solver, turning complexity into clarity.
             </h1>
           </div>
 
