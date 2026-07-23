@@ -7,10 +7,10 @@ export default function Home() {
   return (
     <div className="relative w-full min-h-screen pt-4 pb-20 lg:pb-28 tracking-tight z-10">
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-24 items-start relative z-10">
+      <div className="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-8 lg:gap-20 items-start relative z-10">
 
         {/* LEFT COLUMN: Narrative Hook */}
-        <div className="lg:col-span-5 flex flex-col md:flex-wrap gap-8 lg:sticky lg:-top-12 items-start">
+        <div className="flex flex-col md:flex-wrap gap-8 lg:sticky lg:-top-12 items-start">
 
           {/* 1. Image */}
           <div className="order-1 w-full aspect-[4/3] bg-stone-400/20 border border-stone-400/40 rounded-tl-[2rem] rounded-br-[2rem] overflow-hidden relative shadow-sm backdrop-blur-[2px] shrink-0 md:mt-20">
@@ -28,7 +28,7 @@ export default function Home() {
           {/* 2. Headline */}
           <div className="order-2 w-full pt-2 md:mb-4">
             <h1 className="font-display text-3xl md:text-4xl font-semibold tracking-tight leading-snug max-w-md">
-              NYC-based design leader, mentor and problem solver, turning complexity into clarity.
+              NYC-based design leader, mentor and problem solver. I turn complexity into clarity.
             </h1>
           </div>
 
@@ -40,7 +40,7 @@ export default function Home() {
         </div>
 
         {/* RIGHT COLUMN: Featured Work */}
-        <div className="lg:col-span-7 pt-2 lg:pt-7">
+        <div className="min-w-0 pt-2 lg:pt-7">
           <h2 id="featured-work" className="section-label mb-8">Featured Work</h2>
 
           <div className="flex flex-col gap-8">
