@@ -16,7 +16,7 @@ export default function Home() {
           <div className="order-1 w-full aspect-[4/3] bg-stone-400/20 border border-stone-400/40 rounded-tl-[2rem] rounded-br-[2rem] overflow-hidden relative shadow-sm backdrop-blur-[2px] shrink-0 md:mt-20">
             <div className="absolute inset-0 bg-gradient-to-tr from-amber-500/10 via-transparent to-sky-500/10 opacity-60 z-10" />
             <Image
-              src="/homepage/vince-hero.jpg"
+              src="/homepage/vince-hero-v2.jpg"
               alt="Vincent Nania, Design Leader"
               fill
               sizes="(max-width: 1024px) 100vw, 40vw"
