@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Get in touch // Vincent Nania',
-  description: 'Get in touch for design leadership and product strategy opportunities.',
+  description: 'Get in touch with Vincent Nania about design leadership and product strategy.',
 };
 
 export default function ContactPage() {
@@ -15,8 +15,7 @@ export default function ContactPage() {
           Get in touch
         </h1>
         <p className="text-base font-normal leading-relaxed text-stone-600/90 max-w-xl">
-          Currently open for new opportunities in design leadership and product strategy.
-          I'm always happy to connect, collaborate, or just talk shop.
+          I'm always open to hearing about interesting work in design leadership and product strategy. And I'm happy to connect, collaborate, or just talk shop.
         </p>
       </header>
 
