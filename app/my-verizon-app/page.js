@@ -13,8 +13,8 @@ export default function VerizonCaseStudy() {
         previous: { href: '/', label: 'Back to work' },
         next: { href: '/ae-bopis', label: 'American Eagle BOPIS' },
       }}
-      heroScreenshot="/images/verizon/MVA Screen 2.png"
-      heroScreenshotAlt="My Verizon app L1 dashboard"
+      heroScreenshot="/images/verizon/vz-me-tab.png"
+      heroScreenshotAlt="My Verizon app Me tab, the L1 dashboard"
       heroGlowClassName="bg-red-400/20"
       heroKickerClassName="text-red-400"
       kicker="Project Pathfinder"
@@ -51,14 +51,14 @@ export default function VerizonCaseStudy() {
       <section className="mb-20">
         <div className="bg-stone-300/30 border border-stone-400/20 rounded-2xl p-6 md:p-12 flex flex-col gap-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start justify-items-center">
-            <div className="w-full max-w-[250px] aspect-[9/19] shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white rounded-[1.5rem]">
+            <div className="w-full max-w-[250px] aspect-[9/19] shadow-2xl shadow-stone-950/20 rounded-[1.5rem] overflow-hidden bg-white">
               <ZoomableImage
                 src="/images/verizon/MVA-before-discover.png"
                 alt="Legacy My Verizon Discover tab crowded with promotions"
                 className="h-full w-full object-cover object-top block rounded-[1.5rem]"
               />
             </div>
-            <div className="w-full max-w-[250px] aspect-[9/19] shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white rounded-[1.5rem]">
+            <div className="w-full max-w-[250px] aspect-[9/19] shadow-2xl shadow-stone-950/20 rounded-[1.5rem] overflow-hidden bg-white">
               <ZoomableImage
                 src="/images/verizon/MVA-before-account.png"
                 alt="Legacy My Verizon Account tab as a flat list"
@@ -114,16 +114,24 @@ export default function VerizonCaseStudy() {
 
       {/* VISUAL INSERT 1: RECONFIGURED L1 ENTRY (SKIM LAYER) */}
       <section className="mb-20">
-        <div className="bg-stone-300/30 border border-stone-400/20 rounded-2xl p-6 md:p-12 flex flex-col items-center justify-center gap-4">
-          <div className="w-full max-w-[250px] aspect-[9/19] shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white rounded-[1.5rem]">
-            <ZoomableImage 
-              src="/images/verizon/MVA Screen 2.png" 
-              alt="My Verizon App L1 Dashboard"
-              className="h-full w-full object-cover object-top block rounded-[1.5rem]"
-            />
+        <div className="bg-stone-300/30 border border-stone-400/20 rounded-2xl p-6 md:p-12 flex flex-col gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 items-start justify-items-center">
+            {[
+              { src: "/images/verizon/vz-me-tab.png", alt: "My Verizon Me tab" },
+              { src: "/images/verizon/vz-mobile-tab.png", alt: "My Verizon Mobile tab" },
+              { src: "/images/verizon/vz-home-tab.png", alt: "My Verizon Home tab" },
+            ].map((s, i) => (
+              <div key={i} className="w-full max-w-[220px] aspect-[9/19] shadow-2xl shadow-stone-950/20 rounded-[1.5rem] overflow-hidden bg-white">
+                <ZoomableImage
+                  src={s.src}
+                  alt={s.alt}
+                  className="h-full w-full object-cover object-top block rounded-[1.5rem]"
+                />
+              </div>
+            ))}
           </div>
-          <span className="text-xs text-stone-500 italic text-center max-w-md mt-4">
-            Figure 1.1: The reconfigured L1 dashboard, built for scanning.
+          <span className="text-xs text-stone-500 italic text-center max-w-lg mx-auto mt-2">
+            Figure 1.1: The Skim layer applied consistently across the Me, Mobile, and Home tabs. One scannable structure, evolved a year later with an AI answer bar and a refreshed navigation shell.
           </span>
         </div>
       </section>
@@ -191,7 +199,7 @@ export default function VerizonCaseStudy() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start justify-items-center">
             
             {/* Left Phone: Dip View */}
-            <div className="w-full max-w-[250px] aspect-[9/19] shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white rounded-[1.5rem]">
+            <div className="w-full max-w-[250px] aspect-[9/19] shadow-2xl shadow-stone-950/20 rounded-[1.5rem] overflow-hidden bg-white">
               <ZoomableImage 
                 src="/images/verizon/IMG_4843.PNG" 
                 alt="Verizon Device Detail Flow (Dip Layer)"
@@ -200,7 +208,7 @@ export default function VerizonCaseStudy() {
             </div>
             
             {/* Right Phone: Dive View */}
-            <div className="w-full max-w-[250px] aspect-[9/19] shadow-2xl shadow-stone-950/20 border border-stone-400/40 bg-white rounded-[1.5rem]">
+            <div className="w-full max-w-[250px] aspect-[9/19] shadow-2xl shadow-stone-950/20 rounded-[1.5rem] overflow-hidden bg-white">
               <ZoomableImage 
                 src="/images/verizon/IMG_4845.PNG" 
                 alt="Verizon Usage Metrics Utilization Chart (Dive Layer)"
