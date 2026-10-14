@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  /* This tells Tailwind: "Whenever you see the font-sans class, use my Next.js font" */
-  --font-sans: var(--font-body);
+  /* Familjen Grotesk everywhere, loaded in app/layout.js */
+  --font-sans: var(--f-display), "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--f-mono), ui-monospace, monospace;
 }
 
 :root {
@@ -20,29 +21,36 @@ body {
   min-height: 100%;
 }
 
-p {
-  color: inherit;
-  line-height: 1.75;
-  font-weight: 400;
+body {
+  font-family: var(--f-display), "Helvetica Neue", Arial, sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  letter-spacing: -0.02em;
-  font-weight: 700;
-}
+/* Base element styles sit in the base layer so utility classes can override them */
+@layer base {
+  p {
+    color: inherit;
+    line-height: 1.75;
+    font-weight: 400;
+  }
 
-strong {
-  color: inherit;
-  font-weight: 700;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    letter-spacing: -0.02em;
+    font-weight: 700;
+  }
+
+  strong {
+    color: inherit;
+    font-weight: 700;
+  }
 }
 
 .font-display {
-  font-family: var(--font-display), Georgia, serif;
+  font-family: var(--f-display), "Helvetica Neue", Arial, sans-serif;
 }
 
 .section-label {

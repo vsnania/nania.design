@@ -2,11 +2,11 @@ import Link from 'next/link';
 
 export default function ProfilePage() {
   return (
-    <div className="py-16 md:py-24 max-w-3xl mx-auto tracking-tight">
+    <div className="pt-14 pb-4 md:pt-20 max-w-3xl mx-auto">
       
       {/* Back Link */}
       <div className="mb-12">
-        <Link href="/" className="text-xs  text-stone-500 hover:text-stone-900 transition-colors flex items-center gap-2 group">
+        <Link href="/" className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] hover:text-[#121212] transition-colors inline-flex items-center gap-2 group">
           <span className="transition-transform group-hover:-translate-x-0.5">←</span> Back to work
         </Link>
       </div>
@@ -15,15 +15,15 @@ export default function ProfilePage() {
       <header className="mb-16">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 items-center">
           <div className="md:col-span-7">
-            <div className="flex items-center gap-4 text-xs  font-bold uppercase tracking-[0.2em] mb-4">
-              <span className="text-emerald-800">Vincent Nania</span>
+            <div className="flex flex-wrap items-center gap-x-4 font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase mb-4">
+              <span className="text-[#121212]">vincent nania</span>
               <span className="text-stone-400/60">•</span>
               <span className="text-stone-500">Profile</span>
             </div>
-            <h1 className="text-3xl md:text-4xl font-light leading-tight mb-6">
+            <h1 className="text-[36px] md:text-[52px] font-semibold leading-[1.02] tracking-[-0.035em] mb-6 [text-wrap:balance]">
               Designing for the human on the other side
             </h1>
-            <p className="text-base md:text-lg font-normal leading-relaxed text-stone-600/90">
+            <p className="text-[18px] md:text-[21px] leading-[1.5] text-[#2A2927]">
               I’m a design leader based in Brooklyn. For the past decade I’ve worked with companies like Verizon and American Eagle, mostly trying to make complicated things feel simple. A lot of what helps me do that, I learned away from a desk.
             </p>
           </div>
@@ -47,7 +47,7 @@ export default function ProfilePage() {
         {/* MUSIC SECTION: Real-time feedback */}
         <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
           <div className="md:col-span-4">
-            <h4 className="text-xs  uppercase text-amber-800 font-bold mb-4 tracking-wider sticky top-28">
+            <h4 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] mb-4 sticky top-28">
               The Stage & Studio
             </h4>
           </div>
@@ -84,7 +84,7 @@ export default function ProfilePage() {
         {/* PHOTOGRAPHY SECTION: Intentional constraints */}
         <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
           <div className="md:col-span-4">
-            <h4 className="text-xs  uppercase text-sky-800 font-bold mb-4 tracking-wider sticky top-28">
+            <h4 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] mb-4 sticky top-28">
               Film Photography
             </h4>
           </div>

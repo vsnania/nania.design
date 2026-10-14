@@ -44,7 +44,7 @@ export default function ConversationalUX() {
       {/* Act I: The Constraint */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">The Constraint</h3>
+          <h3 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] mb-4 sticky top-28">The Constraint</h3>
         </div>
         <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
           <p>
@@ -78,7 +78,7 @@ export default function ConversationalUX() {
       {/* Act II: The Stakeholder Bridge */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">The Stakeholder Bridge</h3>
+          <h3 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] mb-4 sticky top-28">The Stakeholder Bridge</h3>
         </div>
         <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
           <p>
@@ -122,7 +122,7 @@ export default function ConversationalUX() {
       {/* Act III: The Scale */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">The Scale</h3>
+          <h3 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] mb-4 sticky top-28">The Scale</h3>
         </div>
         <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
           <p>
@@ -175,7 +175,7 @@ export default function ConversationalUX() {
       {/* Where It Fell Short */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-16">
         <div className="md:col-span-4">
-          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+          <h3 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] mb-4 sticky top-28">
             Where It Fell Short
           </h3>
         </div>
@@ -192,7 +192,7 @@ export default function ConversationalUX() {
       {/* TAKEAWAYS SECTION */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-20 mb-12">
         <div>
-          <h4 className="text-xs uppercase text-amber-700 font-bold mb-4 tracking-wider">Key Takeaways</h4>
+          <h4 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] mb-4">Key Takeaways</h4>
           <ul className="space-y-4 text-base text-stone-600">
             <li>• A rough thing that works beats a polished thing that doesn't exist. The interactive FAQ wasn't pretty, but it proved the concept, moved stakeholders, and unlocked real budget. I'll always look for that scrappy first move.</li>
             <li>• Making stakeholders feel the logic is more powerful than explaining it. The "choose your adventure" wireframe wasn't just a design artifact. It was a facilitation tool. Putting decision logic in someone's hands changes the conversation entirely.</li>
@@ -200,7 +200,7 @@ export default function ConversationalUX() {
           </ul>
         </div>
         <div>
-          <h4 className="text-xs uppercase text-emerald-700 font-bold mb-4 tracking-wider">Strategic Horizon</h4>
+          <h4 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] mb-4">Strategic Horizon</h4>
           <ul className="space-y-4 text-base text-stone-600">
             <li>• The conversational data is a goldmine that I don't think is fully used yet. Every dead end and repeated question is a signal about where the flow breaks down. I'd build a regular review cycle around that.</li>
             <li>• I'd want to move toward more personalized flows. Right now the logic tree treats every user the same. Someone who just placed an order has a completely different set of needs than someone troubleshooting a return.</li>

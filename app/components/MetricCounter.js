@@ -51,7 +51,7 @@ export default function MetricCounter({ value }) {
   const formatted = decimals > 0 ? display.toFixed(decimals) : Math.round(display);
 
   return (
-    <span ref={ref} className="text-4xl font-light tabular-nums">
+    <span ref={ref} className="text-[40px] leading-none font-semibold tracking-[-0.03em] tabular-nums">
       {prefix}{formatted}{suffix}
     </span>
   );

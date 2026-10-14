@@ -1,5 +1,8 @@
 import CaseStudyPage from '@/app/components/CaseStudyPage';
 import ZoomableImage from '@/app/components/ZoomableImage';
+import Beats from '@/app/components/Beats';
+import Lessons from '@/app/components/Lessons';
+import { BopisThumb } from '@/app/components/home/WorkThumbs';
 
 export const metadata = {
   title: 'BOPIS: 0 to 1 Service Design // Vincent Nania',
@@ -13,14 +16,11 @@ export default function BOPISCaseStudy() {
         previous: { href: '/my-verizon-app', label: 'My Verizon App' },
         next: { href: '/conversational-ux', label: 'Conversational UX' },
       }}
-      heroScreenshot="/images/ae-bopis/BOPIS PDP 2025.png"
-      heroScreenshotAlt="American Eagle BOPIS product detail screen"
-      heroGlowClassName="bg-emerald-400/20"
-      heroKickerClassName="text-emerald-400"
-      kicker="Omni-channel E-com"
-      projectLabel="American Eagle & Aerie"
-      kickerClassName="text-amber-800"
-      projectLabelClassName="text-emerald-800"
+      HeroThumb={BopisThumb}
+      kicker="buy online, pick up in-store"
+      projectLabel="american eagle"
+      kickerClassName="text-[#182C52]"
+      projectLabelClassName="text-[#66645F]"
       title="0 to 1 service design for omnichannel retail"
       summary="Led a major cross-functional initiative to develop and launch a new in-store pickup channel for American Eagle and Aerie, unlocking customer convenience and streamlining order fulfillment."
       metrics={[
@@ -33,7 +33,7 @@ export default function BOPISCaseStudy() {
       {/* Act I: The Problem */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+          <h3 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] mb-4 sticky top-28">
             The Problem
           </h3>
         </div>
@@ -50,7 +50,7 @@ export default function BOPISCaseStudy() {
       {/* Act I.5: Leading Discovery */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+          <h3 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] mb-4 sticky top-28">
             Leading Discovery
           </h3>
         </div>
@@ -83,7 +83,7 @@ export default function BOPISCaseStudy() {
       {/* Act II: Making Sense of the Grey */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+          <h3 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] mb-4 sticky top-28">
             Dual-Track Mapping
           </h3>
         </div>
@@ -128,7 +128,7 @@ export default function BOPISCaseStudy() {
       {/* Act II.3: The Service Blueprint */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+          <h3 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] mb-4 sticky top-28">
             The Service Blueprint
           </h3>
         </div>
@@ -177,7 +177,7 @@ export default function BOPISCaseStudy() {
       {/* Act II.5: Friction as Fuel */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+          <h3 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] mb-4 sticky top-28">
             Friction as Fuel
           </h3>
         </div>
@@ -194,31 +194,48 @@ export default function BOPISCaseStudy() {
       {/* Act III: Prototyping and Piloting */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-16">
         <div className="md:col-span-4">
-          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+          <h3 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] mb-4 sticky top-28">
             Pilot & Scale
           </h3>
         </div>
         <div className="md:col-span-8">
-          <p className="text-base font-normal leading-relaxed mb-6 text-stone-600/90">
-            With the wireframes as our blueprint, I led iterative prototype testing to stress-test and refine the solutions. But a digital prototype can only simulate so much of a physical logistics problem, and holiday season was bearing down on us. The iterative pilot was our pressure valve. Ship something real, learn from it, build on it.
-          </p>
-          <div className="grid grid-cols-1 gap-6 text-sm">
-            <div className="p-5 bg-stone-100/90 border border-stone-400/40 rounded-xl shadow-sm">
-              <span className="font-bold block mb-1 text-stone-900">The Pittsburgh Pilot</span>
-              <p className="font-normal text-stone-600/90 leading-relaxed">After validating the initial design, American Eagle and Aerie launched an early rollout pilot program across four stores in the Pittsburgh area.</p>
-            </div>
-            <div className="p-5 bg-stone-100/90 border border-stone-400/40 rounded-xl shadow-sm">
-              <span className="font-bold block mb-1 text-stone-900">What the Pilot Taught Us</span>
-              <p className="font-normal text-stone-600/90 leading-relaxed">Those four stores surfaced what no prototype could. Associates' pickup notifications weren't cutting through, so we drove a fix with the internal systems team. Customers wanted to know how long orders would be held and what happened if they never came, so we built those answers into the flow. Every fix earned more trust from store ops, and they increasingly let us run.</p>
-            </div>
-          </div>
+          <Beats
+            accent="#182C52"
+            intro="A prototype can only simulate so much of a physical logistics problem, and the holidays were coming. So we shipped something real, learned from it, and built on it."
+            items={[
+              {
+                label: 'pilot',
+                head: 'Went live in four Pittsburgh stores.',
+                body: 'With the design validated through iterative prototype testing, American Eagle and Aerie launched an early rollout pilot in the Pittsburgh area.',
+                result: 'Four stores went live',
+              },
+              {
+                label: 'store associates',
+                head: 'Fixed the pickup alerts associates were missing.',
+                body: "Associates' pickup notifications weren't cutting through, so we drove a fix with the internal systems team.",
+                result: 'Fix shipped with internal systems',
+              },
+              {
+                label: 'customers',
+                head: 'Answered the questions customers actually asked.',
+                body: 'People wanted to know how long orders would be held and what happened if they never came, so we built those answers into the flow.',
+                result: 'Hold times and no-shows explained in the flow',
+              },
+              {
+                label: 'store ops',
+                head: 'Every fix earned more room to run.',
+                body: 'Each problem we solved built trust with store operations, and they increasingly let us move faster.',
+                result: 'The path from 4 stores to 1,000+',
+              },
+            ]}
+          />
         </div>
       </section>
 
       {/* Act III.5: The Pivot - Speed Over Proximity */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+          <h3 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] mb-4 sticky top-28">
             Speed Over Proximity
           </h3>
         </div>
@@ -254,7 +271,7 @@ export default function BOPISCaseStudy() {
       {/* Act IV: The Final Experience */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+          <h3 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] mb-4 sticky top-28">
             The Final Experience
           </h3>
         </div>
@@ -300,7 +317,7 @@ export default function BOPISCaseStudy() {
       {/* Act V: Post-Launch Evolution */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-16">
         <div className="md:col-span-4">
-          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+          <h3 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] mb-4 sticky top-28">
             Post-Launch Evolution
           </h3>
         </div>
@@ -317,7 +334,7 @@ export default function BOPISCaseStudy() {
       {/* Act VI: Where It Fell Short */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-16">
         <div className="md:col-span-4">
-          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+          <h3 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] mb-4 sticky top-28">
             Where It Fell Short
           </h3>
         </div>
@@ -332,24 +349,27 @@ export default function BOPISCaseStudy() {
       </section>
 
       {/* TAKEAWAYS SECTION */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-20 mb-12">
-        <div>
-          <h4 className="text-xs uppercase text-amber-700 font-bold mb-4 tracking-wider">Key Takeaways</h4>
-          <ul className="space-y-4 text-base text-stone-600">
-            <li>• The screen is only half the experience. I came into this project thinking about flows and interfaces. I left it thinking about stockrooms, associate workflows, and the moment a customer walks through the door. Omnichannel means designing all of it.</li>
-            <li>• Answer the anxious questions first. The research kept surfacing the same grey-area fears: who can pick up my order, where do I go in the store. Addressing those upfront was what moved the abandonment rate.</li>
-            <li>• Four stores taught me more than any prototype. The Pittsburgh pilot surfaced edge cases no wireframe could have predicted. I'd never skip a physical pilot again.</li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="text-xs uppercase text-emerald-700 font-bold mb-4 tracking-wider">Strategic Horizon</h4>
-          <ul className="space-y-4 text-base text-stone-600">
-            <li>• I'd want to close the loop between physical pickup data and the digital hand-off. There's signal in that moment that could meaningfully shape the confirmation and notification flows.</li>
-            <li>• The 84% fulfillment rate is strong, but I'd want to understand the 16%. Is it a store operations issue, a communication gap, or something in the digital flow that's setting the wrong expectation?</li>
-            <li>• The ready-for-pickup notification is doing a lot of work right now. I think there's a smarter version of it: one that factors in store hours, estimated wait times, and order hold windows so customers always show up at the right moment.</li>
-          </ul>
-        </div>
-      </section>
+      <Lessons
+        accent="#182C52"
+        groups={[
+          {
+            title: 'What I learned',
+            items: [
+              { head: 'The screen is only half the experience.', body: 'I came in thinking about flows and interfaces. I left thinking about stockrooms, associate workflows, and the moment a customer walks through the door. Omnichannel means designing all of it.' },
+              { head: 'Answer the anxious questions first.', body: 'Research kept surfacing the same grey-area fears: who can pick up my order, where do I go in the store. Answering those upfront is what moved the abandonment rate.' },
+              { head: 'Four stores taught me more than any prototype.', body: "The Pittsburgh pilot surfaced edge cases no wireframe could have predicted. I'd never skip a physical pilot again." },
+            ],
+          },
+          {
+            title: "What I'd do next",
+            items: [
+              { head: 'Close the loop between pickup and the digital hand-off.', body: "There's signal in the physical pickup moment that could shape the confirmation and notification flows." },
+              { head: 'Understand the other 16%.', body: 'An 84% fulfillment rate is strong. Is the rest a store operations issue, a communication gap, or a digital flow setting the wrong expectation?' },
+              { head: 'Make the ready-for-pickup alert smarter.', body: 'Factor in store hours, estimated wait times, and hold windows so customers always show up at the right moment.' },
+            ],
+          },
+        ]}
+      />
 
       {/* IMPACT & DEPLOYMENT */}
       <section className="mt-8 p-8 md:p-10 border border-stone-400/30 bg-stone-100/50 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-6">

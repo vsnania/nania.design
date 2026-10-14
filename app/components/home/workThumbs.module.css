@@ -1,0 +1,197 @@
+/* Coded project thumbnails: [brand] + [one lo-fi scene of the outcome].
+   Sized in cqw (of .thumb) so everything scales as one. */
+.thumb {
+  --ink: #121212;
+  container-type: inline-size;
+  position: absolute; inset: 0;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 9cqw;
+  background: transparent; /* the work panel supplies the surface */
+  font-family: var(--f-display), "Helvetica Neue", Arial, sans-serif;
+  color: var(--ink);
+}
+.vz { --vz: #EE001E; } /* from the verizon.com logo */
+.ae { --ae: #182C52; } /* from ae.com: logo fill + --color-blue-900 */
+
+/* SVG scenes share one coordinate system (360 × 240) and scale with the card */
+.scene { width: 38cqw; height: auto; overflow: visible; }
+.scene * { transform-box: view-box; }
+
+/* ---------- Brand marks (same footprint as the old type blocks) ---------- */
+.logoVz { width: 22cqw; height: auto; display: block; }
+.logoAe { display: grid; justify-items: center; gap: 1.6cqw; }
+.logoAe img:first-child { width: 22cqw; height: auto; display: block; }
+.logoAe img:last-child { width: 10cqw; height: auto; display: block; }
+.logoRule { width: 6cqw; height: 1px; background: rgba(24, 44, 82, .3); }
+
+.brand {
+  display: grid;
+  gap: .5cqw;
+  padding: 1.4cqw;
+  font-weight: 800;
+  font-size: 3.4cqw;
+  line-height: .9;
+  letter-spacing: -.01em;
+}
+.brand span { display: block; width: max-content; padding: .35cqw .8cqw .25cqw; }
+.brandUxfe { background: #121212; }
+.brandUxfe span { background: #FFE500; color: #121212; }
+
+/* ---------- Verizon: the pathfinder ---------- */
+.branch { fill: none; stroke: rgba(18, 18, 18, .2); stroke-width: 2.5; stroke-linecap: round; }
+.branch { animation: branchOn 7.5s ease-in-out infinite; animation-delay: calc(var(--i) * 2.5s); }
+@keyframes branchOn {
+  0%, 3% { stroke: rgba(18, 18, 18, .2); }
+  6%, 30% { stroke: var(--vz); }
+  36%, 100% { stroke: rgba(18, 18, 18, .2); }
+}
+.hubPhone rect { fill: #FBFAF6; stroke: var(--ink); stroke-width: 2.2; }
+.hubPhone path { fill: none; stroke: rgba(18, 18, 18, .25); stroke-width: 2.4; stroke-linecap: round; }
+.outcome circle { fill: #FBFAF6; stroke: rgba(18, 18, 18, .25); stroke-width: 2; animation: outcomeOn 7.5s ease-in-out infinite; animation-delay: calc(var(--i) * 2.5s); }
+@keyframes outcomeOn {
+  0%, 25% { fill: #FBFAF6; stroke: rgba(18, 18, 18, .25); }
+  29%, 34% { fill: #FDE7EA; stroke: var(--vz); }
+  40%, 100% { fill: #FBFAF6; stroke: rgba(18, 18, 18, .25); }
+}
+.receipt { fill: #FFFFFF; stroke-width: 2.4; }
+.receiptDollar { font-family: var(--f-display), sans-serif; font-weight: 800; font-size: 21px; fill: var(--ink); stroke: none; }
+.upArrow { stroke-width: 2.6; }
+.glyph { fill: none; stroke: var(--ink); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.glyph circle { fill: #FBFAF6; }
+.glyph .whiteFill { fill: #FFFFFF; }
+.vzCheck { opacity: 0; transform-origin: 322px 0; animation: vzCheck 7.5s cubic-bezier(.3, 1.6, .5, 1) infinite; animation-delay: calc(var(--i) * 2.5s); }
+.vzCheck circle { fill: var(--vz); }
+.vzCheck path { fill: none; stroke: #fff; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+@keyframes vzCheck {
+  0%, 27% { opacity: 0; transform: scale(.4); }
+  30%, 36% { opacity: 1; transform: scale(1); }
+  42%, 100% { opacity: 0; transform: scale(.4); }
+}
+.walker { fill: var(--vz); }
+
+/* ---------- American Eagle + Aerie: click → store → in your hand ---------- */
+/* step one: a deliberately small phone */
+.aePhone rect:first-child { fill: #FBFAF6; stroke: var(--ink); stroke-width: 2.2; }
+.aePhoneLines { fill: none; stroke: rgba(18, 18, 18, .25); stroke-width: 2.4; stroke-linecap: round; }
+.aeBuy { fill: var(--ae); }
+.clickRing { fill: none; stroke: var(--ae); stroke-width: 2.5; opacity: 0; transform-origin: 40px 118px; animation: clickRing 6.5s ease-out infinite; }
+@keyframes clickRing {
+  0%, 4% { opacity: 0; transform: scale(.4); }
+  5% { opacity: .9; transform: scale(.5); }
+  14%, 100% { opacity: 0; transform: scale(1.6); }
+}
+.route { fill: none; stroke: rgba(24, 44, 82, .32); stroke-width: 2; stroke-dasharray: 4 6; stroke-linecap: round; }
+.awning, .scallops { fill: url(#aeStripes); stroke: var(--ae); stroke-width: 2; stroke-linejoin: round; }
+.front { fill: #FBFAF6; stroke: var(--ae); stroke-width: 2.5; animation: frontWait 6.5s ease-in-out infinite; }
+@keyframes frontWait {
+  0%, 36% { fill: #FBFAF6; }
+  40%, 62% { fill: #E9EDF4; }
+  66%, 100% { fill: #FBFAF6; }
+}
+.clock circle { fill: #FBFAF6; stroke: var(--ae); stroke-width: 2.5; }
+.clock path { fill: none; stroke: var(--ae); stroke-width: 2.5; stroke-linecap: round; }
+.clockHand { transform-origin: 330px 70px; animation: sweep 6.5s ease-in-out infinite; }
+@keyframes sweep {
+  0%, 38% { transform: rotate(0deg); }
+  62%, 100% { transform: rotate(150deg); }
+}
+.bagTrip { animation: bagTrip 6.5s cubic-bezier(.45, .05, .3, 1) infinite; }
+/* pops from the phone, waits in the store, then walks out to the right */
+@keyframes bagTrip {
+  0%, 8% { transform: translate(40px, 96px) scale(0); opacity: 0; }
+  13% { transform: translate(40px, 76px) scale(1); opacity: 1; }
+  24% { transform: translate(150px, 50px) scale(1); }
+  36%, 60% { transform: translate(262px, 166px) scale(.95); opacity: 1; }
+  70% { transform: translate(342px, 170px) scale(1.08); opacity: 1; }
+  86% { transform: translate(352px, 170px) scale(1.08); opacity: 1; }
+  96%, 100% { transform: translate(384px, 170px) scale(1.08); opacity: 0; }
+}
+.bagBody { fill: var(--ae); }
+.bagBand { fill: rgba(255, 255, 255, .25); }
+.bagHandle { fill: none; stroke: var(--ae); stroke-width: 2.4; stroke-linecap: round; }
+.bagCheck { opacity: 0; transform-origin: 16px -18px; animation: bagCheck 6.5s cubic-bezier(.3, 1.6, .5, 1) infinite; }
+.bagCheck circle { fill: var(--ae); stroke: #FBFAF6; stroke-width: 2; }
+.bagCheck path { fill: none; stroke: #fff; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+@keyframes bagCheck {
+  0%, 68% { opacity: 0; transform: scale(.3); }
+  73%, 90% { opacity: 1; transform: scale(1); }
+  96%, 100% { opacity: 0; transform: scale(.3); }
+}
+
+/* ---------- UX For Equality: a recorded, think-aloud session ---------- */
+.mBar { display: block; width: var(--w); height: .8cqw; flex: none; border-radius: 1cqw; background: rgba(18, 18, 18, .18); }
+.session { position: relative; }
+.miniPhone {
+  width: 12cqw;
+  aspect-ratio: 9 / 17;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3cqw;
+  padding: 2.4cqw 1.6cqw;
+  border-radius: 2cqw;
+  border: .35cqw solid #121212;
+  background: #FBFAF6;
+}
+.rec {
+  display: inline-flex;
+  align-items: center;
+  gap: .6cqw;
+  align-self: flex-start;
+  font-family: var(--f-pixel), ui-monospace, monospace;
+  font-size: max(9px, 1.6cqw);
+  line-height: 1;
+  color: #C8102E;
+}
+.rec i { width: 1cqw; height: 1cqw; border-radius: 50%; background: #C8102E; animation: blink 1.4s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+.mIcons { display: flex; gap: 1.4cqw; margin: .6cqw 0; }
+.mIcons i { width: 2.4cqw; height: 2.4cqw; border-radius: .6cqw; background: rgba(18, 18, 18, .22); }
+.mIcons .tapped { position: relative; background: #121212; }
+.mIcons .tapped::after {
+  content: "";
+  position: absolute; inset: -1cqw;
+  border-radius: 50%;
+  border: .3cqw solid #121212;
+  animation: tap 2.2s ease-out infinite;
+}
+@keyframes tap {
+  0% { transform: scale(.4); opacity: .9; }
+  70%, 100% { transform: scale(1.5); opacity: 0; }
+}
+.bubble {
+  position: absolute;
+  right: -5.5cqw; top: 2cqw;
+  display: flex; gap: .6cqw;
+  padding: 1.2cqw 1.4cqw;
+  border-radius: 2cqw 2cqw 2cqw .4cqw;
+  background: #FFE500;
+  border: .3cqw solid #121212;
+}
+.bubble i { width: .9cqw; height: .9cqw; border-radius: 50%; background: #121212; animation: think 1.2s ease-in-out infinite; }
+.bubble i:nth-child(2) { animation-delay: .15s; }
+.bubble i:nth-child(3) { animation-delay: .3s; }
+@keyframes think { 50% { transform: translateY(-40%); opacity: .45; } }
+
+/* Narrow cards are 16:9: scale the pieces up a touch. */
+@media (max-width: 900px) {
+  .thumb { gap: 7cqw; }
+  .brand { font-size: 4.2cqw; }
+  .miniPhone { width: 15cqw; }
+  .scene { width: 46cqw; }
+  .logoVz, .logoAe img:first-child { width: 26cqw; }
+  .logoAe img:last-child { width: 12cqw; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .branch, .outcome circle, .vzCheck, .clickRing, .front, .clockHand, .bagTrip, .bagCheck,
+  .rec i, .mIcons .tapped::after, .bubble i { animation: none; }
+  .walker { display: none; }
+  .vzCheck { opacity: 1; }
+  .outcome circle { stroke: var(--vz); }
+  .bagTrip { transform: translate(342px, 170px) scale(1.08); }
+  .bagCheck { opacity: 1; }
+}

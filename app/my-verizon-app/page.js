@@ -1,5 +1,9 @@
 import CaseStudyPage from '@/app/components/CaseStudyPage';
 import ZoomableImage from '@/app/components/ZoomableImage';
+import SkimDipDive from '@/app/components/SkimDipDive';
+import Beats from '@/app/components/Beats';
+import Lessons from '@/app/components/Lessons';
+import { VerizonThumb } from '@/app/components/home/WorkThumbs';
 
 export const metadata = {
   title: 'Skim, Dip, Dive // Vincent Nania',
@@ -13,14 +17,11 @@ export default function VerizonCaseStudy() {
         previous: { href: '/', label: 'Back to work' },
         next: { href: '/ae-bopis', label: 'American Eagle BOPIS' },
       }}
-      heroScreenshot="/images/verizon/vz-me-tab.png"
-      heroScreenshotAlt="My Verizon app Me tab, the L1 dashboard"
-      heroGlowClassName="bg-red-400/20"
-      heroKickerClassName="text-red-400"
-      kicker="Project Pathfinder"
-      projectLabel="My Verizon App"
-      kickerClassName="text-red-800"
-      projectLabelClassName="text-sky-800"
+      HeroThumb={VerizonThumb}
+      kicker="my verizon app transformation"
+      projectLabel="verizon"
+      kickerClassName="text-[#C8102E]"
+      projectLabelClassName="text-[#66645F]"
       title="Skim, Dip, Dive: Re-architecting the L1 mobile experience"
       summary="How a centralized navigation framework transformed a dense, fragmented application into an intuitive pathfinder system. This initiative drove a 60% engagement lift while protecting long-term design governance."
       metrics={[
@@ -33,7 +34,7 @@ export default function VerizonCaseStudy() {
       {/* Act I: The Problem */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+          <h3 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] mb-4 sticky top-28">
             The Problem
           </h3>
         </div>
@@ -72,11 +73,11 @@ export default function VerizonCaseStudy() {
         </div>
       </section>
 
-      {/* Act I.5: Defining the Problem */}
+      {/* Act I.5: Mapping the Opportunity */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
-            Defining the Problem
+          <h3 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] mb-4 sticky top-28">
+            Mapping the Opportunity
           </h3>
         </div>
         <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
@@ -139,7 +140,7 @@ export default function VerizonCaseStudy() {
       {/* Act II: The Information Processing Strategy */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+          <h3 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] mb-4 sticky top-28">
             Governance Model
           </h3>
         </div>
@@ -156,30 +157,15 @@ export default function VerizonCaseStudy() {
         </div>
       </section>
 
-      {/* Framework Blueprint Visualization diagram */}
+      {/* Framework diagram: animated Skim, Dip, Dive (density, not device) */}
       <section className="mb-12">
-        <div className="w-full py-12 bg-stone-400/30 border border-stone-400/50 rounded-2xl flex items-center justify-center gap-3 md:gap-12 text-xs text-stone-700 shadow-inner px-3 md:px-4">
-          <div className="px-3 md:px-5 py-3 bg-stone-100 border border-stone-400/40 rounded-xl shadow-sm text-center">
-            <span className="block font-bold">Skim</span>
-            <span className="text-[10px] text-stone-500 font-semibold mt-0.5 block">L1 Harmony</span>
-          </div>
-          <span className="font-bold text-stone-400 shrink-0">→</span>
-          <div className="px-3 md:px-5 py-3 bg-stone-100 border border-stone-400/40 rounded-xl shadow-sm text-center">
-            <span className="block font-bold">Dip</span>
-            <span className="text-[10px] text-stone-500 font-semibold mt-0.5 block">Contextual Drill</span>
-          </div>
-          <span className="font-bold text-stone-400 shrink-0">→</span>
-          <div className="px-3 md:px-5 py-3 bg-stone-100 border border-stone-400/40 rounded-xl shadow-sm text-center">
-            <span className="block font-bold">Dive</span>
-            <span className="text-[10px] text-stone-500 font-semibold mt-0.5 block">Task Completion</span>
-          </div>
-        </div>
+        <SkimDipDive className="bg-stone-400/30 border border-stone-400/50 rounded-2xl shadow-inner" />
       </section>
 
       {/* Act II.5: Holding the Line */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-12">
         <div className="md:col-span-4">
-          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+          <h3 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] mb-4 sticky top-28">
             Holding the Line
           </h3>
         </div>
@@ -226,35 +212,42 @@ export default function VerizonCaseStudy() {
       {/* Act III: Cross-Functional Alignment */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-16">
         <div className="md:col-span-4">
-          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+          <h3 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] mb-4 sticky top-28">
             Alignment
           </h3>
         </div>
         <div className="md:col-span-8">
-          <p className="text-base font-normal leading-relaxed mb-6 text-stone-600/90">
-            Shipping this required me to work across three organizational fronts at once. The design work was only part of the job.
-          </p>
-          <div className="grid grid-cols-1 gap-6 text-sm">
-            <div className="p-5 bg-stone-100/90 border border-stone-400/40 rounded-xl shadow-sm">
-              <span className="font-bold block mb-1">Product Management</span>
-              <p className="font-normal text-stone-600/90 leading-relaxed">I reframed our UX work in the language of growth metrics that product managers already owned. That translation shifted conversations away from "whose feature gets surfaced" and toward shared structural outcomes, which made it a lot harder to argue against.</p>
-            </div>
-            <div className="p-5 bg-stone-100/90 border border-stone-400/40 rounded-xl shadow-sm">
-              <span className="font-bold block mb-1">Design System Stewardship</span>
-              <p className="font-normal text-stone-600/90 leading-relaxed">The framework needed patterns the global design system didn't have. Instead of asking for exceptions in the abstract, I built the experience twice. Once with out-of-box components, limitations on full display, and once with a lightly customized version. Seeing them side by side ended the debate. The customized patterns shipped, and the system team appended them to the global library.</p>
-            </div>
-            <div className="p-5 bg-stone-100/90 border border-stone-400/40 rounded-xl shadow-sm">
-              <span className="font-bold block mb-1">Engineering Partnership</span>
-              <p className="font-normal text-stone-600/90 leading-relaxed">I worked closely with engineering to find frontend solutions that could support the new layout model without taking on performance debt. Some of the best decisions in the final product came directly out of those technical conversations.</p>
-            </div>
-          </div>
+          <Beats
+            accent="#C8102E"
+            intro="Three fronts at once. The design was only part of the job."
+            items={[
+              {
+                label: 'product management',
+                head: 'Translated UX into the growth metrics PMs already owned.',
+                body: 'The debate moved from "whose feature gets surfaced" to shared structural outcomes, which are a lot harder to argue against.',
+                result: 'Shared outcomes over feature fights',
+              },
+              {
+                label: 'design system',
+                head: 'Built it twice and let the side-by-side end the debate.',
+                body: 'One version with out-of-box components, limitations on full display. One lightly customized. No exceptions requested in the abstract.',
+                result: 'Custom patterns joined the global library',
+              },
+              {
+                label: 'engineering',
+                head: 'Solved the layout with engineering, not after them.',
+                body: 'We found frontend approaches that supported the new layout model without taking on performance debt. Some of the best final decisions came out of those conversations.',
+                result: 'New layout, no performance debt',
+              },
+            ]}
+          />
         </div>
       </section>
 
       {/* Act IV: Where It Fell Short */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-16">
         <div className="md:col-span-4">
-          <h3 className="text-xs uppercase text-stone-500 font-bold mb-4 tracking-wider sticky top-28">
+          <h3 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] mb-4 sticky top-28">
             Where It Fell Short
           </h3>
         </div>
@@ -269,24 +262,27 @@ export default function VerizonCaseStudy() {
       </section>
 
       {/* TAKEAWAYS SECTION */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-20 mb-12">
-        <div>
-          <h4 className="text-xs uppercase text-amber-700 font-bold mb-4 tracking-wider">Key Takeaways</h4>
-          <ul className="space-y-4 text-base text-stone-600">
-            <li>• Reducing noise at the top is a growth lever. Every time we cleared L1 clutter, completion rates went up downstream. It wasn't subtle.</li>
-            <li>• A shared framework is a negotiation tool. Having Skim, Dip, Dive on the table meant feature prioritization conversations had an anchor. That changed everything.</li>
-            <li>• Simplicity needs a guardian. The hardest part of this project wasn't designing the system. It was making sure it didn't quietly erode once we shipped it.</li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="text-xs uppercase text-emerald-700 font-bold mb-4 tracking-wider">Strategic Horizon</h4>
-          <ul className="space-y-4 text-base text-stone-600">
-            <li>• I'd want to go deeper on behavioral data: which L1 features are actually earning their spot based on what users do, not just what teams ask for.</li>
-            <li>• There's an opportunity to make the layout feel more personal without fracturing the core hierarchy. Contextual states based on account activity feel like the right next layer.</li>
-            <li>• Skim, Dip, Dive shouldn't live only in the app. I'd love to see it become a shared mental model across the broader Verizon ecosystem.</li>
-          </ul>
-        </div>
-      </section>
+      <Lessons
+        accent="#C8102E"
+        groups={[
+          {
+            title: 'What I learned',
+            items: [
+              { head: 'Reducing noise at the top is a growth lever.', body: "Every time we cleared L1 clutter, completion rates went up downstream. It wasn't subtle." },
+              { head: 'A shared framework is a negotiation tool.', body: 'With Skim, Dip, Dive on the table, prioritization conversations finally had an anchor.' },
+              { head: 'Simplicity needs a guardian.', body: "The hardest part wasn't designing the system. It was making sure it didn't quietly erode once we shipped it." },
+            ],
+          },
+          {
+            title: "What I'd do next",
+            items: [
+              { head: 'Let behavior decide what earns the L1.', body: 'Go deeper on which features earn their spot based on what customers do, not just what teams ask for.' },
+              { head: 'Personalize without breaking the hierarchy.', body: 'Contextual states based on account activity feel like the right next layer.' },
+              { head: 'Take Skim, Dip, Dive beyond the app.', body: "I'd love to see it become a shared mental model across the broader Verizon ecosystem." },
+            ],
+          },
+        ]}
+      />
 
       {/* IMPACT & DEPLOYMENT */}
       <section className="mt-8 p-8 md:p-10 border border-stone-400/30 bg-stone-100/50 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-6">

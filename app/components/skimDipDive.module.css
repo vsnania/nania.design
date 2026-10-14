@@ -1,0 +1,159 @@
+/* Skim, Dip, Dive: a lo-fi, autoplaying diagram of the framework.
+   Self-contained so it can live on any page (it brings its own colors). */
+.frame {
+  --vz: #C8102E;
+  --ink: #121212;
+  --muted: #6B6862;
+  --cycle: 8.4s;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 1;
+  overflow: hidden;
+}
+.sdd { position: absolute; inset: 0; display: grid; place-items: center; padding-bottom: 4%; }
+.sddRow {
+  width: 84%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4%;
+}
+.sddCol {
+  margin: 0;
+  position: relative;
+  height: 58%;
+  display: flex;
+  flex-direction: column;
+}
+/* Same frame for all three: only the density changes. */
+.sddSkim, .sddDip, .sddDive { flex: 0 0 25%; }
+.sddPanel {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 7%;
+  padding: 9% 9%;
+  border-radius: 6px;
+  border: 1px solid rgba(18, 18, 18, .14);
+  box-shadow: 0 0 0 0 transparent;
+  animation: sddFocus var(--cycle) ease-in-out infinite;
+}
+/* deeper layers read darker, like the framework diagram */
+.sddSkim .sddPanel { background: #FBFAF7; }
+.sddDip  .sddPanel { background: #F1EFEA; animation-delay: calc(var(--cycle) / 3); }
+.sddDive .sddPanel { background: #E6E3DD; animation-delay: calc(var(--cycle) * 2 / 3); }
+@keyframes sddFocus {
+  0%, 2% { transform: none; box-shadow: 0 0 0 0 transparent; border-color: rgba(18, 18, 18, .14); }
+  7%, 28% { transform: translateY(-4%); box-shadow: 0 0 0 2px var(--vz), 0 14px 26px -12px rgba(0, 0, 0, .3); border-color: transparent; }
+  34%, 100% { transform: none; box-shadow: 0 0 0 0 transparent; border-color: rgba(18, 18, 18, .14); }
+}
+/* Skim: few, big, glanceable pieces with lots of air */
+.sddBlock { display: block; width: var(--w); height: 13%; flex: none; border-radius: 5px; background: rgba(18, 18, 18, .22); }
+.sddPill { display: block; width: 34%; height: 9%; flex: none; border-radius: 999px; background: var(--vz); opacity: .75; }
+.sddSkim .sddPanel { gap: 12%; padding-top: 14%; }
+/* Dive: dense detail, smaller everything */
+.sddDense { gap: 4.5%; padding: 7%; }
+.sddGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4%; flex: none; height: 20%; }
+.sddGrid i { border-radius: 2px; background: rgba(18, 18, 18, .16); }
+.sddFine { display: block; width: var(--w); height: 3px; flex: none; border-radius: 2px; background: rgba(18, 18, 18, .2); }
+.sddBar {
+  display: block;
+  width: var(--w, 70%);
+  height: 6px;
+  flex: none;
+  border-radius: 4px;
+  background: rgba(18, 18, 18, .2);
+}
+.sddDots { display: flex; gap: 8%; }
+.sddDots i { width: 9px; height: 9px; border-radius: 50%; background: rgba(18, 18, 18, .22); }
+.sddDots i:first-child { background: var(--vz); opacity: .8; }
+.sddHead { display: block; height: 14%; flex: none; border-radius: 4px; background: rgba(18, 18, 18, .12); }
+.sddRowItem { display: flex; align-items: center; justify-content: space-between; gap: 8%; padding-bottom: 6%; border-bottom: 1px solid rgba(18, 18, 18, .1); }
+.sddChevron { width: 7px; height: 7px; flex: none; border-right: 2px solid rgba(18, 18, 18, .35); border-top: 2px solid rgba(18, 18, 18, .35); transform: rotate(45deg); }
+.sddChart {
+  display: flex;
+  align-items: flex-end;
+  gap: 4%;
+  height: 30%;
+  flex: none;
+  padding-bottom: 4%;
+  border-bottom: 1px solid rgba(18, 18, 18, .2);
+}
+.sddChart i {
+  flex: 1;
+  height: var(--h);
+  border-radius: 3px 3px 0 0;
+  background: rgba(18, 18, 18, .26);
+  transform-origin: bottom;
+  animation: sddGrow var(--cycle) cubic-bezier(.2, .7, .1, 1) infinite;
+  animation-delay: calc(var(--d) * 60ms);
+}
+.sddChart i:last-child { background: var(--vz); opacity: .85; }
+@keyframes sddGrow {
+  0%, 64% { transform: scaleY(.18); }
+  74%, 94% { transform: scaleY(1); }
+  100% { transform: scaleY(.18); }
+}
+.sddArrow {
+  flex: none;
+  width: 3.6%;
+  min-width: 16px;
+  height: auto;
+  overflow: visible;
+  color: rgba(18, 18, 18, .38);
+  animation: sddPass var(--cycle) ease-in-out infinite;
+}
+.sddArrow2 { animation-delay: calc(var(--cycle) / 3); }
+@keyframes sddPass {
+  0%, 25% { color: rgba(18, 18, 18, .38); }
+  29%, 38% { color: var(--vz); }
+  44%, 100% { color: rgba(18, 18, 18, .38); }
+}
+/* Dive branches into tasks, straight from the framework diagram. */
+.sddBranches {
+  position: absolute;
+  left: calc(100% + 8px); top: 16%;
+  display: grid; gap: 9px;
+}
+.sddBranches i {
+  display: block;
+  width: 11px; height: 11px;
+  border-radius: 50%;
+  background: #6699CC;
+  animation: sddPop var(--cycle) cubic-bezier(.3, 1.6, .5, 1) infinite;
+}
+.sddBranches i:nth-child(2) { animation-delay: 80ms; }
+.sddBranches i:nth-child(3) { animation-delay: 160ms; }
+@keyframes sddPop {
+  0%, 70% { transform: scale(.35); opacity: .35; }
+  76%, 94% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(.35); opacity: .35; }
+}
+.sddLabel {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0; right: -20%;
+  display: grid;
+  gap: 2px;
+  font-family: var(--f-pixel-sdd), ui-monospace, monospace;
+  font-size: 18px;
+  line-height: 1;
+}
+.sddLabel b { font-weight: 400; color: var(--ink); }
+.sddLabel span { color: var(--muted); }
+
+@media (max-width: 900px) {
+  .frame { aspect-ratio: 4 / 3; }
+  .sddRow { width: 90%; }
+  .sddCol { height: 50%; }
+  .sddLabel { font-size: 14px; }
+  .sddBar { height: 4px; }
+  .sddBranches { gap: 6px; left: calc(100% + 5px); }
+  .sddBranches i { width: 7px; height: 7px; }
+  .sddFine { height: 2px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sddPanel, .sddChart i, .sddArrow, .sddBranches i { animation: none; }
+}
