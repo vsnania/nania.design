@@ -1,10 +1,12 @@
 import Link from 'next/link';
+import { ViewTransition } from 'react';
 import MetricCounter from '@/app/components/MetricCounter';
 
 export default function CaseStudyPage({
   backHref = '/',
   backLabel = 'Back to work',
   HeroThumb,
+  heroName,
   heroScreenshot,
   heroScreenshotAlt = '',
   heroGlowClassName = 'bg-amber-400/20',
@@ -21,8 +23,11 @@ export default function CaseStudyPage({
   bottomNav,
 }) {
   return (
-    <article className="pt-14 pb-4 md:pt-20 max-w-3xl mx-auto">
-      <div className="mb-8">
+    // The article is its own page-transition layer: after the hero morphs into
+    // place, the rest of the case study rises in (see globals.css).
+    <article className="pt-14 pb-4 md:pt-20 max-w-3xl mx-auto" style={{ viewTransitionName: 'case-content' }}>
+      {/* Own transition layer: fades in place while the content below rises */}
+      <div className="mb-8" style={{ viewTransitionName: 'case-back' }}>
         <a href={backHref} className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] hover:text-[#121212] transition-colors inline-flex items-center gap-2 group">
           <span className="transition-transform group-hover:-translate-x-0.5">←</span> {backLabel}
         </a>
@@ -32,9 +37,11 @@ export default function CaseStudyPage({
           wider than the reading column. Screens live in the body as evidence. */}
       {HeroThumb ? (
         <div className="relative left-1/2 -translate-x-1/2 w-[min(1200px,calc(100vw-2*clamp(16px,4.5vw,64px)))] mb-12 md:mb-14">
-          <div className="relative aspect-[16/9] min-[901px]:aspect-[3/1] overflow-hidden rounded-[14px] bg-[#EDEAE2] border border-[#121212]/[.08]">
-            <HeroThumb />
-          </div>
+          <ViewTransition name={heroName} share="morph">
+            <div className="relative aspect-[16/9] min-[901px]:aspect-[3/1] overflow-hidden rounded-[14px] bg-[#EDEAE2] border border-[#121212]/[.08]">
+              <HeroThumb />
+            </div>
+          </ViewTransition>
         </div>
       ) : null}
 

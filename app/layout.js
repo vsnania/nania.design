@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${display.variable} ${mono.variable} ${pixel.variable} ${serif.variable}`}>
+    <html lang="en" data-scroll-behavior="smooth" className={`${display.variable} ${mono.variable} ${pixel.variable} ${serif.variable}`}>
       <body className="antialiased min-h-screen bg-[#EEEDE9] text-[#121212] selection:bg-[#D9481F]/20">
         <SiteChrome>{children}</SiteChrome>
       </body>

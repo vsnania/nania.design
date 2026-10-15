@@ -14,7 +14,7 @@ const NAV = [
 export default function SiteHeader() {
   const pathname = usePathname();
   return (
-    <header className={`${styles.tokens} ${styles.topbar}`}>
+    <header className={`${styles.tokens} ${styles.topbar}`} style={{ viewTransitionName: 'site-header' }}>
       <Link href="/" className={styles.wordmark}>Vincent Nania</Link>
       <nav className={styles.nav} aria-label="Primary">
         {NAV.map(({ href, label }) => (

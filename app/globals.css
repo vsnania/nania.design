@@ -94,3 +94,42 @@ body {
     scrollbar-width: none;
   }
 }
+/* ---------- Page transitions (React <ViewTransition>, see next.config.mjs) ----------
+   Homepage work panel -> case study hero morph as one object; the old page
+   leaves quickly, and the case study content rises in once the hero lands. */
+::view-transition-group(.morph) {
+  animation-duration: 460ms;
+  animation-timing-function: cubic-bezier(.2, .7, .1, 1);
+}
+::view-transition-old(root) {
+  animation: 180ms ease-out both vt-fade-out;
+}
+::view-transition-new(root) {
+  animation: 260ms ease-out 80ms both vt-fade-in;
+}
+::view-transition-new(case-content) {
+  animation: 420ms cubic-bezier(.2, .7, .1, 1) 180ms both vt-rise;
+}
+::view-transition-old(case-content) { display: none; }
+::view-transition-new(case-back) {
+  animation: 360ms ease-out 140ms both vt-fade-in;
+}
+::view-transition-old(case-back) { display: none; }
+/* the header is an anchor: it stays put while the page changes under it */
+::view-transition-group(site-header) { animation: none; z-index: 100; }
+::view-transition-old(site-header) { display: none; }
+::view-transition-new(site-header) { animation: none; }
+@keyframes vt-fade-out { to { opacity: 0; } }
+@keyframes vt-fade-in { from { opacity: 0; } }
+@keyframes vt-rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation-duration: 1ms !important;
+    animation-delay: 0ms !important;
+  }
+}

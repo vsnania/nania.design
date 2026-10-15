@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { ViewTransition } from 'react';
 import BSideTracklist from '@/app/components/home/BSideTracklist';
 import { VerizonThumb, BopisThumb, UxfeThumb } from '@/app/components/home/WorkThumbs';
 import SiteHeader from '@/app/components/chrome/SiteHeader';
@@ -13,7 +14,7 @@ const WORK = [
     img: '/homepage/verizon-thumbnail.png',
     alt: 'My Verizon app screens',
     meta: [['project', 'my verizon app transformation'], ['client', 'verizon'], ['role', 'lead experience design strategist'], ['year', '2024 – now']],
-    title: 'Leading the My Verizon app transformation',
+    title: 'Skim, Dip, Dive: Re-architecting the My Verizon app',
     body: 'Redefined the top-level dashboard as a pathfinder into account, billing, and device journeys, then turned the framework into the governance model teams use to decide what earns the top of the app.',
     stats: [['+60%', 'monthly engagement'], ['4.7★', 'App Store rating']],
     hue: 'vz',
@@ -60,10 +61,13 @@ function WorkItem({ item }) {
   // and the whole panel is the tap target (the pill just says so out loud).
   const inner = (
     <>
-      <div className={`${styles.workMedia} ${styles.workMediaCoded}`}>
-        <item.Thumb />
-        <span className={styles.workStatic} aria-hidden="true" />
-      </div>
+      {/* Same name as the case study hero: the animation morphs between pages */}
+      <ViewTransition name={`work-${item.hue}`} share="morph">
+        <div className={`${styles.workMedia} ${styles.workMediaCoded}`}>
+          <item.Thumb />
+          <span className={styles.workStatic} aria-hidden="true" />
+        </div>
+      </ViewTransition>
       <div className={styles.workText}>
         <LowerThird rows={item.meta} />
         <div className={styles.workCopy}>
@@ -82,7 +86,7 @@ function WorkItem({ item }) {
 
   const cls = `${styles.work} ${styles[`hue_${item.hue}`]}`;
   return item.href ? (
-    <Link href={item.href} className={cls} aria-label={`${item.title}: read the case study`}>{inner}</Link>
+    <Link href={item.href} transitionTypes={['case-open']} className={cls} aria-label={`${item.title}: read the case study`}>{inner}</Link>
   ) : (
     <article className={cls}>{inner}</article>
   );
