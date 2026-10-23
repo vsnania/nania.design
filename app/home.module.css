@@ -55,14 +55,16 @@
 .nowLine {
   font-family: var(--f-pixel), ui-monospace, monospace;
   font-size: 22px;
-  line-height: 1;
+  line-height: 1.1;
   color: var(--muted);
   margin: 0 0 22px;
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* dot sits on the first line when the text wraps */
   gap: 10px;
 }
 .onAir {
+  flex: none; /* never squish the dot on narrow screens */
+  margin-top: 7px;
   width: 9px; height: 9px;
   border-radius: 50%;
   background: var(--signal);
