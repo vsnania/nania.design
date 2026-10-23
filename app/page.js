@@ -100,7 +100,7 @@ export default function Home() {
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroText}>
-          <p className={styles.nowLine}><span className={styles.onAir} aria-hidden="true" />now: lead experience design strategist · verizon</p>
+          <p className={styles.nowLine}><span className={styles.onAir} aria-hidden="true" />now: lead experience design strategist at verizon</p>
           <h1 className={styles.thesis}>
             Shaping complex problems into products that <span className={styles.clarity}>deliver.</span>
           </h1>
