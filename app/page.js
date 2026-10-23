@@ -102,10 +102,10 @@ export default function Home() {
         <div className={styles.heroText}>
           <p className={styles.nowLine}><span className={styles.onAir} aria-hidden="true" />now: lead experience design strategist · verizon</p>
           <h1 className={styles.thesis}>
-            I turn complexity into <span className={styles.clarity}>clarity.</span>
+            Shaping complex problems into products that <span className={styles.clarity}>deliver.</span>
           </h1>
           <p className={styles.heroDek}>
-            Design leader in New York. I lead experience strategy for the My Verizon app and mentor the designers on my team. Off the clock, I&rsquo;ve spent twelve years making music and directing everything you see around it.
+            Design leader in New York. I lead experience strategy for the My Verizon app and mentor the designers on my team. Off the clock, I make music and direct everything you see around it.
           </p>
           <div className={styles.heroLinks}>
             <a href="#work">See the work</a>
@@ -144,7 +144,7 @@ export default function Home() {
           <div className={styles.bsideHead}>
             <h2 id="bside-h" className={styles.bsideTitle}>B-side</h2>
             <p className={styles.bsideDek}>
-              Twelve years of music, and the look around it. I write and record as <b>V. Sebastian</b>, and since 2014 with my wife, Kyla, as <b>Metacara</b>. I art direct the covers, the shoots, the videos, the socials, and the sites.
+              Music, and the look around it. I write and record as <b>V. Sebastian</b>, and since 2014 with my wife, Kyla, as <b>Metacara</b>. I art direct the covers, the shoots, the videos, the socials, and the sites.
             </p>
             <div className={styles.bsideLinks}>
               <a href="https://linktr.ee/v.sebastian" target="_blank" rel="noreferrer">V. Sebastian ↗</a>
