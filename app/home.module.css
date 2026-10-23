@@ -64,7 +64,7 @@
 }
 .onAir {
   flex: none; /* never squish the dot on narrow screens */
-  margin-top: 7px;
+  margin-top: 10px; /* centered on the pixel font's lowercase letters */
   width: 9px; height: 9px;
   border-radius: 50%;
   background: var(--signal);
