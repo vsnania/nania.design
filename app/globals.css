@@ -8,9 +8,22 @@
 
 :root {
   color-scheme: light;
+  /* One line-height scale for the whole site. Use these, never one-offs. */
+  --lh-display: 1;     /* big headlines, 40px and up */
+  --lh-heading: 1.15;  /* titles and headlines, 19 to 44px */
+  --lh-body: 1.5;      /* all running text */
+  --lh-small: 1.3;     /* small multi-line UI text: stat labels, tags, results */
+  --lh-label: 1.1;     /* pixel labels and meta */
+  /* One spacing scale for page rhythm. Tight inside an idea, more between
+     ideas, most between chapters. */
+  --space-group: 32px;                     /* a section's text to its own figure */
+  --space-block: 48px;                     /* between beats, takeaways */
+  --space-section: clamp(96px, 11vw, 136px); /* between sections (chapters) */
 }
 
 html {
+  /* never fake a bold: the pixel font has one weight, and synthetic bold smears it */
+  font-synthesis-weight: none;
   overflow-x: clip;
   font-size: 18px;
   scroll-behavior: smooth;
@@ -29,7 +42,7 @@ body {
 @layer base {
   p {
     color: inherit;
-    line-height: 1.75;
+    line-height: var(--lh-body);
     font-weight: 400;
   }
 
@@ -47,6 +60,14 @@ body {
     color: inherit;
     font-weight: 700;
   }
+}
+
+ /* small arrows: the words lead, the arrow just points */
+.arrow-sm {
+  display: inline-block;
+  margin-left: .3em;
+  font-size: .72em;
+  line-height: 1;
 }
 
 .font-display {
@@ -132,4 +153,21 @@ body {
     animation-duration: 1ms !important;
     animation-delay: 0ms !important;
   }
+}
+
+/* ---------- Paper grain ----------
+   One static layer of film grain over every page, so the paper reads like
+   a print next to the 35mm photography. Not animated, never blocks clicks. */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 2147483000;
+  pointer-events: none;
+  opacity: .05;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='g'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1.6 -.3'/></filter><rect width='100%' height='100%' filter='url(%23g)'/></svg>");
+}
+@media print {
+  body::after { display: none; }
 }

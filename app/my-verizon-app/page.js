@@ -12,7 +12,7 @@ const VZ = '#C8102E';
 
 export const metadata = {
   title: 'Skim, Dip, Dive // Vincent Nania',
-  description: 'Redesigning the top of the My Verizon app with the Skim, Dip, Dive framework, and turning it into the rules teams design by. Monthly engagement went up 60%.',
+  description: 'Redesigning the top of the My Verizon app with the Skim, Dip, Dive framework, and turning it into the rules teams design by. 60% of app owners open it every month.',
 };
 
 export default function VerizonCaseStudy() {
@@ -22,23 +22,24 @@ export default function VerizonCaseStudy() {
         previous: { href: '/', label: 'Back to work' },
         next: { href: '/ae-bopis', label: 'American Eagle BOPIS' },
       }}
+      accent={VZ}
       heroName="work-vz"
       HeroThumb={VerizonThumb}
-      kicker="my verizon app transformation"
+      kicker="my verizon app"
       projectLabel="verizon"
       kickerClassName="text-[#C8102E]"
       projectLabelClassName="text-[#66645F]"
-      title="Skim, Dip, Dive: Re-architecting the L1 mobile experience"
-      summary="I redesigned the top of the My Verizon app as a clear starting point for billing, plans, and devices, then turned the framework behind it into the rules teams design by. Monthly engagement went up 60%."
+      title="Skim, Dip, Dive: a clearer front door for the My Verizon app"
+      summary="I redesigned the top of the My Verizon app as a clear starting point for billing, plans, and devices, then turned the framework behind it into the rules teams design by. 60% of app owners open it every month."
       metrics={[
-        { value: '60%', label: 'Monthly Engagement', detail: 'Sustained across active app users.' },
-        { value: '4.7★', label: 'iOS App Store Rating', detail: 'Accompanied by 4.8 on Google Play.' },
-        { value: '10M+', label: 'Ecosystem Impressions', detail: 'Spurring 1M+ unique ecosystem sub-visits.' },
+        { value: '60%', label: 'Monthly engagement', detail: 'Share of app owners who open the app each month.' },
+        { value: '4.7★', label: 'iOS App Store rating', detail: 'And 4.8 on Google Play.' },
+        { value: '10M+', label: 'Ecosystem impressions', detail: 'Views of the entry points into the wider Verizon ecosystem.' },
       ]}
     >
 
       {/* The problem */}
-      <CaseSection label="The Problem">
+      <CaseSection label="The Problem" className="mb-[var(--space-group)]">
         <Statement
           accent={VZ}
           lead="The app needed a hierarchy, not more features."
@@ -47,32 +48,32 @@ export default function VerizonCaseStudy() {
         />
       </CaseSection>
 
-      <Figure caption="Figure 1.0: The before state. Promotions crowding the Discover tab, and a flat, undifferentiated list standing in for the account.">
+      <Figure caption="Fig. 1: Before. Promos crowding the Discover tab, and the account as one long, flat list.">
         <div className="grid grid-cols-2 gap-4 md:gap-8 items-start justify-items-center">
           <Phone src="/images/verizon/MVA-before-discover.png" alt="Legacy My Verizon Discover tab crowded with promotions" />
-          <Phone src="/images/verizon/MVA-before-account.png" alt="Legacy My Verizon Account tab as a flat list" />
+          <Phone src="/images/verizon/vz-before-account-masked.png" alt="Legacy My Verizon Account tab as a flat list" />
         </div>
       </Figure>
 
       {/* What shipped: real product early, like the AE case study */}
-      <CaseSection label="What Shipped" className="mb-8">
+      <CaseSection label="What Shipped" className="mb-[var(--space-group)]">
         <Statement
           accent={VZ}
           lead="One clear starting point on every tab."
-          body="The Skim layer gives the Me, Mobile, and Home tabs the same scannable structure, with a clear path into everything else. Here's how we got there."
+          body="The Skim layer gives the Me, Mobile, and Home tabs the same scannable structure, with a clear path into everything else."
         />
       </CaseSection>
 
-      <Figure caption="Figure 1.1: The Skim layer across the Me, Mobile, and Home tabs, as it looks today with an AI answer bar and a refreshed navigation shell.">
+      <Figure bleed caption="Fig. 2: Me, Mobile, and Home as they look today. I contributed to the AI answer bar up top.">
         <div className="grid grid-cols-3 gap-3 md:gap-8 items-start justify-items-center">
-          <Phone max={220} src="/images/verizon/vz-me-tab.png" alt="My Verizon Me tab" />
-          <Phone max={220} src="/images/verizon/vz-mobile-tab.png" alt="My Verizon Mobile tab" />
-          <Phone max={220} src="/images/verizon/vz-home-tab.png" alt="My Verizon Home tab" />
+          <Phone max={280} src="/images/verizon/vz-me-tab.png" alt="My Verizon Me tab" />
+          <Phone max={280} src="/images/verizon/vz-mobile-tab-masked.png" alt="My Verizon Mobile tab" />
+          <Phone max={280} src="/images/verizon/vz-home-tab-masked.png" alt="My Verizon Home tab" />
         </div>
       </Figure>
 
       {/* Mapping the opportunity */}
-      <CaseSection label="Mapping the Opportunity" className="mb-8">
+      <CaseSection label="Mapping the Opportunity" className="mb-[var(--space-group)]">
         <Statement
           accent={VZ}
           lead="Six themes became the rubric for design decisions."
@@ -80,29 +81,27 @@ export default function VerizonCaseStudy() {
         />
       </CaseSection>
 
-      <Figure>
-        <ol className="grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3">
-          {[
-            'Navigation complexity & structure',
-            'Lack of centralized information',
-            'Account & plan management',
-            'Usability issues & dead ends',
-            'Visual & interaction overload',
-            'Service & feature clarity',
-          ].map((theme, i) => (
-            <li key={theme} className="bg-[#FBFAF6] border border-[#121212]/[.08] rounded-xl px-4 py-3.5 md:px-5 md:py-4 min-h-[88px] flex flex-col justify-between gap-3">
-              <span className="font-[family-name:var(--f-pixel)] text-[20px] leading-none" style={{ color: VZ }}>{String(i + 1).padStart(2, '0')}</span>
-              <span className="text-[15px] md:text-[16px] leading-snug font-semibold tracking-[-0.01em] text-[#121212]">{theme}</span>
-            </li>
-          ))}
-        </ol>
-      </Figure>
+      <ol className="mb-[var(--space-section)] grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-4 max-w-[840px]">
+        {[
+          'Navigation complexity & structure',
+          'Lack of centralized information',
+          'Account & plan management',
+          'Usability issues & dead ends',
+          'Visual & interaction overload',
+          'Service & feature clarity',
+        ].map((theme, i) => (
+          <li key={theme} className="flex items-baseline gap-4">
+            <span className="font-[family-name:var(--f-pixel)] text-[20px] leading-none" style={{ color: VZ }}>{String(i + 1).padStart(2, '0')}</span>
+            <span className="text-[17px] leading-[var(--lh-small)] font-semibold tracking-[-0.01em] text-[#121212]">{theme}</span>
+          </li>
+        ))}
+      </ol>
 
       {/* Governance model */}
-      <CaseSection label="Governance Model" className="mb-12">
+      <CaseSection label="Governance Model" className="mb-[var(--space-group)]">
         <Beats
           accent={VZ}
-          intro="Skim, Dip, Dive reframes the home dashboard as an information processing strategy: customers work through a dense product one intentional layer at a time. A framework only matters if teams actually use it, so I operationalized it."
+          intro="Skim, Dip, Dive lets customers move through a dense product one layer at a time. A framework only matters if teams use it, so I turned it into rules every team could apply."
           items={[
             {
               label: 'the proof',
@@ -113,7 +112,7 @@ export default function VerizonCaseStudy() {
             {
               label: 'the rules',
               head: 'Turned a design pattern into a governance tool.',
-              body: 'Clear rules for what belongs at the Skim layer versus the Dive level gave teams an objective lens for new feature requests.',
+              body: 'Clear rules for what belongs at the Skim layer versus the Dive level gave teams a straight answer when a new feature request came in.',
               result: 'Harder to bloat the L1 for any one priority',
             },
           ]}
@@ -121,20 +120,20 @@ export default function VerizonCaseStudy() {
       </CaseSection>
 
       {/* Framework diagram: animated Skim, Dip, Dive (density, not device) */}
-      <section className="mb-16">
-        <SkimDipDive className="bg-[#EDEAE2] border border-[#121212]/[.08] rounded-[14px]" />
+      <section className="mb-[var(--space-section)]">
+        <SkimDipDive className="bg-[#E3E1DC] rounded-[2px]" />
       </section>
 
-      {/* Holding the line */}
-      <CaseSection label="Holding the Line" className="mb-12">
+      {/* Rules in practice */}
+      <CaseSection label="Rules in Practice" className="mb-[var(--space-group)]">
         <Beats
           accent={VZ}
-          intro="Governance gets tested fast. Two requests, two ways to hold the line without arguing taste."
+          intro="Two requests tested the rules early. Both times, the framework made the call."
           items={[
             {
               label: 'the offers team',
               head: 'Kept promotions out of the shortcuts.',
-              body: 'The Offers team wanted Add a Line in the L1 shortcuts. Shortcuts exist to get customers where they need to go, and the moment they become ad space the layer stops earning trust. I pointed at the framework we had all signed up for: shortcuts are navigation, offers live where customers shop.',
+              body: 'The Offers team wanted Add a Line in the L1 shortcuts. Shortcuts exist to get customers where they need to go, and the moment they become ad space the layer stops earning trust. The framework answered it: shortcuts are navigation, offers live where customers shop.',
               result: 'The precedent protected L1 from the next dozen requests',
             },
             {
@@ -147,10 +146,10 @@ export default function VerizonCaseStudy() {
         />
       </CaseSection>
 
-      <Figure caption="Figure 1.2: The Dip and Dive layers turn standard links into high-context, drillable components.">
+      <Figure caption="Fig. 3: One tap in. Device details on Mobile, internet details on Home.">
         <div className="grid grid-cols-2 gap-4 md:gap-8 items-start justify-items-center">
-          <Phone src="/images/verizon/IMG_4843.PNG" alt="Verizon device detail flow (Dip layer)" />
-          <Phone src="/images/verizon/IMG_4845.PNG" alt="Verizon usage utilization chart (Dive layer)" />
+          <Phone src="/images/verizon/vz-dip-masked.png" alt="My Verizon device details on the Mobile tab, one tap in" />
+          <Phone src="/images/verizon/vz-dive-masked.png" alt="My Verizon internet details on the Home tab, one tap in" />
         </div>
       </Figure>
 
@@ -158,13 +157,13 @@ export default function VerizonCaseStudy() {
       <CaseSection label="Alignment">
         <Beats
           accent={VZ}
-          intro="Three fronts at once. The design was only part of the job."
+          intro="I worked with product, the design system team, and engineering in parallel."
           items={[
             {
               label: 'product management',
               head: 'Translated UX into the growth metrics PMs already owned.',
               body: 'The conversation moved from "whose feature gets surfaced" to shared outcomes everyone could get behind.',
-              result: 'Shared outcomes over feature fights',
+              result: 'One set of outcomes across product teams',
             },
             {
               label: 'design system',
@@ -200,22 +199,21 @@ export default function VerizonCaseStudy() {
             items: [
               { head: 'Reducing noise at the top is a growth lever.', body: 'Every time we cleared L1 clutter, completion rates went up downstream.' },
               { head: 'A shared framework is a negotiation tool.', body: 'With Skim, Dip, Dive on the table, prioritization conversations finally had an anchor.' },
-              { head: 'Simplicity needs a guardian.', body: 'Keeping the system from eroding after launch took as much work as designing it.' },
+              { head: 'Keeping the L1 simple is ongoing work.', body: 'Keeping the system from eroding after launch took as much work as designing it.' },
             ],
           },
           {
             title: "What I'd do next",
             items: [
               { head: 'Let behavior decide what earns the L1.', body: 'Go deeper on which features earn their spot based on what customers do, not just what teams ask for.' },
-              { head: 'Personalize without breaking the hierarchy.', body: 'Contextual states based on account activity feel like the right next layer.' },
-              { head: 'Take Skim, Dip, Dive beyond the app.', body: "I'd love to see it become a shared mental model across the broader Verizon ecosystem." },
+              { head: 'Personalize without breaking the hierarchy.', body: "Showing different things based on what's going on in someone's account feels like the right next layer." },
             ],
           },
         ]}
       />
 
       <LiveLink
-        text="Explore the My Verizon app to see the core interface transformations live."
+        text="The My Verizon app is live on iOS and Android."
         href="https://apps.apple.com/us/app/my-verizon/id416023011"
         cta="View on the App Store"
       />

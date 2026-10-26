@@ -14,7 +14,7 @@
   font-family: var(--f-display), "Helvetica Neue", Arial, sans-serif;
   color: var(--ink);
 }
-.vz { --vz: #EE001E; } /* from the verizon.com logo */
+.vz { --vz: #C8102E; } /* one Verizon red, site-wide */
 .ae { --ae: #182C52; } /* from ae.com: logo fill + --color-blue-900 */
 
 /* SVG scenes share one coordinate system (360 × 240) and scale with the card */
@@ -22,11 +22,10 @@
 .scene * { transform-box: view-box; }
 
 /* ---------- Brand marks (same footprint as the old type blocks) ---------- */
-.logoVz { width: 22cqw; height: auto; display: block; }
-.logoAe { display: grid; justify-items: center; gap: 1.6cqw; }
-.logoAe img:first-child { width: 22cqw; height: auto; display: block; }
-.logoAe img:last-child { width: 10cqw; height: auto; display: block; }
-.logoRule { width: 6cqw; height: 1px; background: rgba(24, 44, 82, .3); }
+.logoVz { width: 16cqw; height: auto; display: block; } /* the outcome leads, the logo signs it */
+.logoAe { display: grid; justify-items: center; gap: 2.4cqw; }
+.logoAe img:first-child { width: 16cqw; height: auto; display: block; }
+.logoAe img:last-child { width: 7.5cqw; height: auto; display: block; }
 
 .brand {
   display: grid;
@@ -63,13 +62,13 @@
 .glyph { fill: none; stroke: var(--ink); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
 .glyph circle { fill: #FBFAF6; }
 .glyph .whiteFill { fill: #FFFFFF; }
-.vzCheck { opacity: 0; transform-origin: 322px 0; animation: vzCheck 7.5s cubic-bezier(.3, 1.6, .5, 1) infinite; animation-delay: calc(var(--i) * 2.5s); }
+.vzCheck { opacity: 0; animation: vzCheck 7.5s linear infinite; animation-delay: calc(var(--i) * 2.5s); }
 .vzCheck circle { fill: var(--vz); }
 .vzCheck path { fill: none; stroke: #fff; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
 @keyframes vzCheck {
-  0%, 27% { opacity: 0; transform: scale(.4); }
-  30%, 36% { opacity: 1; transform: scale(1); }
-  42%, 100% { opacity: 0; transform: scale(.4); }
+  0%, 28% { opacity: 0; }
+  30%, 36% { opacity: 1; }
+  38%, 100% { opacity: 0; }
 }
 .walker { fill: var(--vz); }
 
@@ -113,13 +112,13 @@
 .bagBody { fill: var(--ae); }
 .bagBand { fill: rgba(255, 255, 255, .25); }
 .bagHandle { fill: none; stroke: var(--ae); stroke-width: 2.4; stroke-linecap: round; }
-.bagCheck { opacity: 0; transform-origin: 16px -18px; animation: bagCheck 6.5s cubic-bezier(.3, 1.6, .5, 1) infinite; }
+.bagCheck { opacity: 0; animation: bagCheck 6.5s linear infinite; }
 .bagCheck circle { fill: var(--ae); stroke: #FBFAF6; stroke-width: 2; }
 .bagCheck path { fill: none; stroke: #fff; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
 @keyframes bagCheck {
-  0%, 68% { opacity: 0; transform: scale(.3); }
-  73%, 90% { opacity: 1; transform: scale(1); }
-  96%, 100% { opacity: 0; transform: scale(.3); }
+  0%, 70% { opacity: 0; }
+  72%, 90% { opacity: 1; }
+  93%, 100% { opacity: 0; }
 }
 
 /* ---------- UX For Equality: a recorded, think-aloud session ---------- */
@@ -182,8 +181,8 @@
   .brand { font-size: 4.2cqw; }
   .miniPhone { width: 15cqw; }
   .scene { width: 46cqw; }
-  .logoVz, .logoAe img:first-child { width: 26cqw; }
-  .logoAe img:last-child { width: 12cqw; }
+  .logoVz, .logoAe img:first-child { width: 20cqw; }
+  .logoAe img:last-child { width: 9cqw; }
 }
 
 @media (prefers-reduced-motion: reduce) {

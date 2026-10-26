@@ -47,15 +47,6 @@ const TRACKS = [
     alt: 'Vince holding an acoustic guitar at dusk in Tompkins Square Park',
   },
   {
-    title: 'Social',
-    project: 'V. Sebastian',
-    kind: 'Short-form video',
-    caption: [['channel', 'v. sebastian'], ['content', 'guitar demos · gear · covers'], ['role', 'strategy + content']],
-    src: '/home/social.jpg',
-    alt: 'Grid of V. Sebastian short-form videos: guitar slide comparison, a tabs request reply, a pedalboard tour',
-    link: { verb: 'Follow', href: 'https://linktr.ee/v.sebastian' },
-  },
-  {
     title: 'Another World',
     project: 'Metacara',
     kind: 'Full-length album, 2022',
@@ -96,7 +87,6 @@ const TRACKS = [
     src: '/home/epiphany-arch.jpg',
     mock: 'crt',
     screenTitle: 'Epiphany Radio',
-    channel: 'CH 03',
     alt: 'Washington Square Arch against a blue sky, a still from Epiphany Radio',
     link: { verb: 'Watch', href: 'https://youtu.be/5N6CpJEDxIU' },
   },
@@ -106,7 +96,6 @@ const TRACKS = [
     kind: 'Photo art direction',
     caption: [['single', 'cherry red'], ['artist', 'metacara'], ['role', 'art direction, rollout strategy']],
     src: '/home/metacara-red.jpg',
-    grain: true,
     alt: 'Kyla and Vince lit in deep red against a brick wall',
     link: { verb: 'View', href: 'https://www.instagram.com/metacara/p/CUsQMu5rSH-/' },
   },
@@ -146,7 +135,7 @@ export default function BSideTracklist() {
           ) : track.mock === 'press' ? (
             <PressMock key={track.src} press={track.press} />
           ) : track.mock === 'crt' ? (
-            <CrtMock key={track.src} src={track.src} alt={track.alt} title={track.screenTitle} channel={track.channel} />
+            <CrtMock key={track.src} src={track.src} alt={track.alt} title={track.screenTitle} />
           ) : (
             <Image
               key={track.src}
@@ -159,7 +148,6 @@ export default function BSideTracklist() {
           )}
           {/* Lo-fi tune-in plays once per switch, then the asset shows clean. */}
           <span className={styles.frameStatic} key={`static-${active}`} aria-hidden="true" />
-          {track.grain && <span className={styles.frameGrain} aria-hidden="true" />}
           {track.link && (
             <a
               key={`link-${active}`}

@@ -5,13 +5,15 @@ import Statement from '@/app/components/Statement';
 import CaseSection from '@/app/components/CaseSection';
 import Figure, { Phone, Artifact } from '@/app/components/Figure';
 import LiveLink from '@/app/components/LiveLink';
+import ServiceBlueprint from '@/app/components/ServiceBlueprint';
+import PickupCard from '@/app/components/PickupCard';
 import { BopisThumb } from '@/app/components/home/WorkThumbs';
 
 const AE = '#182C52';
 
 export const metadata = {
   title: 'BOPIS: 0 to 1 Service Design // Vincent Nania',
-  description: 'Leading a cross-functional initiative to design and launch Buy Online Pickup In-Store for American Eagle and Aerie across 1,000+ locations.',
+  description: 'Designing buy online, pick up in store for American Eagle and Aerie, from a four-store pilot to 1,000+ stores.',
 };
 
 export default function BOPISCaseStudy() {
@@ -21,6 +23,7 @@ export default function BOPISCaseStudy() {
         previous: { href: '/', label: 'Back to work' },
         next: { href: '/my-verizon-app', label: 'My Verizon App' },
       }}
+      accent={AE}
       heroName="work-ae"
       HeroThumb={BopisThumb}
       kicker="buy online, pick up in-store"
@@ -30,9 +33,9 @@ export default function BOPISCaseStudy() {
       title="0 to 1 service design for omnichannel retail"
       summary="Took in-store pickup from a broken reservation program to a channel live in 1,000+ stores, by designing the digital flow and the in-store operation as one service."
       metrics={[
-        { value: '$51.4M', label: 'Generated Revenue', detail: 'Picked-up dollars + attached in-store sales.' },
-        { value: '84%', label: 'Fulfillment Rate', detail: 'Overall pick-up success rate.' },
-        { value: '1000+', label: 'Locations Scaled', detail: 'BOPIS-enabled stores across U.S. + Canada.' },
+        { value: '$51.4M', label: 'Revenue', detail: 'Picked-up dollars plus attached in-store sales.' },
+        { value: '84%', label: 'Fulfillment rate', detail: 'Share of pickup orders successfully picked up.' },
+        { value: '1,000+', label: 'Stores', detail: 'Pickup-enabled across the U.S. and Canada.' },
       ]}
     >
 
@@ -40,9 +43,9 @@ export default function BOPISCaseStudy() {
       <CaseSection label="The Problem">
         <Statement
           accent={AE}
-          lead="Reserve, Try, Buy buckled under its own weight."
+          lead="Most reservations never became sales."
           body={[
-            "American Eagle and Aerie's legacy program let customers reserve items without paying upfront. With no financial commitment and unclear pickup logistics, most reservations never turned into sales.",
+            "American Eagle and Aerie's legacy program, Reserve, Try, Buy, let customers reserve items without paying upfront. With no commitment and unclear pickup logistics, reserved items piled up in stockrooms.",
             'The fix was a real Buy Online Pickup In-Store (BOPIS) system.',
           ]}
           stats={[
@@ -53,15 +56,15 @@ export default function BOPISCaseStudy() {
       </CaseSection>
 
       {/* What shipped: real product early, so skimmers see the outcome first */}
-      <CaseSection label="What Shipped" className="mb-8">
+      <CaseSection label="What Shipped" className="mb-[var(--space-group)]">
         <Statement
           accent={AE}
-          lead="Effortless, not transactional."
-          body="The pickup experience gives customers clarity at every hand-off: when, where, and how to pick up their order, without contacting support or second-guessing the timeline. Here's how we got there."
+          lead="Customers always know when, where, and how to pick up."
+          body="Pickup options at checkout, honest timing, and an update at every step, so nobody has to contact support or second-guess when their order will be ready."
         />
       </CaseSection>
 
-      <Figure caption="Figure 1.0: Final UI for Product Detail, Checkout, and Find Another Store. Click to zoom.">
+      <Figure caption="Fig. 1: Product page, checkout, and find another store, as shipped.">
         <div className="grid grid-cols-3 gap-3 md:gap-8 items-start justify-items-center">
           <Phone src="/images/ae-bopis/BOPIS PDP 2025.png" alt="BOPIS product detail page" />
           <Phone src="/images/ae-bopis/BOPIS Checkout 2025.png" alt="BOPIS checkout screen" />
@@ -70,16 +73,11 @@ export default function BOPISCaseStudy() {
       </Figure>
 
       {/* Leading discovery */}
-      <CaseSection label="Leading Discovery" className="mb-8">
+      <CaseSection label="Leading Discovery" className="mb-[var(--space-group)]">
         <Beats
           accent={AE}
-          intro="A new design director, brought over from product management, pulled me in first. The mandate was experience discovery."
+          intro="I led experience discovery, starting with one question: what was Reserve, Try, Buy telling us?"
           items={[
-            {
-              label: 'the questions',
-              head: 'What was Reserve, Try, Buy actually telling us?',
-              body: 'What needed fixing immediately, and what could the new system not afford to repeat?',
-            },
             {
               label: 'the research',
               head: 'Went into stores to watch real people shop.',
@@ -94,21 +92,21 @@ export default function BOPISCaseStudy() {
         />
       </CaseSection>
 
-      <Figure caption="Figure 1.1: Mapping the customer anxieties that drove the early UX requirements.">
-        <Artifact multiply src="/images/ae-bopis/BOPIS Common Customer Questions.png" alt="BOPIS customer anxiety sticky-note mapping" />
+      <Figure caption="Fig. 2: The questions customers kept asking. These became the first requirements.">
+        <Artifact multiply className="max-w-[520px]" src="/images/ae-bopis/BOPIS Common Customer Questions.png" alt="BOPIS customer anxiety sticky-note mapping" />
       </Figure>
 
       {/* Dual-track mapping */}
-      <CaseSection label="Dual-Track Mapping" className="mb-8">
+      <CaseSection label="Dual-Track Mapping" className="mb-[var(--space-group)]">
         <Statement
           accent={AE}
-          lead="Omnichannel means holding two realities at once."
-          body="The digital interface had to mirror the physical constraints of the stores: stockroom logistics, associate workflows, and the moments where digital intent meets physical fulfillment. So I introduced dual-track story mapping."
+          lead="The screens had to match what stores could actually do."
+          body="Stockroom logistics, associate workflows, and the moment a digital order meets a physical store all shaped the design. So I introduced dual-track story mapping."
           tags={{ items: ['Digital Browse: on-screen user stories', 'Store Pickup: physical fulfillment for customers and associates'] }}
         />
       </CaseSection>
 
-      <Figure caption="Figure 1.2: Dual-track story mapping. Digital Browse (left) and Store Pickup (right).">
+      <Figure caption="Fig. 3: Digital browse on the left, store pickup on the right.">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
           <Artifact multiply src="/images/ae-bopis/Digital Browse Mapping.png" alt="Digital Browse story map" />
           <Artifact multiply src="/images/ae-bopis/In Store Mapping.png" alt="Store Pickup story map" />
@@ -116,54 +114,37 @@ export default function BOPISCaseStudy() {
       </Figure>
 
       {/* Service blueprint */}
-      <CaseSection label="The Service Blueprint" className="mb-8">
+      <CaseSection label="The Service Blueprint" className="mb-[var(--space-group)]">
         <Statement
           accent={AE}
-          lead="It didn't fail because of any single screen. It failed because the layers were never aligned."
-          body="The story maps fed a full service blueprint. Customers could reserve items, but the backend systems and store operations weren't built to deliver a reliable pickup. The blueprint became our shared map for fixing all five layers at once."
-          tags={{ label: 'five layers', items: ['Customer journey', 'Digital experience', 'Physical store', 'Associate workflow', 'Systems'] }}
+          lead="Reserve, Try, Buy broke where the layers met."
+          body="The story maps fed a five-layer service blueprint. Customers could reserve items, but the backend systems and store operations weren't built to deliver a reliable pickup. The blueprint became our shared map for fixing all five layers at once."
         />
       </CaseSection>
 
-      <Figure caption="Figure 1.3: The five-layer BOPIS service blueprint. Click to zoom.">
-        <Artifact src="/images/ae-bopis/BOPIS-Service-Blueprint.png" alt="BOPIS service blueprint spanning customer, digital, store, associate, and systems layers" />
+      <Figure bleed caption="Fig. 4: The BOPIS service blueprint, from browsing online to picking up in store.">
+        <ServiceBlueprint />
       </Figure>
 
-      <Figure caption="Figure 1.4: Early wireframes exploring content placement ahead of prototype testing.">
+      <Figure caption="Fig. 5: Early wireframes, before the first round of testing.">
         <Artifact src="/images/ae-bopis/Lofi Mosaic.png" alt="BOPIS lo-fi wireframes and checkout flows" />
       </Figure>
 
-      {/* Prototype testing */}
-      <CaseSection label="Prototype Testing">
-        <Statement
-          accent={AE}
-          lead="Every round of testing fed the next iteration."
-          body={[
-            'I put working prototypes in front of customers throughout the design process, so decisions came from what they actually did.',
-            'Working prototypes also brought the teams who owned the in-store experience into the process early. They could feel the full flow instead of reviewing static screens, which made alignment faster.',
-          ]}
-          tags={{ items: ['Test, learn, iterate', 'Real flows over static screens', 'Store teams in early'] }}
-        />
-      </CaseSection>
-
-      {/* Speed over proximity */}
-      <CaseSection label="Speed Over Proximity" className="mb-8">
+      {/* Prototype testing, and the finding it produced */}
+      <CaseSection label="Prototype Testing" className="mb-[var(--space-group)]">
         <Statement
           accent={AE}
           lead="Fastest pickup beat nearest store."
           body={[
-            "The system defaulted customers to the closest store, but the closest store often wasn't the one that could fulfill the order fastest. I caught it in a prototype usability study I ran with my researcher: customers would happily drive a little farther to get their order in hand sooner.",
+            'I put working prototypes in front of customers throughout the design, and brought the store teams in early so they could feel the full flow. One usability study I ran with my researcher changed the core logic.',
+            "The system defaulted customers to the closest store, but the closest store often wasn't the one that could fulfill the order fastest. Customers would happily drive a little farther to get their order in hand sooner.",
             'The finding gave our product partner the evidence to change the default with confidence. We reframed the logic from "nearest store" to "fastest available pickup," with a clear prompt to trade a few extra miles for same-day speed.',
-          ]}
-          stats={[
-            { value: '↑', label: 'same-day pickup volume' },
-            { value: '↓', label: 'fulfillment costs, by routing to stores with inventory' },
           ]}
         />
       </CaseSection>
 
-      <Figure caption="Figure 1.5: The pickup card lets customers trade a farther store for same-day speed.">
-        <Artifact className="max-w-xl mx-auto" src="/images/ae-bopis/BOPIS-Pivot.png" alt="Fastest pickup prompt offering a nearby store for same-day fulfillment" />
+      <Figure caption="Fig. 6: The pickup card, where it shows up in checkout.">
+        <PickupCard />
       </Figure>
 
       {/* Pilot & scale */}
@@ -204,8 +185,8 @@ export default function BOPISCaseStudy() {
       <CaseSection label="Post-Launch Evolution">
         <Statement
           accent={AE}
-          lead="Designed to grow, not just to launch."
-          body="Good service design creates the scaffolding for what comes next. Post-launch, I set up a continuous research loop to keep the product honest, and it directly shaped later rollouts."
+          lead="Research kept running after launch, and it shaped what came next."
+          body="After launch, I set up a continuous research loop to keep learning from real pickups."
           tags={{ label: 'what it enabled', items: ['In-Store Mode', 'Curbside Pickup'] }}
         />
       </CaseSection>
@@ -216,7 +197,7 @@ export default function BOPISCaseStudy() {
           accent={AE}
           lead="The one that got away: item-level fulfillment."
           body={[
-            'I wanted a customer to pick up what was ready today and have the rest shipped home, all in one seamless transaction. The operational complexity meant we had to settle for ship to store on the remaining items.',
+            'I wanted a customer to pick up what was ready today and have the rest shipped home, all in one checkout. The operational complexity meant we had to settle for ship to store on the remaining items.',
             "It works, but it isn't the experience I was chasing. It's the first thing I'd fund if I went back.",
           ]}
         />
@@ -230,7 +211,7 @@ export default function BOPISCaseStudy() {
             title: 'What I learned',
             items: [
               { head: 'The screen is only half the experience.', body: 'I came in thinking about flows and interfaces. I left thinking about stockrooms, associate workflows, and the moment a customer walks through the door. Omnichannel means designing all of it.' },
-              { head: 'Answer the anxious questions first.', body: 'Research kept surfacing the same grey-area fears: who can pick up my order, where do I go in the store. Answering those upfront is what moved the abandonment rate.' },
+              { head: 'Answer the anxious questions first.', body: 'Research kept surfacing the same grey-area fears: who can pick up my order, where do I go in the store. Answering those upfront is what took pickup from 69% abandonment to an 84% fulfillment rate.' },
               { head: "A pilot catches what a prototype can't.", body: "The Pittsburgh pilot surfaced edge cases no wireframe could have predicted. I'd never skip a physical pilot again." },
             ],
           },
@@ -246,7 +227,7 @@ export default function BOPISCaseStudy() {
       />
 
       <LiveLink
-        text="Explore the American Eagle site to see the checkout and store pickup flows live."
+        text="The pickup flow is live on ae.com."
         href="https://www.ae.com/us/en/"
         cta="View live on AE.com"
       />

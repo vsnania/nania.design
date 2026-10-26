@@ -1,0 +1,134 @@
+/* BOPIS service blueprint: static lanes in the same lo-fi language as the
+   Skim, Dip, Dive diagram. Ink on paper, AE navy only for what broke,
+   pixel labels. Lanes are rows of tags held together by spacing, not rules. */
+.wrap {
+  --ae: #182C52;
+  --ink: #121212;
+  --muted: #6B6862;
+  --line: rgba(18, 18, 18, .18);
+  overflow-x: auto; /* the whole blueprint on phones, side to side */
+  -webkit-overflow-scrolling: touch;
+}
+.bp {
+  min-width: 860px;
+  display: grid;
+  grid-template-columns: 140px repeat(6, minmax(0, 1fr));
+  column-gap: 10px;
+  align-items: center;
+}
+.lane { display: contents; }
+
+/* moments */
+.step {
+  padding-bottom: 14px;
+  font-family: var(--f-pixel), ui-monospace, monospace;
+  font-size: 19px;
+  line-height: 1;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.step b { font-weight: 400; color: var(--muted); }
+
+/* lane labels */
+.laneLabel {
+  grid-column: 1;
+  display: grid;
+  gap: 3px;
+  padding: 22px 0;
+  font-family: var(--f-pixel), ui-monospace, monospace;
+  line-height: 1;
+}
+.laneLabel b { font-weight: 400; font-size: 20px; color: var(--ink); }
+.laneLabel i { font-style: normal; font-size: 16px; color: var(--muted); }
+
+/* customer route: one dashed line, a stop per moment, the question above */
+.route {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  column-gap: 10px;
+  align-items: end; /* dots line up even when a question wraps */
+  align-self: end;
+  padding: 8px 0 22px;
+}
+.route::before {
+  content: "";
+  position: absolute;
+  left: calc(100% / 12); right: calc(100% / 12);
+  bottom: 27px;
+  border-top: 2px dashed rgba(18, 18, 18, .3);
+}
+.stop { position: relative; display: grid; justify-items: center; gap: 12px; }
+.bubble {
+  position: relative;
+  padding: 7px 10px;
+  border-radius: 12px;
+  background: #FBFAF7;
+  font-family: var(--f-display), "Helvetica Neue", Arial, sans-serif;
+  font-size: 13.5px;
+  line-height: var(--lh-small);
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  color: var(--ink);
+  max-width: 100%;
+}
+.bubble::after {
+  content: "";
+  position: absolute;
+  left: 50%; bottom: -7px;
+  width: 10px; height: 10px;
+  margin-left: -5px;
+  background: #FBFAF7;
+  transform: rotate(45deg);
+}
+.dot { position: relative; z-index: 1; width: 12px; height: 12px; border-radius: 50%; background: var(--ink); }
+
+/* tags sit in their lane where that layer shows up; alignment with the
+   lane label does the work, no rules needed */
+.track { display: none; }
+.tag {
+  position: relative;
+  z-index: 1;
+  justify-self: center;
+  max-width: 100%;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #FBFAF7;
+  font-family: var(--f-display), "Helvetica Neue", Arial, sans-serif;
+  font-size: 13.5px;
+  line-height: var(--lh-small);
+  font-weight: 600;
+  text-align: center;
+  color: var(--ink);
+}
+/* a tag that covers several moments stretches across them */
+.span { justify-self: stretch; }
+.broke { background: var(--ae); color: #fff; }
+
+/* the line of visibility between frontstage and backstage */
+.visibility {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 6px 0;
+  padding-top: 8px;
+  border-top: 1.5px dashed rgba(18, 18, 18, .45);
+  font-family: var(--f-pixel), ui-monospace, monospace;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--muted);
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 18px 0 0;
+  font-family: var(--f-pixel), ui-monospace, monospace;
+  font-size: 18px;
+  line-height: var(--lh-label);
+  color: var(--ink);
+}
+.legendKey { flex: none; width: 26px; height: 16px; border-radius: 4px; background: var(--ae); }

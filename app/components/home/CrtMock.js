@@ -5,8 +5,9 @@ import Image from 'next/image';
 import styles from '@/app/home.module.css';
 
 // A lo-fi CRT set for video work. The scanlines, roll bar, and flicker live
-// on the TV screen itself (that's the medium), not on the viewer.
-export default function CrtMock({ src, alt, title, channel = 'CH 03' }) {
+// on the TV screen itself (that's the medium), not on the viewer. The
+// on-screen display is a VHS deck's PLAY, not a TV channel.
+export default function CrtMock({ src, alt, title }) {
   // Deterministic for server render, then randomized before first paint.
   const [motion, setMotion] = useState({ lean: -0.8, delay: 0 });
   useLayoutEffect(() => {
@@ -26,7 +27,7 @@ export default function CrtMock({ src, alt, title, channel = 'CH 03' }) {
             <div className={styles.tvScreen}>
               <Image src={src} alt={alt} fill sizes="(max-width: 900px) 80vw, 40vw" className={styles.tvImg} />
               <span className={styles.tvTitle} aria-hidden="true">{title}</span>
-              <span className={styles.tvOsd} aria-hidden="true">{channel}</span>
+              <span className={styles.tvOsd} aria-hidden="true">PLAY <i className={styles.tvPlay} /></span>
               <span className={styles.tvLines} aria-hidden="true" />
               <span className={styles.tvRoll} aria-hidden="true" />
               <span className={styles.tvGlass} aria-hidden="true" />

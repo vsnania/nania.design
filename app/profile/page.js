@@ -18,17 +18,17 @@ export default function ProfilePage() {
             <div className="flex flex-wrap items-center gap-x-4 font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase mb-4">
               <span className="text-[#121212]">vincent nania</span>
               <span className="text-stone-400/60">•</span>
-              <span className="text-stone-500">Profile</span>
+              <span className="text-stone-500">about</span>
             </div>
-            <h1 className="text-[36px] md:text-[52px] font-semibold leading-[1.02] tracking-[-0.035em] mb-6 [text-wrap:balance]">
+            <h1 className="text-[36px] md:text-[52px] font-semibold leading-[var(--lh-display)] tracking-[-0.035em] mb-6 [text-wrap:balance]">
               Designing for the human on the other side
             </h1>
-            <p className="text-[18px] md:text-[21px] leading-[1.5] text-[#2A2927]">
-              I’m a design leader based in Brooklyn. For the past decade I’ve worked with companies like Verizon and American Eagle, mostly trying to make complicated things feel simple. A lot of what helps me do that, I learned away from a desk.
+            <p className="text-[18px] md:text-[21px] leading-[var(--lh-body)] text-[#2A2927]">
+              I’m a design leader based in Brooklyn. I’ve worked with companies like Verizon and American Eagle, mostly making complicated things feel simple. A lot of what helps me do that, I learned away from a desk.
             </p>
           </div>
           <div className="md:col-span-5">
-            <div className="w-full aspect-[1414/1620] rounded-2xl overflow-hidden shadow-md border border-stone-400/25">
+            <div className="w-full aspect-[1414/1620] rounded-2xl overflow-hidden shadow-md">
               <img
                 src="/images/profile/vince-bowie.jpg"
                 alt="Vincent Nania at a table with his dog Bowie"
@@ -42,7 +42,7 @@ export default function ProfilePage() {
         </div>
       </header>
 
-      <div className="space-y-20 border-t border-stone-400/40 pt-16">
+      <div className="space-y-20 pt-16">
         
         {/* MUSIC SECTION: Real-time feedback */}
         <section className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
@@ -51,7 +51,7 @@ export default function ProfilePage() {
               The Stage & Studio
             </h4>
           </div>
-          <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
+          <div className="md:col-span-8 space-y-4 text-base font-normal leading-[var(--lh-body)] text-stone-600/90">
             <p>
               I'm a songwriter and producer, and I play gigs and open mics around NYC whenever I get the chance. Performing live is a weird, humbling thing. You get completely unfiltered feedback from a room full of people who aren't going to lie to you about it. You figure out fast what's landing and what isn't, and you adjust mid-song.
             </p>
@@ -60,7 +60,7 @@ export default function ProfilePage() {
             </p>
 
             <div className="mt-8 pt-4 space-y-4">
-              <div className="w-full aspect-[16/9] rounded-xl overflow-hidden shadow-md border border-stone-400/20">
+              <div className="w-full aspect-[16/9] rounded-xl overflow-hidden shadow-md">
                 <img
                   src="/images/profile/4B6181C0-296C-4F6F-A08B-D8CE1898EE0D_1_105_c.jpeg"
                   alt="Vincent Nania performing live at an open mic"
@@ -88,7 +88,7 @@ export default function ProfilePage() {
               Film Photography
             </h4>
           </div>
-          <div className="md:col-span-8 space-y-4 text-base font-normal leading-relaxed text-stone-600/90">
+          <div className="md:col-span-8 space-y-4 text-base font-normal leading-[var(--lh-body)] text-stone-600/90">
             <p>
               I shoot on 35mm film. Partly because I love how it looks, but mostly because it forces me to slow down. You get 36 frames, maybe fewer, and there's no preview, no delete button. You have to think before you shoot, or you burn the frame.
             </p>
@@ -100,28 +100,28 @@ export default function ProfilePage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 pt-4">
               
               {/* Photo Slot 1 */}
-              <div className="group relative aspect-[4/3] bg-stone-200/50 border border-stone-400/30 rounded-lg overflow-hidden flex flex-col items-center justify-center hover:border-stone-400/60 transition-colors">
+              <div className="group relative aspect-[4/3] bg-stone-200/50 rounded-lg overflow-hidden flex flex-col items-center justify-center transition-colors">
                 <span className="text-xs  text-stone-400 group-hover:text-stone-500 transition-colors">
                 </span>
                   <img src="images/profile/000013370002.jpg" alt="Analog photography bowie" className="absolute inset-0 w-full h-full object-cover mix-blend-multiply" /> 
               </div>
 
               {/* Photo Slot 2 */}
-              <div className="group relative aspect-[4/3] bg-stone-200/50 border border-stone-400/30 rounded-lg overflow-hidden flex flex-col items-center justify-center hover:border-stone-400/60 transition-colors">
+              <div className="group relative aspect-[4/3] bg-stone-200/50 rounded-lg overflow-hidden flex flex-col items-center justify-center transition-colors">
                 <span className="text-xs  text-stone-400 group-hover:text-stone-500 transition-colors">
                 </span>
                   <img src="images/profile/000091880020.jpg" alt="Analog photography tower of london" className="absolute inset-0 w-full h-full object-cover mix-blend-multiply" /> 
               </div>
 
               {/* Photo Slot 3 */}
-              <div className="group relative aspect-[4/3] bg-stone-200/50 border border-stone-400/30 rounded-lg overflow-hidden flex flex-col items-center justify-center hover:border-stone-400/60 transition-colors">
+              <div className="group relative aspect-[4/3] bg-stone-200/50 rounded-lg overflow-hidden flex flex-col items-center justify-center transition-colors">
                 <span className="text-xs  text-stone-400 group-hover:text-stone-500 transition-colors">
                 </span>
                   <img src="images/profile/IMG_9599.JPG" alt="Analog photography chicago" className="absolute inset-0 w-full h-full object-cover mix-blend-multiply" /> 
               </div>
 
               {/* Photo Slot 4 */}
-              <div className="group relative aspect-[4/3] bg-stone-200/50 border border-stone-400/30 rounded-lg overflow-hidden flex flex-col items-center justify-center hover:border-stone-400/60 transition-colors">
+              <div className="group relative aspect-[4/3] bg-stone-200/50 rounded-lg overflow-hidden flex flex-col items-center justify-center transition-colors">
                 <span className="text-xs  text-stone-400 group-hover:text-stone-500 transition-colors">
                 </span>
                   <img src="images/profile/IMG_9759.JPG" alt="Analog photography merry go round" className="absolute inset-0 w-full h-full object-cover mix-blend-multiply" /> 
@@ -136,9 +136,9 @@ export default function ProfilePage() {
 
       </div>
 
-      <div className="mt-20 pt-12 border-t border-stone-400/25 space-y-6">
-        <p className="text-base font-normal leading-relaxed text-stone-600/90 max-w-xl">
-          Writing songs and shipping products are the same job, honestly. You start with noise, you find the thread, and you fight for it until it's real.
+      <div className="mt-20 pt-12 space-y-6">
+        <p className="text-base font-normal leading-[var(--lh-body)] text-stone-600/90 max-w-xl">
+          Writing songs and shipping products are the same job. You start with noise, find the thread, and keep at it until it's real.
         </p>
         <a href="/" className="text-xs text-stone-500 hover:text-stone-900 transition-colors flex items-center gap-2 group">
           View my work <span className="transition-transform group-hover:translate-x-0.5">→</span>

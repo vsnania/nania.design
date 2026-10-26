@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import { ViewTransition } from 'react';
-import MetricCounter from '@/app/components/MetricCounter';
 
 export default function CaseStudyPage({
   backHref = '/',
   backLabel = 'Back to work',
+  accent = '#66645F',
   HeroThumb,
   heroName,
   heroScreenshot,
@@ -25,7 +25,7 @@ export default function CaseStudyPage({
   return (
     // The article is its own page-transition layer: after the hero morphs into
     // place, the rest of the case study rises in (see globals.css).
-    <article className="pt-14 pb-4 md:pt-20 max-w-3xl mx-auto" style={{ viewTransitionName: 'case-content' }}>
+    <article className="pt-14 pb-4 md:pt-20 max-w-[1040px] mx-auto" style={{ viewTransitionName: 'case-content', '--accent': accent }}>
       {/* Own transition layer: fades in place while the content below rises */}
       <div className="mb-8" style={{ viewTransitionName: 'case-back' }}>
         <a href={backHref} className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase text-[#66645F] hover:text-[#121212] transition-colors inline-flex items-center gap-2 group">
@@ -38,7 +38,7 @@ export default function CaseStudyPage({
       {HeroThumb ? (
         <div className="relative left-1/2 -translate-x-1/2 w-[min(1200px,calc(100vw-2*clamp(16px,4.5vw,64px)))] mb-12 md:mb-14">
           <ViewTransition name={heroName} share="morph">
-            <div className="relative aspect-[16/9] min-[901px]:aspect-[3/1] overflow-hidden rounded-[14px] bg-[#EDEAE2] border border-[#121212]/[.08]">
+            <div className="relative aspect-[16/9] min-[901px]:aspect-[3/1] overflow-hidden rounded-[2px] bg-[#E3E1DC]">
               <HeroThumb />
             </div>
           </ViewTransition>
@@ -62,7 +62,7 @@ export default function CaseStudyPage({
                 </>
               ) : null}
             </div>
-            <h1 className="text-white text-[32px] md:text-[44px] font-semibold leading-[1.04] tracking-[-0.03em] [text-wrap:balance]">{title}</h1>
+            <h1 className="text-white text-[32px] md:text-[44px] font-semibold leading-[var(--lh-display)] tracking-[-0.03em] [text-wrap:balance]">{title}</h1>
           </div>
 
           <div
@@ -78,7 +78,7 @@ export default function CaseStudyPage({
         </div>
       ) : null}
 
-      <header className="mb-16">
+      <header className="mb-16 max-w-[760px]">
         {!heroScreenshot ? (
           <>
             <div className="flex flex-wrap items-center gap-x-4 font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase mb-4">
@@ -90,36 +90,36 @@ export default function CaseStudyPage({
                 </>
               ) : null}
             </div>
-            <h1 className="text-[36px] md:text-[52px] font-semibold leading-[1.02] tracking-[-0.035em] mb-6 [text-wrap:balance]">{title}</h1>
+            <h1 className="text-[36px] md:text-[52px] font-semibold leading-[var(--lh-display)] tracking-[-0.035em] mb-6 [text-wrap:balance]">{title}</h1>
           </>
         ) : null}
-        <p className="text-[18px] md:text-[21px] leading-[1.5] text-[#2A2927]">{summary}</p>
+        <p className="text-[18px] md:text-[21px] leading-[var(--lh-body)] text-[#2A2927]">{summary}</p>
       </header>
 
       {metrics.length > 0 ? (
-        <section className="grid grid-cols-1 sm:grid-cols-3 gap-8 border-y border-[#CFCCC5] py-10 mb-16">
+        <section className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-[var(--space-section)]">
           {metrics.map((metric) => (
             <div key={metric.label}>
-              <MetricCounter value={metric.value} />
-              <p className="text-[14px] leading-snug mt-2 font-semibold text-[#121212]">{metric.label}</p>
-              {metric.detail ? <p className="text-[13px] leading-snug mt-1 text-[#66645F]">{metric.detail}</p> : null}
+              <span className="text-[40px] leading-none font-semibold tracking-[-0.03em] tabular-nums">{metric.value}</span>
+              <p className="text-[14px] leading-[var(--lh-small)] mt-2 font-semibold text-[#121212]">{metric.label}</p>
+              {metric.detail ? <p className="text-[13px] leading-[var(--lh-small)] mt-1 text-[#55534F]">{metric.detail}</p> : null}
             </div>
           ))}
         </section>
       ) : null}
 
-      <div className="space-y-16">{children}</div>
+      <div>{children}</div>
 
       {bottomNav ? (
-        <div className="mt-24 grid grid-cols-1 gap-4 pt-12 border-t-2 border-[#121212] md:grid-cols-2">
-          <a href={bottomNav.previous.href} className="group flex items-center justify-between gap-4 px-6 py-5 bg-[#EDEAE2] border border-[#121212]/10 rounded-[14px] hover:border-[#121212] hover:-translate-y-1 transition-all duration-300">
+        <div className="mt-28 grid grid-cols-1 gap-4 md:grid-cols-2">
+          <a href={bottomNav.previous.href} className="group flex items-center justify-between gap-4 px-6 py-5 bg-[#E3E1DC] rounded-[2px] hover:bg-[#DAD7D0] transition-colors duration-300">
             <span className="text-[17px] font-semibold tracking-[-0.01em] text-[#121212]">
-              ← {bottomNav.previous.label}
+              <span aria-hidden="true" className="text-[0.8em] mr-1.5">←</span>{bottomNav.previous.label}
             </span>
           </a>
-          <a href={bottomNav.next.href} className="group flex items-center justify-between gap-4 px-6 py-5 bg-[#EDEAE2] border border-[#121212]/10 rounded-[14px] hover:border-[#121212] hover:-translate-y-1 transition-all duration-300">
+          <a href={bottomNav.next.href} className="group flex items-center justify-between gap-4 px-6 py-5 bg-[#E3E1DC] rounded-[2px] hover:bg-[#DAD7D0] transition-colors duration-300">
             <span className="text-[17px] font-semibold tracking-[-0.01em] text-[#121212]">
-              {bottomNav.next.label} →
+              {bottomNav.next.label}<span aria-hidden="true" className="text-[0.8em] ml-1.5">→</span>
             </span>
           </a>
         </div>

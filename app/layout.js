@@ -10,7 +10,7 @@ const serif = Newsreader({ subsets: ['latin'], weight: ['400', '600'], style: ['
 
 export const metadata = {
   title: 'Vincent Nania',
-  description: 'Design Leadership & Product Strategy Portfolio',
+  description: 'Vincent Nania, design leader in New York. Product work for Verizon and American Eagle, and music on the side.',
 };
 
 export default function RootLayout({ children }) {

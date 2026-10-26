@@ -1,21 +1,21 @@
 // Closing "what I learned / what I'd do next" block, built on the same idea
 // as Beats: a bold one-line headline per point, detail underneath, ruled
-// rows instead of bullets. Two columns on desktop, stacked on phones.
+// spacing instead of bullets or rules. Two columns on desktop, stacked on phones.
 export default function Lessons({ groups, accent = '#121212' }) {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-14 mt-20 mb-12">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-[var(--space-block)] mb-[var(--space-section)]">
       {groups.map((group) => (
         <div key={group.title}>
-          <h4 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase mb-5" style={{ color: accent }}>
+          <h4 className="font-[family-name:var(--f-pixel)] text-[20px] leading-none lowercase mb-4" style={{ color: accent }}>
             {group.title}
           </h4>
-          <ul className="border-b border-[#CFCCC5]">
+          <ul className="grid gap-[var(--space-block)]">
             {group.items.map((item) => (
-              <li key={item.head} className="py-5 border-t border-[#CFCCC5]">
-                <p className="text-[19px] leading-[1.25] font-semibold tracking-[-0.02em] text-[#121212] [text-wrap:balance]">
+              <li key={item.head}>
+                <p className="text-[19px] leading-[var(--lh-heading)] font-semibold tracking-[-0.02em] text-[#121212] [text-wrap:balance]">
                   {item.head}
                 </p>
-                <p className="mt-2 text-[15px] leading-[1.6] text-[#2A2927]/85">
+                <p className="mt-1.5 text-[16px] leading-[var(--lh-body)] text-[#2A2927]">
                   {item.body}
                 </p>
               </li>

@@ -67,9 +67,10 @@ export function VerizonThumb() {
           </g>
         ))}
 
-        {/* the customer: takes a different path each loop */}
+        {/* the customer: takes a different path each loop. Hidden by default,
+            so it never flashes at the corner before the animation clock starts */}
         {BRANCHES.map((b, i) => (
-          <circle key={b.key} className={styles.walker} r="6">
+          <circle key={b.key} className={styles.walker} r="6" opacity="0">
             <animateMotion dur="7.5s" repeatCount="indefinite" calcMode="linear"
               keyPoints="0;0;1;1" keyTimes={SLOTS[i].join(';')}
               path={`${b.d} L 270 ${b.y}`} />
@@ -88,7 +89,6 @@ export function BopisThumb() {
     <div className={`${styles.thumb} ${styles.ae}`} role="img" aria-label="American Eagle and Aerie buy online, pick up in store: one click sends a bag to the store, where it's ready fast and picked up in person">
       <div className={styles.logoAe} aria-hidden="true">
         <img src="/home/logos/american-eagle.svg" alt="" />
-        <span className={styles.logoRule} />
         <img src="/home/logos/aerie.svg" alt="" />
       </div>
       <svg className={styles.scene} viewBox="0 0 360 240" aria-hidden="true">
