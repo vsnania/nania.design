@@ -114,7 +114,7 @@ export default function Home() {
         </div>
         <figure className={styles.portrait}>
           <div className={styles.portraitMedia}>
-            <Image src="/home/vince-railing.jpg" alt="Vincent Nania leaning on a white railing against a concrete wall, in black and white" fill priority sizes="(max-width: 900px) 92vw, 40vw" className={styles.portraitImg} />
+            <Image src="/home/vince-bench.jpg" alt="Vincent Nania on a painted bench in front of a wall mural of a giant face, in black and white" fill priority sizes="(max-width: 900px) 92vw, 40vw" className={styles.portraitImg} />
             <span className={styles.scanlinesIntro} aria-hidden="true" />
           </div>
         </figure>

@@ -103,7 +103,7 @@
 .portrait { margin: 0; }
 .portraitMedia {
   position: relative;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 5;
   overflow: hidden;
   background: #1a1a1a;
 }
